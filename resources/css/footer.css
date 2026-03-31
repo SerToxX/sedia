@@ -1,0 +1,129 @@
+/* FONT GLOBAL */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* FOOTER */
+
+.class-footer-container{
+    background:#a7ad95;
+    color:white;
+    width:100%;
+}
+
+.class-footer-content{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap:40px;
+    padding:60px 20px;
+}
+
+
+/* TITULOS */
+
+.class-footer-title{
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+.class-footer-title-logo{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+
+/* TEXTOS */
+
+.class-footer-text{
+    font-size:12px;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.class-footer-text-small{
+    font-size:12px;
+}
+
+
+/* LINKS */
+
+.class-footer-links{
+    list-style:none;
+    padding:0;
+}
+
+.class-footer-links li{
+    font-size:12px;
+    margin-bottom:8px;
+    cursor:pointer;
+}
+
+
+/* SOCIAL */
+
+.class-footer-social{
+    display:flex;
+    gap:12px;
+}
+
+.class-footer-social-icon{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    border:1px solid white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+/* PAYMENT */
+
+.class-footer-payments{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.class-footer-payment-box{
+    width:45px;
+    height:28px;
+    background:white;
+    border-radius:4px;
+}
+
+
+/* BOTTOM */
+
+.class-footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.3);
+    text-align:center;
+    padding:15px 0;
+}
+
+.class-footer-copyright{
+    font-size:11px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width:900px){
+
+.class-footer-content{
+    grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media (max-width:600px){
+
+.class-footer-content{
+    grid-template-columns:1fr;
+}
+
+}
