@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    
 }
 
 
@@ -13,15 +14,15 @@ body{
     width:100%;
 }
 
+
 .class-footer-content{
     max-width:1200px;
     margin:auto;
     display:grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap:40px;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    gap:60px;
     padding:60px 20px;
 }
-
 
 /* TITULOS */
 
@@ -84,13 +85,13 @@ body{
 /* PAYMENT */
 
 .class-footer-payments{
-    display:flex;
-    flex-wrap:wrap;
+    display:grid;
+    grid-template-columns: repeat(4, 45px);
     gap:10px;
 }
 
 .class-footer-payment-box{
-    width:45px;
+    width:100%;
     height:28px;
     background:white;
     border-radius:4px;
@@ -112,18 +113,84 @@ body{
 
 /* RESPONSIVE */
 
-@media (max-width:900px){
+/* =========================
+   RESPONSIVE
+========================= */
 
-.class-footer-content{
-    grid-template-columns:1fr 1fr;
-}
 
-}
-
-@media (max-width:600px){
+/* Tablet vertical y móviles */
+@media (max-width:768px){
 
 .class-footer-content{
     grid-template-columns:1fr;
+    gap:35px;
+    text-align:center;
+}
+
+/* columna marca */
+.class-footer-brand{
+    text-align:center;
+    margin:auto;
+    max-width:500px;
+}
+
+/* titulo SEDIA */
+.class-footer-title-logo{
+    text-align:center;
+}
+
+/* párrafo */
+.class-footer-text{
+    text-align:center;
+}
+
+/* redes sociales */
+.class-footer-social{
+    justify-content:center;
+}
+
+/* links */
+.class-footer-links{
+    text-align:center;
+}
+
+/* pagos */
+/* pagos */
+.class-footer-payments{
+    display:flex;
+    justify-content:center;
+    flex-wrap:nowrap;
+    gap:10px;
+}
+
+.class-footer-payment-box{
+    width:45px;
+    height:28px;
+    background:white;
+    border-radius:4px;
+    flex-shrink:0;
+}
+
+
+}
+
+/* Móviles pequeños */
+@media (max-width:480px){
+
+.class-footer-content{
+    padding:40px 20px;
+}
+
+.class-footer-title-logo{
+    font-size:26px;
+}
+
+.class-footer-text{
+    font-size:11px;
+}
+
+.class-footer-links li{
+    font-size:11px;
 }
 
 }

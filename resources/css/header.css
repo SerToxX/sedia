@@ -1,0 +1,74 @@
+/* HEADER */
+
+.class-header-container{
+    width:100%;
+    background:#b6ab9a;
+    padding:15px 30px;
+}
+
+/* HEADER TRANSPARENTE SOLO EN HOME */
+
+.class-home .class-header-container{
+    background:transparent;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:10;
+}
+
+/* NAV */
+
+.class-header-nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+/* IZQUIERDA */
+
+.class-header-left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:white;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+.class-header-menu-icon{
+    font-size:18px;
+}
+
+/* CENTRO */
+
+.class-header-logo{
+    color:white;
+    font-size:28px;
+    letter-spacing:3px;
+    font-weight:500;
+}
+
+/* DERECHA */
+
+.class-header-right{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:white;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+.class-header-cart-count{
+    background:#a7ad95;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    font-size:11px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
