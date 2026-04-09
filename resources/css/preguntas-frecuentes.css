@@ -1,0 +1,119 @@
+/* ========================================
+PREGUNTAS FRECUENTES
+======================================== */
+
+.class-preguntas-frecuentes{
+padding:80px 40px;
+max-width:900px;
+margin:auto;
+}
+
+
+/* TITULO */
+
+.class-preguntas-frecuentes-title{
+font-family:Poppins;
+font-weight:400;
+font-size:40px;
+color:#000;
+text-align:center;
+margin-bottom:60px;
+}
+
+
+/* CONTENEDOR */
+
+.class-preguntas-frecuentes-container{
+width:100%;
+}
+
+
+/* ITEM */
+
+.class-preguntas-frecuentes-item{
+border-bottom:1px solid #F7F7F7;
+padding:20px 0;
+}
+
+
+/* PREGUNTA */
+
+.class-preguntas-frecuentes-question{
+display:flex;
+justify-content:space-between;
+align-items:center;
+cursor:pointer;
+
+font-family:Poppins;
+font-weight:600;
+font-size:18px;
+color:#000;
+}
+
+
+/* FLECHA */
+
+.class-preguntas-frecuentes-arrow{
+width:12px;
+height:12px;
+
+border-right:5px solid #A3A3A3;
+border-bottom:5px solid #A3A3A3;
+
+transform:rotate(45deg);
+transition:0.3s;
+}
+
+
+/* RESPUESTA */
+
+.class-preguntas-frecuentes-answer{
+max-height:0;
+overflow:hidden;
+transition:max-height 0.4s ease;
+font-family:Poppins;
+font-weight:400;
+font-size:16px;
+color:#555;
+margin-top:10px;
+}
+
+
+/* ACTIVO */
+
+.class-preguntas-frecuentes-item.active 
+.class-preguntas-frecuentes-question{
+color:#B8C1A8;
+}
+
+.class-preguntas-frecuentes-item.active 
+.class-preguntas-frecuentes-arrow{
+border-color:#B8C1A8;
+transform:rotate(-135deg);
+}
+
+.class-preguntas-frecuentes-item.active 
+.class-preguntas-frecuentes-answer{
+max-height:300px;
+}
+
+
+/* ========================================
+RESPONSIVE
+======================================== */
+
+@media (max-width:768px){
+
+.class-preguntas-frecuentes{
+padding:60px 20px;
+}
+
+.class-preguntas-frecuentes-title{
+font-size:32px;
+}
+
+.class-preguntas-frecuentes-question{
+font-size:16px;
+}
+
+}

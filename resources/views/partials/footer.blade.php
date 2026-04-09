@@ -32,7 +32,11 @@
             <ul class="class-footer-links">
                 <li>Nosotros</li>
                 <li>Contáctanos</li>
-                <li>Preguntas frecuentes</li>
+                <li>
+                    <a href="{{ route('faq') }}">
+                        Preguntas frecuentes
+                    </a>
+                </li>
                 <li>Políticas de devolución</li>
                 <li>Términos y condiciones</li>
                 <li>Libro de reclamaciones</li>

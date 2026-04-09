@@ -17,13 +17,16 @@
     {{-- Header --}}
     @include('partials.header')
 
-    {{-- Contenido que cambia --}}
+    {{-- Contenido --}}
     <main>
         @yield('content')
     </main>
 
     {{-- Footer --}}
     @include('partials.footer')
+
+    {{-- Scripts por página --}}
+    @stack('scripts')
 
 </body>
 </html>

@@ -13,3 +13,7 @@ Route::get('/productos', function () {
 Route::get('/contacto', function () {
     return view('pages.contacto');
 });
+
+Route::get('/preguntas-frecuentes', function () {
+    return view('pages.preguntas-frecuentes.preguntas-frecuentes');
+})->name('faq');

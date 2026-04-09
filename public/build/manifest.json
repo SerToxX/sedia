@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-IFmJTva6.css",
+    "file": "assets/app-Dgm9gGSr.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -12,6 +12,12 @@
     "file": "assets/app-B4-LX7ro.js",
     "name": "app",
     "src": "resources/js/app.jsx",
+    "isEntry": true
+  },
+  "resources/js/preguntas-frecuentes.js": {
+    "file": "assets/preguntas-frecuentes-DaT_HVNR.js",
+    "name": "preguntas-frecuentes",
+    "src": "resources/js/preguntas-frecuentes.js",
     "isEntry": true
   }
 }
