@@ -14,10 +14,22 @@
     "src": "resources/js/app.jsx",
     "isEntry": true
   },
+  "resources/js/politicas-devolucion.js": {
+    "file": "assets/politicas-devolucion-Qp14cpnT.js",
+    "name": "politicas-devolucion",
+    "src": "resources/js/politicas-devolucion.js",
+    "isEntry": true
+  },
   "resources/js/preguntas-frecuentes.js": {
     "file": "assets/preguntas-frecuentes-DaT_HVNR.js",
     "name": "preguntas-frecuentes",
     "src": "resources/js/preguntas-frecuentes.js",
+    "isEntry": true
+  },
+  "resources/js/terminos-condiciones.js": {
+    "file": "assets/terminos-condiciones-BHVLIJM_.js",
+    "name": "terminos-condiciones",
+    "src": "resources/js/terminos-condiciones.js",
     "isEntry": true
   }
 }

@@ -9,7 +9,9 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resources/js/app.jsx',
-                'resources/js/preguntas-frecuentes.js'
+                'resources/js/preguntas-frecuentes.js',
+                'resources/js/politicas-devolucion.js',
+                'resources/js/terminos-condiciones.js'
             ],
             refresh: true,
         }),

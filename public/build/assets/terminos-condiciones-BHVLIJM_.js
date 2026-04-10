@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelectorAll(".class-terminos-condiciones-question");e.length&&e.forEach(t=>{t.addEventListener("click",()=>{t.parentElement.classList.toggle("active")})})});
