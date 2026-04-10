@@ -1,0 +1,139 @@
+/* ========================================
+TERMINOS Y CONDICIONES
+======================================== */
+
+.class-terminos-condiciones{
+padding:80px 40px;
+max-width:900px;
+margin:auto;
+}
+
+
+/* TITULO */
+
+.class-terminos-condiciones-title{
+font-family:Poppins;
+font-weight:400;
+font-size:40px;
+color:#000;
+text-align:center;
+margin-bottom:60px;
+}
+
+
+/* CONTENEDOR */
+
+.class-terminos-condiciones-container{
+width:100%;
+}
+
+
+/* SECCION FIJA */
+
+.class-terminos-condiciones-static{
+margin-bottom:40px;
+}
+
+.class-terminos-condiciones-static h2{
+font-family:Poppins;
+font-weight:600;
+font-size:22px;
+color:#B8C1A8;
+margin-bottom:10px;
+}
+
+.class-terminos-condiciones-static p{
+font-family:Poppins;
+font-weight:400;
+font-size:16px;
+color:#444;
+line-height:1.6;
+}
+
+
+/* ITEM */
+
+.class-terminos-condiciones-item{
+border-bottom:1px solid #ddd;
+padding:20px 0;
+}
+
+
+/* TITULO ITEM */
+
+.class-terminos-condiciones-question{
+display:flex;
+justify-content:space-between;
+align-items:center;
+cursor:pointer;
+
+font-family:Poppins;
+font-weight:500;
+font-size:16px;
+color:#000;
+}
+
+
+/* FLECHA */
+
+.class-terminos-condiciones-arrow{
+width:12px;
+height:12px;
+
+border-right:4px solid #A3A3A3;
+border-bottom:4px solid #A3A3A3;
+
+transform:rotate(45deg);
+transition:0.3s;
+}
+
+
+/* RESPUESTA */
+
+.class-terminos-condiciones-answer{
+max-height:0;
+overflow:hidden;
+transition:max-height 0.4s ease;
+
+font-family:Poppins;
+font-weight:400;
+font-size:15px;
+color:#555;
+margin-top:10px;
+line-height:1.6;
+}
+
+
+/* ACTIVO */
+
+.class-terminos-condiciones-item.active 
+.class-terminos-condiciones-arrow{
+border-color:#B8C1A8;
+transform:rotate(-135deg);
+}
+
+.class-terminos-condiciones-item.active 
+.class-terminos-condiciones-answer{
+max-height:300px;
+}
+
+
+/* ========================================
+RESPONSIVE
+======================================== */
+
+@media (max-width:768px){
+
+.class-terminos-condiciones{
+padding:60px 20px;
+}
+
+.class-terminos-condiciones-title{
+font-size:32px;
+}
+
+.class-terminos-condiciones-question{
+font-size:15px;
+}
+
+}

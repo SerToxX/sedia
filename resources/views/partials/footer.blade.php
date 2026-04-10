@@ -37,8 +37,16 @@
                         Preguntas frecuentes
                     </a>
                 </li>
-                <li>Políticas de devolución</li>
-                <li>Términos y condiciones</li>
+                <li>
+                    <a href="{{ route('politicas-devolucion') }}">
+                        Políticas de devolución
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('terminos') }}">
+                        Términos y condiciones
+                    </a>
+                </li>
                 <li>Libro de reclamaciones</li>
             </ul>
 

@@ -3,6 +3,8 @@
 @import './header.css';
 @import './index.css';
 @import './preguntas-frecuentes.css';
+@import './terminos-condiciones.css';
+@import './politicas-devolucion.css';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';

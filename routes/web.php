@@ -17,3 +17,11 @@ Route::get('/contacto', function () {
 Route::get('/preguntas-frecuentes', function () {
     return view('pages.preguntas-frecuentes.preguntas-frecuentes');
 })->name('faq');
+
+Route::get('/terminos-condiciones', function () {
+    return view('pages.terminos-condiciones.terminos-condiciones');
+})->name('terminos');
+
+Route::get('/politicas-devolucion', function () {
+    return view('pages.politicas-devolucion.politicas-devolucion');
+})->name('politicas-devolucion');

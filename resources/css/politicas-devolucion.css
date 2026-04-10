@@ -1,0 +1,209 @@
+/* ========================================
+POLITICAS DE DEVOLUCION
+======================================== */
+
+.class-politicas-devolucion {
+    width: 100%;
+    padding: 80px 40px;
+}
+
+.class-politicas-devolucion-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    gap: 25px;
+}
+
+
+/* TITULO */
+
+.class-politicas-devolucion-title {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #494950;
+}
+
+
+/* CARDS */
+
+.class-politicas-devolucion-card {
+    display: flex;
+    align-items: stretch;
+    background: #F6F6F4;
+    border-radius: 12px;
+    overflow: hidden;
+
+    min-height: 220px;
+}
+
+/* TEXTO */
+
+.class-politicas-devolucion-text {
+    flex: 1;
+    padding: 30px 40px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    color: #494950;
+    line-height: 1.2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* NEGRITA */
+
+.class-politicas-devolucion-text strong {
+    font-weight: 600;
+}
+
+.class-politicas-devolucion-card:nth-child(2) .class-politicas-devolucion-text ul {
+    padding-left: 40px;
+}
+
+
+/* LISTAS */
+
+.class-politicas-devolucion-text ul {
+    padding-left: 25px;
+    list-style: disc;
+}
+
+
+/* .class-politicas-devolucion-text li{
+margin-bottom:14px;
+} */
+
+/* bloque 1 */
+.class-politicas-devolucion-card:nth-child(1) .class-politicas-devolucion-text li {
+    margin-bottom: 14px;
+}
+
+.class-politicas-devolucion-card:nth-child(1) .class-politicas-devolucion-text li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* bloque 2 */
+.class-politicas-devolucion-card:nth-child(2) .class-politicas-devolucion-text li {
+    margin-bottom: 0;
+}
+
+
+/* bloque 3 */
+.class-politicas-devolucion-card:nth-child(3) .class-politicas-devolucion-text li {
+    margin-bottom: 14px;
+}
+
+.class-politicas-devolucion-card:nth-child(3) .class-politicas-devolucion-text li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* BLOQUE VERDE */
+
+.class-politicas-devolucion-side {
+    width: 260px;
+    background: #B8C1A8;
+    color: white;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* ========================================
+PROCESO
+======================================== */
+
+.class-politicas-devolucion-proceso {
+    margin-top: 80px;
+}
+
+.class-politicas-devolucion-proceso-title {
+
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 32px;
+    color: #323334;
+
+    text-align: center;
+
+    padding: 20px 0;
+    margin: 0 -40px 40px -40px;
+
+    border-top: 1px solid #DFDEDB;
+    border-bottom: 1px solid #DFDEDB;
+}
+
+
+/* ========================================
+STEPS SVG
+======================================== */
+
+.class-politicas-devolucion-steps{
+    display:flex;
+    justify-content:center;
+    margin-bottom:30px;
+    flex-wrap:nowrap;
+}
+
+/* cada paso */
+.class-politicas-devolucion-step{
+    cursor:pointer;
+    position:relative;
+}
+
+/* superposición para que se unan */
+.class-politicas-devolucion-step:not(:first-child){
+    margin-left:-26px;
+}
+
+/* SVG */
+
+.step-svg{
+    width:260px;
+    height:52px;
+    display:block;
+}
+
+/* FIGURA */
+
+.step-shape{
+    fill:white;
+    stroke:#C1C9D2;
+    stroke-width:1;
+}
+
+/* TEXTO */
+
+.step-svg text{
+    font-family:Poppins;
+    font-size:16px;
+    fill:#323334;
+}
+
+/* ACTIVO */
+
+.class-politicas-devolucion-step.active{
+    z-index:2;
+}
+
+.class-politicas-devolucion-step.active .step-shape{
+    fill:#B8C1A8;
+    stroke:#B8C1A8;
+}
+
+.class-politicas-devolucion-step.active text{
+    fill:white;
+}
