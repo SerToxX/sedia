@@ -127,240 +127,72 @@
     <!-- SECCION PASOS -->
     <!-- =================================== -->
 
-    <section class="class-politicas-devolucion-proceso">
+    <div class="class-politicas-devolucion-steps">
 
-        <h2 class="class-politicas-devolucion-proceso-title">
-            ¿Cómo solicitar una devolución o cambio?
-        </h2>
+<div class="class-politicas-devolucion-step active" data-step="0">
 
+<svg viewBox="0 0 350 52" class="step-svg">
 
-        <div class="class-politicas-devolucion-steps">
+<polygon class="step-shape"
+points="0,0 325,0 350,26 325,52 0,52"/>
 
+<text x="46%" y="50%" dominant-baseline="middle" text-anchor="middle">
+<tspan font-weight="600">Paso 1:</tspan> Notificación
+</text>
 
-            <!-- PASO 1 -->
-            <div class="class-politicas-devolucion-step active" data-step="0">
+</svg>
 
-                <svg viewBox="0 0 260 52" class="step-svg">
+</div>
 
-                    <polygon
-                        class="step-shape"
-                        points="0,0 235,0 260,26 235,52 0,52" />
 
-                    <text
-                        x="50%"
-                        y="50%"
-                        dominant-baseline="middle"
-                        text-anchor="middle"
-                        font-family="Poppins"
-                        font-size="16">
+<div class="class-politicas-devolucion-step" data-step="1">
 
-                        <tspan font-weight="600">Paso 1:</tspan> Notificación
+<svg viewBox="0 0 350 52" class="step-svg">
 
-                    </text>
+<polygon class="step-shape"
+points="0,0 325,0 350,26 325,52 0,52 25,26"/>
 
-                </svg>
+<text x="46%" y="50%" dominant-baseline="middle" text-anchor="middle">
+<tspan font-weight="600">Paso 2:</tspan> Instrucciones
+</text>
 
-            </div>
+</svg>
 
+</div>
 
 
-            <!-- PASO 2 -->
-            <div class="class-politicas-devolucion-step" data-step="1">
+<div class="class-politicas-devolucion-step" data-step="2">
 
-                <svg viewBox="0 0 260 52.5" class="step-svg">
+<svg viewBox="0 0 350 52" class="step-svg">
 
-                    <polygon
-                        class="step-shape"
-                        points="0,0 235,0 260,26.25 235,52.5 0,52.5 25,26.25" />
+<polygon class="step-shape"
+points="0,0 325,0 350,26 325,52 0,52 25,26"/>
 
-                    <text
-                        x="50%"
-                        y="50%"
-                        dominant-baseline="middle"
-                        text-anchor="middle"
-                        font-family="Poppins"
-                        font-size="16">
+<text x="46%" y="50%" dominant-baseline="middle" text-anchor="middle">
+<tspan font-weight="600">Paso 3:</tspan> Envío del artículo
+</text>
 
-                        <tspan font-weight="600">Paso 2:</tspan> Instrucciones
+</svg>
 
-                    </text>
+</div>
 
-                </svg>
 
-            </div>
+<div class="class-politicas-devolucion-step" data-step="3">
 
+<svg viewBox="0 0 350 52" class="step-svg">
 
+<polygon class="step-shape"
+points="0,0 350,0 350,52 0,52 25,26"/>
 
-            <!-- PASO 3 -->
-            <div class="class-politicas-devolucion-step" data-step="2">
+<text x="46%" y="50%" dominant-baseline="middle" text-anchor="middle">
+<tspan font-weight="600">Paso 4:</tspan> Procesamiento
+</text>
 
-                <svg viewBox="0 0 260 52" class="step-svg">
+</svg>
 
-                    <polygon
-                        class="step-shape"
-                        points="0,0 235,0 260,26 235,52 0,52 25,26" />
+</div>
 
-                    <text
-                        x="50%"
-                        y="50%"
-                        dominant-baseline="middle"
-                        text-anchor="middle"
-                        font-family="Poppins"
-                        font-size="16">
-
-                        <tspan font-weight="600">Paso 3:</tspan> Envío del artículo
-
-                    </text>
-
-                </svg>
-
-            </div>
-
-
-
-            <!-- PASO 4 -->
-            <div class="class-politicas-devolucion-step" data-step="3">
-
-                <svg viewBox="0 0 260 52" class="step-svg">
-
-                    <polygon
-                        class="step-shape"
-                        points="0,0 260,0 260,52 0,52 25,26" />
-
-                    <text
-                        x="50%"
-                        y="50%"
-                        dominant-baseline="middle"
-                        text-anchor="middle"
-                        font-family="Poppins"
-                        font-size="16">
-
-                        <tspan font-weight="600">Paso 4:</tspan> Procesamiento
-
-                    </text>
-
-                </svg>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- CONTENIDO CAMBIANTE -->
-
-        <div class="class-politicas-devolucion-info">
-
-
-            <div class="class-politicas-devolucion-content active">
-
-                <p>
-                    Envía un correo electrónico a nuestro equipo de Servicio al Cliente
-                    a informes@proteplus.pe o utiliza nuestro formulario de contacto en la web.
-                </p>
-
-                <p>
-                    En el correo, incluye la siguiente información:
-                </p>
-
-                <ul>
-
-                    <li>Asunto: Solicitud de devolución/cambio</li>
-
-                    <li>Nombre completo y número de pedido.</li>
-
-                    <li>Producto a devolver (nombre y cantidad).</li>
-
-                    <li>Motivo de la devolución (ej: defectuoso o talla incorrecta).</li>
-
-                    <li>Opción deseada (reembolso o cambio).</li>
-
-                </ul>
-
-            </div>
-
-
-
-            <div class="class-politicas-devolucion-content">
-
-                <p>
-                    Una vez que recibamos tu solicitud y verifiquemos que cumple con
-                    las condiciones, te responderemos en un plazo máximo
-                    con las instrucciones detalladas para el envío del artículo,
-                    incluyendo la dirección de nuestro almacén.
-                </p>
-
-            </div>
-
-
-
-            <div class="class-politicas-devolucion-content">
-
-                <ul>
-
-                    <li>
-                        Empaca el producto de forma segura,
-                        preferiblemente en su embalaje original.
-                    </li>
-
-                    <li>
-                        Asegúrate de incluir una copia
-                        del comprobante de compra dentro del paquete.
-                    </li>
-
-                    <li>
-                        Envía el paquete a la dirección proporcionada.
-                    </li>
-
-                </ul>
-
-                <p><strong>Costos de Envío:</strong></p>
-
-                <ul>
-
-                    <li>
-                        Si la devolución es por defecto o error nuestro,
-                        nosotros cubrimos los costos del envío de vuelta.
-                    </li>
-
-                    <li>
-                        Si es por cambio de opinión (retracto),
-                        el costo del envío de devolución corre por cuenta del cliente.
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-
-            <div class="class-politicas-devolucion-content">
-
-                <p>
-                    Una vez que recibamos el artículo,
-                    nuestro equipo de calidad lo inspeccionará.
-                </p>
-
-                <ul>
-
-                    <li>
-                        El proceso de inspección y aprobación
-                        toma algunos días hábiles.
-                    </li>
-
-                    <li>
-                        Si se aprueba, el reembolso se emitirá
-                        a tu método de pago original.
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-        </div>
-
-    </section>
+</div>
 
 
     @endsection

@@ -148,62 +148,79 @@ PROCESO
 
 
 /* ========================================
-STEPS SVG
+STEPS
 ======================================== */
 
-.class-politicas-devolucion-steps {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    flex-wrap: nowrap;
+.class-politicas-devolucion-steps{
+display:flex;
+width:100%;
+margin-bottom:30px;
 }
 
-/* cada paso */
-.class-politicas-devolucion-step {
-    cursor: pointer;
-    position: relative;
+.class-politicas-devolucion-step{
+flex:1;
+position:relative;
+cursor:pointer;
 }
 
-/* superposición para que se unan */
-.class-politicas-devolucion-step:not(:first-child) {
-    margin-left: -26px;
+.class-politicas-devolucion-step:not(:first-child){
+margin-left:-18px;
 }
 
 /* SVG */
 
-.step-svg {
-    width: 260px;
-    height: 52px;
-    display: block;
+.step-svg{
+width:100%;
+height:auto;
+aspect-ratio:350 / 60;
+display:block;
 }
 
-/* FIGURA */
+/* figura */
 
-.step-shape {
-    fill: white;
-    stroke: #C1C9D2;
-    stroke-width: 1;
+.step-shape{
+fill:white;
+stroke:#C1C9D2;
+stroke-width:1;
+stroke-linejoin:round;
 }
 
-/* TEXTO */
+/* texto */
 
-.step-svg text {
-    font-family: Poppins;
-    font-size: 16px;
-    fill: #323334;
+.step-svg text{
+font-family:Poppins;
+font-size:16px;
+fill:#323334;
+pointer-events:none;
 }
 
-/* ACTIVO */
+/* activo */
 
-.class-politicas-devolucion-step.active {
-    z-index: 2;
+.class-politicas-devolucion-step.active{
+z-index:2;
 }
 
-.class-politicas-devolucion-step.active .step-shape {
-    fill: #B8C1A8;
-    stroke: #B8C1A8;
+.class-politicas-devolucion-step.active .step-shape{
+fill:#B8C1A8;
+stroke:#B8C1A8;
 }
 
-.class-politicas-devolucion-step.active text {
-    fill: white;
+.class-politicas-devolucion-step.active text{
+fill:white;
+}
+
+/* ========================================
+MOBILE
+======================================== */
+
+@media (max-width:600px){
+
+.step-svg text{
+font-size:10px;
+}
+
+.class-politicas-devolucion-step:not(:first-child){
+margin-left:-8px;
+}
+
 }

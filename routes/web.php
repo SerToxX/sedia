@@ -25,3 +25,7 @@ Route::get('/terminos-condiciones', function () {
 Route::get('/politicas-devolucion', function () {
     return view('pages.politicas-devolucion.politicas-devolucion');
 })->name('politicas-devolucion');
+
+Route::get('/proyectos', function () {
+    return view('pages.proyectos.proyectos');
+})->name('proyectos');
