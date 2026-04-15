@@ -34,6 +34,8 @@
 
         <!-- BLOQUE 1 -->
 
+        <!-- BLOQUE 1 -->
+
         <div class="class-proyectos-info-top">
 
             <div class="class-proyectos-info-img-wrap">
