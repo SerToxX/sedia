@@ -77,7 +77,8 @@
     gap: 60px;
 
     width: 100%;
-    padding-right: 89px; /* solo espacio a la derecha */
+    padding-right: 89px;
+    /* solo espacio a la derecha */
 }
 
 /* IMAGEN */
@@ -122,10 +123,423 @@
 }
 
 /* ========================================
+   BLOQUE 2 - NEGOCIOS
+======================================== */
+
+.class-proyectos-negocios {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 60px;
+
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+/* TEXTO */
+
+.class-proyectos-negocios-text {
+    max-width: 320px;
+}
+
+.class-proyectos-negocios-text h3 {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 32px;
+    color: #23262F;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.class-proyectos-negocios-text p {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 15px;
+    color: #23262F;
+    line-height: 1.6;
+}
+
+/* GRID IMAGENES */
+
+.class-proyectos-negocios-grid {
+    display: flex;
+    gap: 8px;
+}
+
+/* TARJETA */
+
+.class-proyectos-card {
+    position: relative;
+    width: 261px;
+    height: 407px;
+    overflow: hidden;
+}
+
+.class-proyectos-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TITULO */
+
+.class-proyectos-card span {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 28px;
+
+    color: white;
+}
+
+/* ========================================
+   BLOQUE 3
+======================================== */
+
+.class-proyectos-bloque3 {
+
+    background: #F6F6F6;
+    margin-top: 86px;
+}
+
+.class-proyectos-bloque3-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 89px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+
+/* TEXTO */
+
+.class-proyectos-bloque3-text {
+    max-width: 500px;
+}
+
+.class-proyectos-bloque3-text h2 {
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 38px;
+    color: #C5CDB8;
+
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.class-proyectos-bloque3-text p {
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 15px;
+    color: #000;
+
+    line-height: 1.6;
+}
+
+/* IMAGEN */
+
+.class-proyectos-bloque3-img-wrap {
+
+    width: 761px;
+    height: 434px;
+    flex-shrink: 0;
+}
+
+.class-proyectos-bloque3-img-wrap img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ========================================
+   BLOQUE 4 - BENEFICIOS
+======================================== */
+
+.class-proyectos-beneficios {
+    margin-top: 60px;
+}
+
+.class-proyectos-beneficios-container {
+
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    padding-right: 89px;
+}
+
+/* IMAGEN */
+
+.class-proyectos-beneficios-img-wrap {
+
+    width: 490px;
+    height: 601px;
+    flex-shrink: 0;
+}
+
+.class-proyectos-beneficios-img-wrap img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CONTENIDO */
+
+.class-proyectos-beneficios-content {
+    width: 100%;
+}
+
+/* TITULO */
+
+.class-proyectos-beneficios-title {
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 42px;
+    color: #1E1E1E;
+
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* GRID */
+
+.class-proyectos-beneficios-grid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* ITEM */
+
+.beneficio-item {
+    padding: 10px 10px 10px 0;
+}
+
+/* NUMERO */
+
+.beneficio-num {
+
+    display: block;
+
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 64px;
+
+    color: #B8C1A8;
+}
+
+/* SUBTITULO */
+
+.beneficio-item h3 {
+
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+/* TEXTO */
+
+.beneficio-item p {
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 15px;
+
+    color: #1E1E1E;
+    line-height: 1.6;
+}
+
+/* LINEAS */
+
+.beneficio-border-left {
+    position: relative;
+    padding-left: 40px;
+}
+
+.beneficio-item:nth-child(odd) {
+    padding-right: 40px;
+}
+
+.beneficio-border-left::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    top: 120px;
+    /* baja la línea */
+
+    width: 1px;
+    height: 118px;
+
+    background: #8F8F8F;
+}
+
+
+/* ========================================
+   FORM PROYECTOS
+======================================== */
+
+.class-proyectos-form{
+    padding:100px 0;
+}
+
+.class-proyectos-form-container{
+
+    width:970px;
+    margin:0 auto;
+}
+
+/* TITULO */
+
+.class-proyectos-form-title{
+
+    font-family:"Poppins";
+    font-weight:400;
+    font-size:32px;
+
+    color:#B8C1A8;
+
+    text-align:center;
+    margin-bottom:70px;
+}
+
+/* GRID */
+
+.class-proyectos-form-grid{
+
+    display:grid;
+    grid-template-columns:412px 412px;
+    justify-content:space-between;
+    row-gap:50px;
+}
+
+/* LABEL */
+
+.form-group label{
+
+    display:block;
+
+    font-family:"Poppins";
+    font-weight:400;
+    font-size:18px;
+
+    color:#7C7878;
+
+    margin-bottom:10px;
+}
+
+/* INPUT */
+
+.form-group input,
+.form-group textarea{
+
+    width:412px;
+
+    border:none;
+    border-bottom:1px solid #000000;
+
+    outline:none;
+    background:transparent;
+
+    font-family:"Poppins";
+    font-size:16px;
+}
+
+/* FULL WIDTH */
+
+.form-group.full{
+    grid-column:1 / -1;
+}
+
+.form-group.full input,
+.form-group.full textarea{
+    width:970px;
+}
+
+/* TEXTAREA */
+
+textarea{
+    resize:none;
+    height:40px;
+}
+
+/* BOTTOM */
+
+.class-proyectos-form-bottom{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-top:80px;
+
+}
+
+/* BOTON ARCHIVO */
+
+.btn-file{
+
+    width:223px;
+    height:42px;
+
+    background:#D9D9D9;
+    border:1px solid #EDEDED;
+    border-radius:10px;
+
+    font-family:"Poppins";
+    font-weight:400;
+    font-size:16px;
+
+    color:#7C7878;
+
+    cursor:pointer;
+}
+
+/* BOTON ENVIAR */
+
+.btn-submit{
+
+    width:128px;
+    height:38px;
+
+    background:#B8C1A8;
+    border:none;
+
+    font-family:"Poppins";
+    font-weight:500;
+    font-size:14px;
+
+    color:#FFFFFF;
+
+    cursor:pointer;
+
+    margin-top:92px;
+}
+
+
+
+/* ========================================
    PC
 ======================================== */
 
 @media (min-width: 1440px) {
+
+    /* ========================================
+    BLOQUE 1
+    ======================================== */
 
     .class-proyectos-info-container {
         max-width: 1600px;
@@ -143,9 +557,74 @@
 
     /* TEXTO */
 
-.class-proyectos-info-text {
-    max-width: 600px;
-}
+    .class-proyectos-info-text {
+        max-width: 600px;
+    }
+
+    /* ========================================
+    BLOQUE 2
+    ======================================== */
+
+    .class-proyectos-negocios {
+        max-width: 1600px;
+        margin: 120px auto 0 auto;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .class-proyectos-card {
+        position: relative;
+        width: 300px;
+        height: 440px;
+        overflow: hidden;
+    }
+
+    .class-proyectos-negocios-grid {
+        gap: 12px;
+    }
+
+    .class-proyectos-negocios-text {
+        max-width: 500px;
+    }
+
+    .class-proyectos-negocios-text h3 {
+        width: 400px;
+    }
+
+    /* ========================================
+    BLOQUE 3
+    ======================================== */
+
+    .class-proyectos-bloque3-container {
+
+        max-width: 1600px;
+        margin: 0 auto;
+
+        gap: 120px;
+    }
+
+    .class-proyectos-bloque3-container {
+        padding-left: 0px;
+    }
+
+    /* ========================================
+    BLOQUE 4 - BENEFICIOS
+    ======================================== */
+
+    .class-proyectos-beneficios-container {
+
+        max-width: 1600px;
+        margin: 0 auto;
+
+        gap: 120px;
+        padding-right: 0px;
+    }
+
+    /* ========================================
+    FORM PROYECTOS
+    ======================================== */
+
+
 
 }
 
@@ -155,6 +634,9 @@
 
 @media (max-width: 1024px) {
 
+    /* ========================================
+    BLOQUE 1
+    ======================================== */
     .class-proyectos-info-top {
         gap: 40px;
         padding-right: 40px;
@@ -174,6 +656,65 @@
         font-size: 30px;
     }
 
+    /* ========================================
+    BLOQUE 2
+    ======================================== */
+
+    .class-proyectos-negocios {
+        padding-left: 40px;
+        padding-right: 40px;
+        gap: 40px;
+    }
+
+    .class-proyectos-card {
+        width: 220px;
+        height: 340px;
+    }
+
+    /* ========================================
+    BLOQUE 3
+    ======================================== */
+
+    .class-proyectos-bloque3-container {
+
+        padding-left: 40px;
+        padding-right: 40px;
+
+        gap: 40px;
+    }
+
+    .class-proyectos-bloque3-img-wrap {
+
+        width: 520px;
+        height: 320px;
+    }
+
+    .class-proyectos-bloque3-text {
+        max-width: 420px;
+    }
+
+    .class-proyectos-bloque3-text h2 {
+        font-size: 30px;
+    }
+
+    /* ========================================
+    BLOQUE 4 - BENEFICIOS
+    ======================================== */
+
+    .class-proyectos-beneficios-container {
+
+        padding-left: 40px;
+        padding-right: 40px;
+
+        gap: 50px;
+    }
+
+    .class-proyectos-beneficios-img-wrap {
+
+        width: 380px;
+        height: 480px;
+    }
+
 }
 
 /* ========================================
@@ -182,6 +723,9 @@
 
 @media (max-width: 768px) {
 
+    /* ========================================
+    BLOQUE 1
+    ======================================== */
     .class-proyectos-info-top {
         flex-direction: column;
         align-items: flex-start;
@@ -206,6 +750,93 @@
 
     .class-proyectos-info-text p {
         font-size: 14px;
+    }
+
+    /* ========================================
+    BLOQUE 2
+    ======================================== */
+
+    .class-proyectos-negocios {
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+        gap: 30px;
+    }
+
+    .class-proyectos-negocios-grid {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .class-proyectos-card {
+        width: calc(33.33% - 3px);
+        height: 260px;
+    }
+
+    /* ========================================
+    BLOQUE 3
+    ======================================== */
+    .class-proyectos-bloque3-container {
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+        gap: 30px;
+    }
+
+    .class-proyectos-bloque3-img-wrap {
+
+        width: 100%;
+        height: 260px;
+    }
+
+    .class-proyectos-bloque3-text {
+        max-width: 100%;
+    }
+
+    .class-proyectos-bloque3-text h2 {
+        font-size: 26px;
+    }
+
+    .class-proyectos-bloque3-text p {
+        font-size: 14px;
+    }
+
+    /* ========================================
+    BLOQUE 4 - BENEFICIOS
+    ======================================== */
+
+    .class-proyectos-beneficios-container {
+
+        flex-direction: column;
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+        gap: 40px;
+    }
+
+    .class-proyectos-beneficios-img-wrap {
+
+        width: 100%;
+        height: 360px;
+    }
+
+    .class-proyectos-beneficios-grid {
+
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .beneficio-border-left {
+        border: none;
+        padding-left: 0;
     }
 
 }
