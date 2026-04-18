@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-BzWFgDHw.css",
+    "file": "assets/app-D1GKInuG.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -8,10 +8,20 @@
       "app.css"
     ]
   },
+  "resources/fonts/Phenomena-Regular.otf": {
+    "file": "assets/Phenomena-Regular-i8mSNsY-.otf",
+    "src": "resources/fonts/Phenomena-Regular.otf"
+  },
   "resources/js/app.jsx": {
     "file": "assets/app-B4-LX7ro.js",
     "name": "app",
     "src": "resources/js/app.jsx",
+    "isEntry": true
+  },
+  "resources/js/header.js": {
+    "file": "assets/header-gSX6zaj6.js",
+    "name": "header",
+    "src": "resources/js/header.js",
     "isEntry": true
   },
   "resources/js/politicas-devolucion.js": {

@@ -284,4 +284,53 @@ HERO SOBRE NOSOTROS
 
 </section>
 
+<section class="class-nosotros-project">
+
+    <div class="class-nosotros-project-container">
+
+        <div class="class-nosotros-project-left">
+
+            <h2 class="class-nosotros-project-title">
+                <span>SEDIA</span> - PROJECT
+            </h2>
+
+            <p class="class-nosotros-project-sub">
+                MOBILIARIO IDEAL PARA GRANDES PROYECTOS.
+            </p>
+
+            <button class="class-nosotros-project-button">
+                ¡TRABAJEMOS JUNTOS!
+            </button>
+
+        </div>
+
+
+        <div class="class-nosotros-project-img">
+            <img src="{{ asset('image/sedia-project-chair.png') }}">
+        </div>
+
+
+        <div class="class-nosotros-project-info">
+
+            <div class="class-nosotros-project-item">
+                <img src="{{ asset('image/icons/project1.png') }}">
+                <p>Proyectos a gran escala para cafeterías, restaurantes, oficinas y más.</p>
+            </div>
+
+            <div class="class-nosotros-project-item">
+                <img src="{{ asset('image/icons/project2.png') }}">
+                <p>Acompañamiento completo guiándote en cada decisión de mobiliario.</p>
+            </div>
+
+            <div class="class-nosotros-project-item">
+                <img src="{{ asset('image/icons/project3.png') }}">
+                <p>Implementación sin complicaciones desde el diseño hasta la instalación final.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 @endsection

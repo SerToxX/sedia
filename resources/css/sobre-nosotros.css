@@ -428,7 +428,7 @@ AMBIENTES
 
 
     padding-top: 0px;
-    padding-bottom: 120px;
+    padding-bottom: 164px;
 }
 
 
@@ -531,6 +531,163 @@ AMBIENTES
     height: 448px;
     margin-top: 114px;
 
+}
+
+
+/* ========================================
+PROJECT SOBRE NOSOTROS
+======================================== */
+
+.class-nosotros-project {
+
+    background: #EBEBEB;
+
+    height: 238px;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 138px;
+}
+
+
+/* CONTAINER */
+
+.class-nosotros-project-container {
+
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* TEXTO IZQUIERDA */
+
+.class-nosotros-project-left {
+
+    max-width: 350px;
+    width: 100%;
+}
+
+
+/* TITULO */
+
+.class-nosotros-project-title {
+
+    font-family: "Phenomena";
+    font-size: 44px;
+
+    margin-bottom: 10px;
+
+    color: #000000;
+}
+
+.class-nosotros-project-title span {
+
+    color: #B8C1A8;
+}
+
+
+/* SUBTEXTO */
+
+.class-nosotros-project-sub {
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #2F302C;
+
+    margin-bottom: 20px;
+}
+
+
+/* BOTON */
+
+.class-nosotros-project-button {
+
+    width: 242px;
+    height: 38px;
+
+    background: #B8C1A8;
+    border: none;
+
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 14px;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+
+/* IMAGEN CENTRO */
+
+.class-nosotros-project-img {
+
+    width: 262px;
+    height: 328px;
+
+    margin-right: 69px;
+    margin-left: 129px;
+    ;
+}
+
+.class-nosotros-project-img img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* DERECHA */
+
+.class-nosotros-project-info {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    max-width: 406px;
+}
+
+
+/* ITEM */
+
+.class-nosotros-project-item {
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 20px;
+}
+
+.class-nosotros-project-item img {
+
+    width: 32px;
+    height: 32px;
+    align-self: center;
+}
+
+.class-nosotros-project-item p {
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 15px;
+
+    color: #141718;
+
+    line-height: 1.5;
 }
 
 /* ========================================

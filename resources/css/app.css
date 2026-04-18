@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Phenomena";
+    src: url("../fonts/Phenomena-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 @import 'tailwindcss';
 @import './footer.css';
 @import './header.css';
