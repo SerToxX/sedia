@@ -30,7 +30,11 @@
             <h3 class="class-footer-title">¿Necesitas ayuda?</h3>
 
             <ul class="class-footer-links">
-                <li>Nosotros</li>
+                <li>
+                    <a href="{{ route('nosotros') }}">
+                        Nosotros
+                    </a>
+                </li>
                 <li>Contáctanos</li>
                 <li>
                     <a href="{{ route('faq') }}">

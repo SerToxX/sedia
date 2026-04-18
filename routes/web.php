@@ -29,3 +29,7 @@ Route::get('/politicas-devolucion', function () {
 Route::get('/proyectos', function () {
     return view('pages.proyectos.proyectos');
 })->name('proyectos');
+
+Route::get('/sobre-nosotros', function () {
+    return view('pages.sobre-nosotros.sobre-nosotros');
+})->name('nosotros');

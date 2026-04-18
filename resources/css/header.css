@@ -28,6 +28,17 @@
     z-index:10;
 }
 
+/* HEADER TRANSPARENTE EN SOBRE NOSOTROS */
+
+.class-sobre-nosotros-page .class-header-container{
+    background:transparent;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:10;
+}
+
 /* NAV */
 
 .class-header-nav{

@@ -1,0 +1,854 @@
+/* ========================================
+HERO SOBRE NOSOTROS
+======================================== */
+
+.class-sobre-nosotros-hero {
+    position: relative;
+    width: 100%;
+    height: 670px;
+    overflow: hidden;
+}
+
+.class-sobre-nosotros-hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CONTENEDOR HERO */
+
+.class-sobre-nosotros-hero-container {
+
+    max-width: 1216px;
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+/* TEXTO */
+
+.class-sobre-nosotros-hero-title {
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 64px;
+
+    color: #FFFFFF;
+
+    line-height: 1.1;
+}
+
+
+
+/* ========================================
+VALORES SOBRE NOSOTROS
+======================================== */
+
+.class-nosotros-valores {
+
+    padding: 70px 0;
+}
+
+
+/* CONTAINER */
+
+.class-nosotros-valores-container {
+
+    display: flex;
+    align-items: flex-start;
+
+    max-width: 1216px;
+    margin: 0 auto;
+
+    gap: 109px;
+}
+
+
+/* TEXTO IZQUIERDA */
+
+.class-nosotros-valores-text {
+    max-width: 420px;
+    margin-top: 90px;
+}
+
+
+/* SUBTITULO */
+
+.class-nosotros-valores-sub {
+
+    display: block;
+
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 28px;
+
+    color: #B8C1A8;
+
+    margin-bottom: 20px;
+}
+
+
+/* TITULO */
+
+.class-nosotros-valores-title {
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 32px;
+
+    color: #000;
+
+    margin-bottom: 20px;
+}
+
+
+/* PARRAFO */
+
+.class-nosotros-valores-desc {
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 15px;
+
+    color: #000;
+
+    line-height: 1.6;
+}
+
+
+
+/* GRID */
+
+.class-nosotros-valores-grid {
+
+    display: grid;
+
+    grid-template-columns: 317px 317px;
+
+    gap: 36px;
+}
+
+
+
+/* CARD */
+
+.valor-card {
+
+    width: 317px;
+    height: 252px;
+
+    background: #FFFFFF;
+
+    padding: 28px;
+
+    box-shadow: 0px 3px 19.5px rgba(175, 175, 175, 0.79);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: flex-start;
+
+    text-align: left;
+}
+
+
+/* TOP */
+
+.valor-top {
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 16px;
+}
+
+
+
+/* NUMERO */
+
+.valor-num {
+
+    width: 45px;
+    height: 45px;
+
+    background: #B8C1A8;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Poppins";
+    font-weight: 800;
+    font-size: 24px;
+
+    color: #FFFFFF;
+}
+
+
+
+/* TITULO CARD */
+
+.valor-card h3 {
+
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 24px;
+
+    color: #B8C1A8;
+}
+
+
+
+/* PARRAFO */
+
+.valor-card p {
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 15px;
+
+    color: #141718;
+
+    margin-top: 20px;
+
+    line-height: 1.5;
+}
+
+/* ========================================
+HISTORIA SOBRE NOSOTROS
+======================================== */
+
+.class-nosotros-historia {
+
+    margin-top: 0px;
+    margin-bottom: 92px;
+}
+
+
+/* CONTAINER */
+
+.class-nosotros-historia-container {
+
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+
+/* IMAGEN */
+
+.class-nosotros-historia-img-wrap {
+
+    width: 100%;
+    height: 500px;
+
+    margin-bottom: 75px;
+}
+
+.class-nosotros-historia-img-wrap img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center 75%;
+
+    display: block;
+}
+
+/* CONTENIDO */
+
+.class-nosotros-historia-content {
+
+    display: flex;
+
+    gap: 93px;
+}
+
+
+/* BLOQUE IZQUIERDA */
+
+.class-nosotros-historia-text {
+
+    max-width: 500px;
+}
+
+
+/* TITULO 1 */
+
+.historia-subtitle {
+
+    display: block;
+
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 28px;
+
+    color: #B8C1A8;
+
+    margin-bottom: 15px;
+}
+
+
+/* TITULO 2 */
+
+.historia-title {
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 32px;
+
+    color: #151411;
+
+    line-height: 1.2;
+}
+
+
+/* PARRAFO DERECHA */
+
+.historia-desc {
+
+    max-width: 623px;
+    margin-top: 25px;
+}
+
+.historia-desc p {
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+
+    color: #141718;
+
+    line-height: 1.6;
+}
+
+/* ========================================
+SERVICIO SOBRE NOSOTROS
+======================================== */
+
+.class-nosotros-servicio {
+
+    background: #F6F6F6;
+
+    margin-top: 0px;
+    margin-bottom: 80px;
+}
+
+
+/* CONTAINER */
+
+.class-nosotros-servicio-container {
+
+    max-width: 1216px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 81px;
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+
+/* IMAGEN */
+
+.class-nosotros-servicio-img-wrap {
+
+    width: 693px;
+    height: 405px;
+
+    flex-shrink: 0;
+}
+
+.class-nosotros-servicio-img-wrap img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* TEXTO */
+
+.class-nosotros-servicio-text {
+
+    max-width: 430px;
+}
+
+
+/* TITULO */
+
+.servicio-title {
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 38px;
+
+    color: #B8C1A8;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+
+/* PARRAFO */
+
+.servicio-desc {
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+
+    color: #141718;
+
+    line-height: 1.6;
+}
+
+/* ========================================
+AMBIENTES
+======================================== */
+
+.class-nosotros-ambientes {
+
+
+    padding-top: 0px;
+    padding-bottom: 120px;
+}
+
+
+/* CONTAINER */
+
+.class-nosotros-ambientes-container {
+
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+
+/* TEXTO */
+
+.class-nosotros-ambientes-text {
+
+    text-align: center;
+
+    max-width: 920px;
+    margin: 0 auto 70px auto;
+}
+
+
+/* TITULO */
+
+.ambientes-title {
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 32px;
+
+    color: #000000;
+
+    margin-bottom: 20px;
+}
+
+
+/* PARRAFO */
+
+.ambientes-desc {
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 15px;
+
+    color: #000000;
+
+    line-height: 1.6;
+}
+
+
+/* GRID IMAGENES */
+
+.class-nosotros-ambientes-grid {
+
+    display: flex;
+    justify-content: center;
+
+    gap: 46px;
+}
+
+
+/* IMAGEN */
+
+.ambiente-img {
+
+    overflow: hidden;
+}
+
+.ambiente-img img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* TAMAÑOS */
+
+.ambiente-left {
+
+    width: 375px;
+    height: 448px;
+    margin-top: 114px;
+
+}
+
+.ambiente-center {
+
+    width: 375px;
+    height: 607px;
+}
+
+.ambiente-right {
+
+    width: 375px;
+    height: 448px;
+    margin-top: 114px;
+
+}
+
+/* ========================================
+PC
+======================================== */
+
+@media (min-width:1440px) {
+
+    .class-sobre-nosotros-hero-container {
+
+        max-width: 1600px;
+    }
+
+    .class-nosotros-valores-container {
+
+        max-width: 1600px;
+        margin: 0 auto;
+
+        gap: 220px;
+    }
+
+    .class-nosotros-valores-text {
+        max-width: 650px;
+        margin-top: 90px;
+    }
+
+
+    .class-nosotros-valores-grid {
+
+        grid-template-columns: 340px 340px;
+        gap: 50px;
+    }
+
+
+
+    .valor-card {
+
+        width: 340px;
+        height: 270px;
+    }
+
+    .class-nosotros-historia-container {
+
+        max-width: 1600px;
+    }
+
+    .class-nosotros-historia-img-wrap {
+
+        height: 600px;
+    }
+
+    .historia-desc {
+        max-width: 700px;
+    }
+
+    .class-nosotros-historia-content {
+        gap: 200px;
+    }
+
+    .class-nosotros-historia-text {
+        max-width: 700px;
+    }
+
+    .class-nosotros-servicio-container {
+
+        max-width: 1600px;
+        margin: 0 auto;
+
+        gap: 120px;
+    }
+
+    .class-nosotros-servicio-img-wrap {
+
+        width: 800px;
+        height: 490px;
+    }
+
+    .class-nosotros-servicio-text {
+
+        max-width: 680px;
+    }
+
+    .servicio-title {
+
+        font-size: 42px;
+    }
+
+    .servicio-desc {
+
+        font-size: 18px;
+    }
+
+    .class-nosotros-ambientes-container {
+
+        max-width: 1600px;
+    }
+
+    .class-nosotros-ambientes-grid {
+
+        gap: 70px;
+    }
+
+    .ambiente-left,
+    .ambiente-right {
+
+        width: 510px;
+        height: 570px;
+    }
+
+    .ambiente-center {
+
+        width: 510px;
+        height: 780px;
+    }
+
+}
+
+
+
+/* ========================================
+TABLET
+======================================== */
+
+@media (max-width:1024px) {
+
+    .class-sobre-nosotros-hero {
+        height: 580px;
+    }
+
+    .class-sobre-nosotros-hero-container {
+
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .class-sobre-nosotros-hero-title {
+        font-size: 48px;
+    }
+
+
+    /* VALORES */
+
+    .class-nosotros-valores-container {
+
+        gap: 60px;
+
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .class-nosotros-valores-grid {
+
+        grid-template-columns: 240px 240px;
+    }
+
+    .valor-card {
+
+        width: 240px;
+        height: auto;
+    }
+
+    .class-nosotros-historia-container {
+
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .class-nosotros-historia-img-wrap {
+
+        height: 320px;
+    }
+
+    .class-nosotros-historia-content {
+
+        gap: 40px;
+    }
+
+    .historia-title {
+
+        font-size: 28px;
+    }
+
+    .historia-desc p {
+
+        font-size: 16px;
+    }
+
+    .class-nosotros-ambientes-container {
+
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .class-nosotros-ambientes-grid {
+
+        gap: 30px;
+    }
+
+    .ambiente-left,
+    .ambiente-right {
+
+        width: 240px;
+        height: 300px;
+    }
+
+    .ambiente-center {
+
+        width: 280px;
+        height: 360px;
+    }
+
+}
+
+
+
+/* ========================================
+CELULAR
+======================================== */
+
+@media (max-width:768px) {
+
+    .class-sobre-nosotros-hero {
+        height: 520px;
+    }
+
+    .class-sobre-nosotros-hero-container {
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .class-sobre-nosotros-hero-title {
+        font-size: 38px;
+    }
+
+
+    /* VALORES */
+
+    .class-nosotros-valores-container {
+
+        flex-direction: column;
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+        gap: 40px;
+    }
+
+    .class-nosotros-valores-text {
+        max-width: 100%;
+    }
+
+    .class-nosotros-valores-grid {
+
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .valor-card {
+
+        width: 100%;
+        height: auto;
+    }
+
+    .class-nosotros-historia-container {
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .class-nosotros-historia-img-wrap {
+
+        height: 240px;
+    }
+
+    .class-nosotros-historia-content {
+
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+    .class-nosotros-historia-text {
+
+        max-width: 100%;
+    }
+
+    .historia-desc {
+
+        max-width: 100%;
+    }
+
+    .historia-desc p {
+
+        font-size: 15px;
+    }
+
+    .class-nosotros-ambientes-container {
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .class-nosotros-ambientes-grid {
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 25px;
+    }
+
+    .ambiente-left,
+    .ambiente-center,
+    .ambiente-right {
+
+        width: 100%;
+        height: 280px;
+    }
+
+
+}
