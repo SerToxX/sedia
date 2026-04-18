@@ -296,6 +296,16 @@
 .class-menu-sub a:hover {
 
     color: #B8C1A8;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.class-menu-link.active,
+.class-menu-sub a.active {
+
+    color: #B8C1A8;
+    text-decoration: underline;
 
 }
 

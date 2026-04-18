@@ -4,15 +4,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('pages.home');
-});
+})->name('inicio');
 
 Route::get('/productos', function () {
     return view('pages.productos');
-});
+})->name('productos');
 
 Route::get('/contacto', function () {
-    return view('pages.contacto');
-});
+    return view('pages.contacto.contacto');
+})->name('contacto');
 
 Route::get('/preguntas-frecuentes', function () {
     return view('pages.preguntas-frecuentes.preguntas-frecuentes');

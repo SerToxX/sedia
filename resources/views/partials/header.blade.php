@@ -10,7 +10,7 @@
 
         <!-- CENTRO -->
         <div class="class-header-center">
-            <h1 class="class-header-logo">SEDIA</h1>
+            <h1 class="class-header-logo"> <a href="{{ route('inicio') }}">SEDIA</h1>
         </div>
 
         <!-- DERECHA -->
@@ -18,17 +18,6 @@
             <span class="class-header-cart-text">CARRITO</span>
             <span class="class-header-cart-count">1</span>
         </div>
-
-        <ul>
-            <li><a href="/">Inicio</a></li>
-            <li>
-                <a href="{{ route('proyectos') }}">
-                    Proyectos
-                </a>
-            </li>
-            <li><a href="/productos">Productos</a></li>
-            <li><a href="/contacto">Contacto</a></li>
-        </ul>
 
     </nav>
 
@@ -63,10 +52,25 @@
                 Nosotros
             </div>
 
-            <a class="class-menu-link" href="{{ route('nosotros') }}">Sobre nosotros</a>
-            <a class="class-menu-link" href="{{ route('proyectos') }}">Proyectos</a>
-            <a class="class-menu-link">Contáctanos</a>
-            <a class="class-menu-link">Blog</a>
+            <a class="class-menu-link {{ request()->routeIs('nosotros') ? 'active' : '' }}" 
+            href="{{ route('nosotros') }}">
+                Sobre nosotros
+            </a>
+
+            <a class="class-menu-link {{ request()->routeIs('proyectos') ? 'active' : '' }}" 
+            href="{{ route('proyectos') }}">
+                Proyectos
+            </a>
+
+            <a class="class-menu-link {{ request()->routeIs('contacto') ? 'active' : '' }}" 
+            href="{{ route('contacto') }}">
+                Contáctanos
+            </a>
+
+            <a class="class-menu-link {{ request()->routeIs('blog') ? 'active' : '' }}" 
+            href="{{ route('contacto') }}">
+                Blog
+            </a>
 
         </div>
 
@@ -78,7 +82,15 @@
                 Productos
             </div>
 
-            <a class="class-menu-link">Promociones</a>
+            <a class="class-menu-link {{ request()->is('productos/promociones') ? 'active' : '' }}" 
+            href="/productos/promociones">
+                Promociones
+            </a>
+
+            <a class="class-menu-link {{ request()->routeIs('productos') ? 'active' : '' }}" 
+            href="{{ route('productos') }}">
+                Productos
+            </a>
 
 
             <!-- SILLAS -->
@@ -88,8 +100,8 @@
             </div>
 
             <div class="class-menu-sub">
-                <a>obj1</a>
-                <a>obj2</a>
+                <a class="{{ request()->is('productos/sillas/obj1') ? 'active' : '' }}" href="/productos/sillas/obj1">obj1</a>
+                <a class="{{ request()->is('productos/sillas/obj2') ? 'active' : '' }}" href="/productos/sillas/obj2">obj2</a>
             </div>
 
 
@@ -100,8 +112,8 @@
             </div>
 
             <div class="class-menu-sub">
-                <a>obj1</a>
-                <a>obj2</a>
+                <a class="{{ request()->is('productos/taburetes/obj1') ? 'active' : '' }}" href="/productos/taburetes/obj1">obj1</a>
+                <a class="{{ request()->is('productos/taburetes/obj2') ? 'active' : '' }}" href="/productos/taburetes/obj2">obj2</a>
             </div>
 
 
@@ -112,13 +124,20 @@
             </div>
 
             <div class="class-menu-sub">
-                <a>obj1</a>
-                <a>obj2</a>
+                <a class="{{ request()->is('productos/mesas/obj1') ? 'active' : '' }}" href="/productos/mesas/obj1">obj1</a>
+                <a class="{{ request()->is('productos/mesas/obj2') ? 'active' : '' }}" href="/productos/mesas/obj2">obj2</a>
             </div>
 
 
-            <a class="class-menu-link">Bases de mesa</a>
-            <a class="class-menu-link">Tableros de mesa</a>
+            <a class="class-menu-link {{ request()->is('productos/bases-mesa') ? 'active' : '' }}" 
+            href="/productos/bases-mesa">
+                Bases de mesa
+            </a>
+
+            <a class="class-menu-link {{ request()->is('productos/tableros-mesa') ? 'active' : '' }}" 
+            href="/productos/tableros-mesa">
+                Tableros de mesa
+            </a>
 
 
             <!-- MOBILIARIO -->
@@ -128,8 +147,8 @@
             </div>
 
             <div class="class-menu-sub">
-                <a>obj1</a>
-                <a>obj2</a>
+                <a class="{{ request()->is('productos/mobiliario/obj1') ? 'active' : '' }}" href="/productos/mobiliario/obj1">obj1</a>
+                <a class="{{ request()->is('productos/mobiliario/obj2') ? 'active' : '' }}" href="/productos/mobiliario/obj2">obj2</a>
             </div>
 
         </div>
