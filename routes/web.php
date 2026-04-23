@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactoController;
 
 Route::get('/', function () {
     return view('pages.home');
@@ -33,3 +34,6 @@ Route::get('/proyectos', function () {
 Route::get('/sobre-nosotros', function () {
     return view('pages.sobre-nosotros.sobre-nosotros');
 })->name('nosotros');
+
+Route::post('/contacto', [ContactoController::class, 'enviar'])
+    ->name('contacto.enviar');

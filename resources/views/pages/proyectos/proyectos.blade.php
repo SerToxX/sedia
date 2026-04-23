@@ -214,51 +214,60 @@
             y SEDIA lo hace realidad.
         </h2>
 
-        <form class="class-proyectos-form-grid">
+        <form class="class-proyectos-form-grid"
+              method="POST"
+              action="{{ route('contacto.enviar') }}"
+              enctype="multipart/form-data">
+
+            @csrf
 
             <div class="form-group">
                 <label>Nombres y Apellidos</label>
-                <input type="text">
+                <input type="text" name="nombre" required>
             </div>
 
             <div class="form-group">
                 <label>Empresa</label>
-                <input type="text">
+                <input type="text" name="empresa">
             </div>
 
             <div class="form-group">
                 <label>Telefono /Celular</label>
-                <input type="text">
+                <input type="text" name="telefono">
             </div>
 
             <div class="form-group">
                 <label>DNI / RUC</label>
-                <input type="text">
+                <input type="text" name="documento">
             </div>
 
             <div class="form-group full">
                 <label>Email</label>
-                <input type="email">
+                <input type="email" name="email" required>
             </div>
 
             <div class="form-group full">
                 <label>Comentanos de tu proyecto</label>
-                <textarea></textarea>
+                <textarea name="mensaje" required></textarea>
+            </div>
+
+            <!-- INPUT REAL OCULTO -->
+            <input type="file" name="archivo" id="archivoInput" style="display: none;">
+
+            <div class="class-proyectos-form-bottom">
+
+                <!-- BOTÓN VISUAL -->
+                <button type="button" class="btn-file" onclick="document.getElementById('archivoInput').click();">
+                    Seleccionar archivo
+                </button>
+
+                <button type="submit" class="btn-submit">
+                    ENVIAR
+                </button>
+
             </div>
 
         </form>
-
-        <div class="class-proyectos-form-bottom">
-
-            <button class="btn-file">
-                Seleccionar archivo
-            </button>
-
-            <button class="btn-submit">
-                ENVIAR
-            </button>
-
-        </div>
 
     </div>
 

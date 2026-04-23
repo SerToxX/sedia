@@ -3,7 +3,7 @@
 .class-header-container {
     width: 100%;
     background: #b6ab9a;
-    padding: 15px 30px;
+    padding: 15px 0px;
 }
 
 /* HEADER TRANSPARENTE SOLO EN HOME */
@@ -42,7 +42,7 @@
 /* NAV */
 
 .class-header-nav {
-    max-width: 1200px;
+    max-width: 1216px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -175,12 +175,15 @@
     font-family: "Poppins";
     font-weight: 500;
     font-size: 22px;
+}
+
+.class-menu-content .class-menu-title {
     margin-bottom: 17px;
 }
 
-.class-menu-group{
+.class-menu-group {
 
-    margin-bottom:63px;
+    margin-bottom: 63px;
 }
 
 /* CLOSE X */
@@ -375,4 +378,14 @@
     transform: rotate(-135deg);
     border-color: #B8C1A8;
 
+}
+
+/* ========================================
+PC
+======================================== */
+
+@media (min-width:1440px) {
+    .class-header-nav {
+        max-width: 1600px;
+    }
 }

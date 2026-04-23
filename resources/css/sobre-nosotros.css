@@ -9,12 +9,18 @@ HERO SOBRE NOSOTROS
     overflow: hidden;
 }
 
+
 .class-sobre-nosotros-hero-img {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.class-sobre-nosotros-hero-content {
+    position: relative;
+    z-index: 2;
 }
 
 /* CONTENEDOR HERO */
@@ -83,7 +89,7 @@ VALORES SOBRE NOSOTROS
 
     display: block;
 
-    font-family: "Poppins";
+    font-family: "Playfair Display";
     font-weight: 500;
     font-size: 28px;
 
@@ -289,7 +295,7 @@ HISTORIA SOBRE NOSOTROS
 
     display: block;
 
-    font-family: "Poppins";
+    font-family: "Playfair Display";
     font-weight: 500;
     font-size: 28px;
 
@@ -580,6 +586,7 @@ PROJECT SOBRE NOSOTROS
 
     font-family: "Phenomena";
     font-size: 44px;
+    font-weight: 600;
 
     margin-bottom: 10px;
 

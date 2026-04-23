@@ -10,7 +10,7 @@
 
         <!-- CENTRO -->
         <div class="class-header-center">
-            <h1 class="class-header-logo"> <a href="{{ route('inicio') }}">SEDIA</h1>
+            <h1 class="class-header-logo"> <a href="{{ route('inicio') }}">SEDIA</a></h1>
         </div>
 
         <!-- DERECHA -->

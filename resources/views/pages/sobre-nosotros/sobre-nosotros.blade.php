@@ -11,20 +11,21 @@ HERO SOBRE NOSOTROS
 <section class="class-sobre-nosotros-hero">
 
     <!-- IMAGEN -->
-
     <img
         src="{{ asset('image/sobre-nosotros-banner.png') }}"
         alt="Sobre Nosotros"
         class="class-sobre-nosotros-hero-img">
 
-    <!-- CONTENIDO -->
+    <!-- CONTENEDOR -->
+    <div class="class-sobre-nosotros-hero-container">
 
-    <div class="class-sobre-nosotros-hero-content">
-
-        <h1 class="class-sobre-nosotros-hero-title">
-            SOBRE<br>
-            NOSOTROS
-        </h1>
+        <!-- CONTENIDO -->
+        <div class="class-sobre-nosotros-hero-content">
+            <h1 class="class-sobre-nosotros-hero-title">
+                SOBRE<br>
+                NOSOTROS
+            </h1>
+        </div>
 
     </div>
 
