@@ -340,7 +340,16 @@ document.getElementById('formContactoProyectos').addEventListener('submit', func
             'X-Requested-With': 'XMLHttpRequest'
         }
     })
-    .then(response => response.json())
+    .then(response => {
+        // Manejar respuesta no JSON
+        if (!response.ok && response.status !== 422) {
+            throw new Error('Error en la respuesta del servidor');
+        }
+        return response.json().catch(() => ({
+            success: false,
+            message: 'Error del servidor. Intenta nuevamente.'
+        }));
+    })
     .then(data => {
         if (data.success) {
             successMessage.style.display = 'block';
@@ -350,11 +359,14 @@ document.getElementById('formContactoProyectos').addEventListener('submit', func
             // Desplazar hacia el mensaje de éxito
             successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else {
+            errorMessage.innerHTML = '❌ ' + (data.message || 'Error al enviar el mensaje. Intenta nuevamente.');
             errorMessage.style.display = 'block';
+            errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
     })
     .catch(error => {
         console.error('Error:', error);
+        errorMessage.innerHTML = '❌ Error al enviar: ' + error.message;
         errorMessage.style.display = 'block';
     })
     .finally(() => {
