@@ -14,15 +14,15 @@ class ContactoMail extends Mailable
     use Queueable, SerializesModels;
 
     public $data;
-    public $archivo;
+    public $archivos;
 
     /**
      * Create a new message instance.
      */
-    public function __construct($data, $archivo = null)
+    public function __construct($data, $archivos = [])
     {
         $this->data = $data;
-        $this->archivo = $archivo;
+        $this->archivos = $archivos;
     }
 
     /**
@@ -50,12 +50,14 @@ class ContactoMail extends Mailable
      */
     public function attachments(): array
     {
-        if ($this->archivo) {
-            return [
-                Attachment::fromPath(storage_path('app/' . $this->archivo)),
-            ];
+        $attachments = [];
+
+        if (!empty($this->archivos)) {
+            foreach ($this->archivos as $archivo) {
+                $attachments[] = Attachment::fromPath(storage_path('app/' . $archivo));
+            }
         }
 
-        return [];
+        return $attachments;
     }
 }

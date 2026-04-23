@@ -18,13 +18,16 @@ class ContactoService
             'mensaje'
         ]);
 
-        $archivoPath = null;
+        $archivosPaths = [];
 
-        if ($request->hasFile('archivo')) {
-            $archivoPath = $request->file('archivo')->store('contactos');
+        if ($request->hasFile('archivos')) {
+            foreach ($request->file('archivos') as $archivo) {
+                $path = $archivo->store('contactos');
+                $archivosPaths[] = $path;
+            }
         }
 
-        Mail::to('tucorreo@gmail.com')
-            ->send(new ContactoMail($data, $archivoPath));
+        Mail::to('cocotabo7715@gmail.com')
+            ->send(new ContactoMail($data, $archivosPaths));
     }
 }

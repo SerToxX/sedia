@@ -214,7 +214,18 @@
             y SEDIA lo hace realidad.
         </h2>
 
+        <!-- MENSAJE DE ÉXITO -->
+        <div id="successMessage" style="display: none; background-color: #4caf50; color: white; padding: 15px; border-radius: 5px; margin-bottom: 20px; text-align: center;">
+            ✅ ¡Mensaje enviado correctamente! Pronto nos pondremos en contacto.
+        </div>
+
+        <!-- MENSAJES DE ERROR -->
+        <div id="errorMessage" style="display: none; background-color: #f44336; color: white; padding: 15px; border-radius: 5px; margin-bottom: 20px; text-align: center;">
+            ❌ Error al enviar el mensaje. Intenta nuevamente.
+        </div>
+
         <form class="class-proyectos-form-grid"
+              id="formContactoProyectos"
               method="POST"
               action="{{ route('contacto.enviar') }}"
               enctype="multipart/form-data">
@@ -251,17 +262,21 @@
                 <textarea name="mensaje" required></textarea>
             </div>
 
-            <!-- INPUT REAL OCULTO -->
-            <input type="file" name="archivo" id="archivoInput" style="display: none;">
+            <!-- ARCHIVOS MÚLTIPLES -->
+            <div class="form-group full">
+                <label>Archivos (Máx. 5 archivos, 5MB cada uno)</label>
+                <input type="file" name="archivos[]" id="archivosInput" style="display: none;" multiple accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.xls,.xlsx,.zip,.rar">
+                <div id="archivosList" style="margin-top: 10px;"></div>
+            </div>
 
             <div class="class-proyectos-form-bottom">
 
                 <!-- BOTÓN VISUAL -->
-                <button type="button" class="btn-file" onclick="document.getElementById('archivoInput').click();">
-                    Seleccionar archivo
+                <button type="button" class="btn-file" onclick="document.getElementById('archivosInput').click();">
+                    Seleccionar archivos
                 </button>
 
-                <button type="submit" class="btn-submit">
+                <button type="submit" class="btn-submit" id="btnSubmit">
                     ENVIAR
                 </button>
 
@@ -272,5 +287,81 @@
     </div>
 
 </section>
+
+<script>
+// Mostrar archivos seleccionados
+document.getElementById('archivosInput').addEventListener('change', function(e) {
+    const archivosList = document.getElementById('archivosList');
+    const files = this.files;
+    
+    archivosList.innerHTML = '';
+    
+    if (files.length > 0) {
+        const ul = document.createElement('ul');
+        ul.style.listStyle = 'none';
+        ul.style.padding = '10px';
+        ul.style.backgroundColor = '#f5f5f5';
+        ul.style.borderRadius = '5px';
+        
+        for (let i = 0; i < files.length; i++) {
+            const li = document.createElement('li');
+            li.style.padding = '5px 0';
+            li.style.borderBottom = '1px solid #ddd';
+            li.textContent = (i + 1) + '. ' + files[i].name + ' (' + (files[i].size / 1024).toFixed(2) + ' KB)';
+            ul.appendChild(li);
+        }
+        
+        archivosList.appendChild(ul);
+    }
+});
+
+// Enviar formulario
+document.getElementById('formContactoProyectos').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const form = this;
+    const formData = new FormData(form);
+    const btnSubmit = document.getElementById('btnSubmit');
+    const successMessage = document.getElementById('successMessage');
+    const errorMessage = document.getElementById('errorMessage');
+
+    // Ocultar mensajes previos
+    successMessage.style.display = 'none';
+    errorMessage.style.display = 'none';
+
+    // Deshabilitar botón mientras se envía
+    btnSubmit.disabled = true;
+    btnSubmit.textContent = 'Enviando...';
+
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            successMessage.style.display = 'block';
+            form.reset();
+            document.getElementById('archivosList').innerHTML = '';
+            
+            // Desplazar hacia el mensaje de éxito
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+            errorMessage.style.display = 'block';
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        errorMessage.style.display = 'block';
+    })
+    .finally(() => {
+        btnSubmit.disabled = false;
+        btnSubmit.textContent = 'ENVIAR';
+    });
+});
+</script>
 
 @endsection
