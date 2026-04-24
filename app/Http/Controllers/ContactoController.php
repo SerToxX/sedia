@@ -22,7 +22,7 @@ class ContactoController extends Controller
                 'email' => 'required|email',
                 'mensaje' => 'required',
                 'archivos' => 'nullable|array|max:5',
-                'archivos.*' => 'nullable|file|max:5120|mimetypes:image/jpeg,image/png,image/gif,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/zip,application/x-rar-compressed'
+                'archivos.*' => 'nullable|file|max:25600|mimes:jpg,jpeg,png,gif,pdf,doc,docx,xls,xlsx,zip,rar'
             ]);
 
             $this->contactoService->enviarCorreo($request);

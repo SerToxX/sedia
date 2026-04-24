@@ -264,7 +264,7 @@
 
             <!-- ARCHIVOS MÚLTIPLES -->
             <div class="form-group full">
-                <label>Archivos (Máx. 5 archivos, 5MB cada uno)</label>
+                <label>Archivos (Máx. 5 archivos, 25MB cada uno)</label>
                 <input type="file" name="archivos[]" id="archivosInput" style="display: none;" multiple accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.xls,.xlsx,.zip,.rar">
                 <div id="archivosList" style="margin-top: 10px;"></div>
             </div>
