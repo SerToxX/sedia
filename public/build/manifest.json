@@ -1,0 +1,242 @@
+{
+  "_accordion-5yLDC6ml.js": {
+    "file": "assets/accordion-5yLDC6ml.js",
+    "name": "accordion"
+  },
+  "_toast-DDRwuU1U.js": {
+    "file": "assets/toast-DDRwuU1U.js",
+    "name": "toast"
+  },
+  "public/image/fondosillas.jpg": {
+    "file": "assets/fondosillas-5W2sz4nJ.jpg",
+    "src": "public/image/fondosillas.jpg"
+  },
+  "public/image/hero.webp": {
+    "file": "assets/hero-DcR_yuKS.webp",
+    "src": "public/image/hero.webp"
+  },
+  "public/image/jobs-bg.png": {
+    "file": "assets/jobs-bg-BxxSkxBw.png",
+    "src": "public/image/jobs-bg.png"
+  },
+  "resources/css/admin.css": {
+    "file": "assets/admin-DUl6Nq5O.css",
+    "src": "resources/css/admin.css",
+    "isEntry": true,
+    "name": "admin",
+    "names": [
+      "admin.css"
+    ]
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-BVHzsHPi.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/css/blog.css": {
+    "file": "assets/blog-CXoFPeyT.css",
+    "src": "resources/css/blog.css",
+    "isEntry": true,
+    "name": "blog",
+    "names": [
+      "blog.css"
+    ]
+  },
+  "resources/css/checkout.css": {
+    "file": "assets/checkout-k0RHtZKO.css",
+    "src": "resources/css/checkout.css",
+    "isEntry": true,
+    "name": "checkout",
+    "names": [
+      "checkout.css"
+    ]
+  },
+  "resources/css/contactanos.css": {
+    "file": "assets/contactanos-DO4ouXkN.css",
+    "src": "resources/css/contactanos.css",
+    "isEntry": true,
+    "name": "contactanos",
+    "names": [
+      "contactanos.css"
+    ]
+  },
+  "resources/css/index.css": {
+    "file": "assets/index-B98mPrf_.css",
+    "src": "resources/css/index.css",
+    "isEntry": true,
+    "name": "index",
+    "names": [
+      "index.css"
+    ]
+  },
+  "resources/css/libro-reclamaciones.css": {
+    "file": "assets/libro-reclamaciones-D0OT2PiU.css",
+    "src": "resources/css/libro-reclamaciones.css",
+    "isEntry": true,
+    "name": "libro-reclamaciones",
+    "names": [
+      "libro-reclamaciones.css"
+    ]
+  },
+  "resources/css/listing.css": {
+    "file": "assets/listing-BQoG8WNv.css",
+    "src": "resources/css/listing.css",
+    "isEntry": true,
+    "name": "listing",
+    "names": [
+      "listing.css"
+    ]
+  },
+  "resources/css/politicas-devolucion.css": {
+    "file": "assets/politicas-devolucion-B8zbUSUV.css",
+    "src": "resources/css/politicas-devolucion.css",
+    "isEntry": true,
+    "name": "politicas-devolucion",
+    "names": [
+      "politicas-devolucion.css"
+    ]
+  },
+  "resources/css/preguntas-frecuentes.css": {
+    "file": "assets/preguntas-frecuentes-BZTt7Iyy.css",
+    "src": "resources/css/preguntas-frecuentes.css",
+    "isEntry": true,
+    "name": "preguntas-frecuentes",
+    "names": [
+      "preguntas-frecuentes.css"
+    ]
+  },
+  "resources/css/producto-detalle.css": {
+    "file": "assets/producto-detalle-9m2gYwmF.css",
+    "src": "resources/css/producto-detalle.css",
+    "isEntry": true,
+    "name": "producto-detalle",
+    "names": [
+      "producto-detalle.css"
+    ]
+  },
+  "resources/css/proyectos.css": {
+    "file": "assets/proyectos-DdWBThnp.css",
+    "src": "resources/css/proyectos.css",
+    "isEntry": true,
+    "name": "proyectos",
+    "names": [
+      "proyectos.css"
+    ]
+  },
+  "resources/css/sobre-nosotros.css": {
+    "file": "assets/sobre-nosotros-CEjJG1EK.css",
+    "src": "resources/css/sobre-nosotros.css",
+    "isEntry": true,
+    "name": "sobre-nosotros",
+    "names": [
+      "sobre-nosotros.css"
+    ]
+  },
+  "resources/css/terminos-condiciones.css": {
+    "file": "assets/terminos-condiciones-BVUl8Aod.css",
+    "src": "resources/css/terminos-condiciones.css",
+    "isEntry": true,
+    "name": "terminos-condiciones",
+    "names": [
+      "terminos-condiciones.css"
+    ]
+  },
+  "resources/css/toast.css": {
+    "file": "assets/toast-mkGzOEKO.css",
+    "src": "resources/css/toast.css",
+    "isEntry": true,
+    "name": "toast",
+    "names": [
+      "toast.css"
+    ]
+  },
+  "resources/fonts/Phenomena-Regular.otf": {
+    "file": "assets/Phenomena-Regular-i8mSNsY-.otf",
+    "src": "resources/fonts/Phenomena-Regular.otf"
+  },
+  "resources/js/admin.js": {
+    "file": "assets/admin-DvLNIP7b.js",
+    "name": "admin",
+    "src": "resources/js/admin.js",
+    "isEntry": true,
+    "imports": [
+      "_toast-DDRwuU1U.js"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-DOJBkqrG.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/contactanos/form.js": {
+    "file": "assets/form-XQYv61CX.js",
+    "name": "form",
+    "src": "resources/js/contactanos/form.js",
+    "isEntry": true,
+    "imports": [
+      "_toast-DDRwuU1U.js"
+    ]
+  },
+  "resources/js/header.js": {
+    "file": "assets/header-BhJYHPoM.js",
+    "name": "header",
+    "src": "resources/js/header.js",
+    "isEntry": true
+  },
+  "resources/js/home.js": {
+    "file": "assets/home-Be0R4Ylr.js",
+    "name": "home",
+    "src": "resources/js/home.js",
+    "isEntry": true
+  },
+  "resources/js/libro-reclamaciones.js": {
+    "file": "assets/libro-reclamaciones-pkkdRKv4.js",
+    "name": "libro-reclamaciones",
+    "src": "resources/js/libro-reclamaciones.js",
+    "isEntry": true
+  },
+  "resources/js/politicas-devolucion.js": {
+    "file": "assets/politicas-devolucion-DUbnPVsl.js",
+    "name": "politicas-devolucion",
+    "src": "resources/js/politicas-devolucion.js",
+    "isEntry": true
+  },
+  "resources/js/preguntas-frecuentes.js": {
+    "file": "assets/preguntas-frecuentes-DfcXYvCS.js",
+    "name": "preguntas-frecuentes",
+    "src": "resources/js/preguntas-frecuentes.js",
+    "isEntry": true,
+    "imports": [
+      "_accordion-5yLDC6ml.js"
+    ]
+  },
+  "resources/js/producto-detalle.js": {
+    "file": "assets/producto-detalle-BoAvrk1T.js",
+    "name": "producto-detalle",
+    "src": "resources/js/producto-detalle.js",
+    "isEntry": true
+  },
+  "resources/js/proyectos/form.js": {
+    "file": "assets/form-Dl9GpC7J.js",
+    "name": "form",
+    "src": "resources/js/proyectos/form.js",
+    "isEntry": true,
+    "imports": [
+      "_toast-DDRwuU1U.js"
+    ]
+  },
+  "resources/js/terminos-condiciones.js": {
+    "file": "assets/terminos-condiciones-C-rnbk_r.js",
+    "name": "terminos-condiciones",
+    "src": "resources/js/terminos-condiciones.js",
+    "isEntry": true,
+    "imports": [
+      "_accordion-5yLDC6ml.js"
+    ]
+  }
+}

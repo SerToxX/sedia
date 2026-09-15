@@ -1,0 +1,338 @@
+/* ================================================
+   FOOTER
+   Mismo margen que .class-header-nav:
+   padding: 0 40px  (default)
+   1440+: max-width 1600px centrado
+   ≤1024px: padding 0 30px
+   ≤768px:  padding 0 20px
+================================================ */
+
+/* Contenedor exterior — fondo completo */
+.class-footer-container {
+    background: var(--sedia-green);
+    color: #fff;
+    width: 100%;
+}
+
+/* Wrapper interior — mismo padding que header */
+.class-footer-inner {
+    width: 100%;
+    padding: 0 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Grid de 4 columnas */
+.class-footer-content {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr 1.1fr 1fr;
+    gap: 0 56px;
+    padding: 60px 0;
+}
+
+/* ================================================
+   LOGO
+================================================ */
+
+.class-footer-logo {
+    font-family: 'Phenomena', sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* ================================================
+   DESCRIPCIÓN
+================================================ */
+
+.class-footer-desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.65;
+    margin: 0 0 24px;
+}
+
+/* ================================================
+   REDES SOCIALES
+================================================ */
+
+.class-footer-social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.class-footer-social-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255,255,255,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: border-color .25s, background .25s;
+    text-decoration: none;
+}
+
+.class-footer-social-btn img,
+.class-footer-social-btn svg {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.class-footer-social-btn:hover {
+    background: rgba(255,255,255,.15);
+    border-color: #fff;
+}
+
+/* ================================================
+   TÍTULOS DE COLUMNA
+================================================ */
+
+.class-footer-col-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: .3px;
+    margin: 0 0 16px;
+    line-height: 1.3;
+}
+
+.class-footer-col-title--mt {
+    margin-top: 28px;
+}
+
+/* ================================================
+   LINKS
+================================================ */
+
+.class-footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.class-footer-links li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255,255,255,.9);
+    letter-spacing: .15px;
+    line-height: 1.5;
+}
+
+.class-footer-links a {
+    color: rgba(255,255,255,.9);
+    text-decoration: none;
+    transition: color .2s, text-decoration .2s;
+}
+
+.class-footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Libro de reclamaciones — con icono */
+.class-footer-link-reclamaciones {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.class-footer-link-reclamaciones img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    flex-shrink: 0;
+}
+
+/* ================================================
+   HORARIO
+================================================ */
+
+.class-footer-schedule {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255,255,255,.9);
+    line-height: 1.7;
+    letter-spacing: .3px;
+    margin: 0;
+}
+
+/* ================================================
+   MEDIOS DE PAGO
+================================================ */
+
+.class-footer-payments {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+}
+
+.class-footer-pay-card {
+    width: 42px;
+    height: 28px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.class-footer-pay-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ================================================
+   BOTTOM BAR
+================================================ */
+
+.class-footer-bottom {
+    width: 100%;
+}
+
+.class-footer-bottom-inner {
+    padding: 14px 40px;
+    text-align: center;
+}
+
+.class-footer-copy {
+    font-family: 'Open Sans', 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255,255,255,.85);
+    margin: 0;
+    letter-spacing: .2px;
+}
+
+
+/* ================================================
+   PC GRANDE ≥ 1440px
+================================================ */
+
+@media (min-width: 1600px) {
+
+    .class-footer-inner {
+        max-width: 1600px;
+        padding: 0;
+    }
+
+    .class-footer-bottom-inner {
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 14px 0;
+    }
+}
+
+
+/* ================================================
+   LAPTOP ≤ 1024px
+================================================ */
+
+@media (max-width: 1024px) {
+
+    .class-footer-inner {
+        padding: 0 30px;
+    }
+
+    .class-footer-bottom-inner {
+        padding: 14px 30px;
+    }
+
+    .class-footer-content {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        gap: 0 36px;
+    }
+
+    .class-footer-logo {
+        font-size: 44px;
+    }
+}
+
+
+/* ================================================
+   TABLET ≤ 768px
+================================================ */
+
+@media (max-width: 768px) {
+
+    .class-footer-inner {
+        padding: 0 20px;
+    }
+
+    .class-footer-bottom-inner {
+        padding: 14px 20px;
+    }
+
+    .class-footer-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 48px 0;
+        text-align: center;
+    }
+
+    /* Todas las columnas centradas */
+    .class-footer-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .class-footer-links {
+        align-items: center;
+    }
+
+    .class-footer-link-reclamaciones {
+        justify-content: center;
+    }
+
+    .class-footer-social {
+        justify-content: center;
+    }
+
+    .class-footer-logo {
+        font-size: 44px;
+    }
+
+    /* Tarjetas en una sola fila centrada */
+    .class-footer-payments {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+}
+
+
+/* ================================================
+   CELULAR ≤ 480px
+================================================ */
+
+@media (max-width: 480px) {
+
+    .class-footer-logo {
+        font-size: 38px;
+    }
+
+    .class-footer-desc {
+        font-size: 12px;
+    }
+
+    /* En pantallas muy pequeñas permitir wrap para que no desborden */
+    .class-footer-payments {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

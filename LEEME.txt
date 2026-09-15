@@ -1,0 +1,44 @@
+=== REDISEÑO DEL PANEL DE ADMINISTRADOR (estilo DreamLife) ===
+
+QUÉ HACER:
+1. Copia todos estos archivos a las mismas rutas dentro de tu proyecto
+   (reemplaza los que ya existen).
+
+2. BORRA estos dos archivos, ya NO se usan (el crear/editar ahora es
+   con ventanas emergentes/modales dentro de productos/index.blade.php):
+   - resources/views/admin/products/create.blade.php
+   - resources/views/admin/products/edit.blade.php
+
+3. Corre en tu terminal, dentro de la carpeta del proyecto:
+   pnpm run build
+   (esto es obligatorio porque cambiaron admin.css y admin.js)
+
+4. Ya no necesitas instalar nada más: Alpine.js (lo que mueve los
+   modales) se carga desde un CDN dentro de layout.blade.php, así que
+   no requiere pnpm install.
+
+5. Sube los archivos a Hostinger (o haz git push si ya conectamos el
+   repo) y vuelve a correr el build allá también si tu flujo de deploy
+   lo requiere.
+
+QUÉ CAMBIÓ:
+- Nueva paleta e interfaz para /dashboard, inspirada en el estilo de
+  DreamLife (monocromo + degradado rojo→morado), con modo claro/oscuro
+  (botón en la barra superior, se guarda en el navegador).
+- Dashboard ahora muestra 4 tarjetas con números reales: total de
+  productos, activos, sin stock, y valor total del inventario
+  (precio × stock).
+- Crear y editar productos ahora abre una ventana emergente (modal)
+  en vez de cambiar de página — más rápido e interactivo.
+- Buscador de productos por nombre o categoría en la parte de arriba
+  de la tabla.
+- Stock en rojo cuando está en 0, en amarillo cuando quedan 5 o menos.
+- Sidebar colapsable en celular (menú hamburguesa).
+- El sitio público (la tienda que ven tus clientes) no se tocó en
+  absoluto — sigue usando sus propios CSS/JS de siempre.
+
+Probado de principio a fin antes de mandarte esto: login, logout,
+crear/editar/eliminar producto, error de validación reabriendo el
+modal correcto, búsqueda con y sin resultados, y confirmé que las
+páginas públicas (inicio, catálogo, checkout, etc.) siguen exactamente
+igual.

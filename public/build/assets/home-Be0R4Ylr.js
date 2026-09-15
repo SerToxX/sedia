@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector(".class-hero-video");if(!e||!("IntersectionObserver"in window))return;new IntersectionObserver(r=>{r.forEach(n=>{n.isIntersecting?e.play().catch(()=>{}):e.pause()})},{threshold:.2}).observe(e)});

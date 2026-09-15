@@ -1,0 +1,335 @@
+/* ========================================
+   BLOG POST — HERO
+======================================== */
+
+.class-blog-hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1920 / 800;
+    overflow: hidden;
+}
+
+.class-blog-hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.class-blog-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.52);
+}
+
+.class-blog-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1216px;
+    margin: 0 auto;
+    padding: 0 72px 64px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.class-blog-hero-tag {
+    display: inline-block;
+    background: var(--sedia-green);
+    color: #fff;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 5px 16px;
+    border-radius: 2px;
+    margin-bottom: 22px;
+    align-self: flex-start;
+}
+
+.class-blog-hero-title {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 46px;
+    color: #fff;
+    line-height: 1.15;
+    max-width: 760px;
+    margin-bottom: 22px;
+}
+
+.class-blog-hero-quote {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #fff;
+    opacity: 0.85;
+    max-width: 660px;
+    line-height: 1.55;
+    margin-bottom: 0;
+}
+
+/* ICONOS SOCIALES EN HERO — solo móvil */
+
+.class-blog-hero-social {
+    display: none;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.class-blog-hero-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    color: #fff;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.class-blog-hero-social-link:hover {
+    background: var(--sedia-green);
+    border-color: var(--sedia-green);
+}
+
+
+/* ========================================
+   BLOG POST — BODY
+======================================== */
+
+.class-blog-body {
+    padding: 72px 0 110px;
+}
+
+.class-blog-container {
+    max-width: 1216px;
+    margin: 0 auto;
+    padding: 0 72px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+
+/* ========================================
+   SIDEBAR SOCIAL — desktop
+======================================== */
+
+.class-blog-social-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: sticky;
+    top: 120px;
+}
+
+.class-blog-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #d8d8d8;
+    border-radius: 50%;
+    color: #000;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+}
+
+.class-blog-social-link:hover {
+    background: var(--sedia-green);
+    border-color: var(--sedia-green);
+    color: #fff;
+}
+
+
+/* ========================================
+   ARTÍCULO
+======================================== */
+
+.class-blog-article {
+    min-width: 0;
+}
+
+.class-blog-intro {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #141718;
+    line-height: 1.75;
+    margin-bottom: 44px;
+}
+
+.class-blog-img-wrap {
+    width: 100%;
+    margin-bottom: 44px;
+    overflow: hidden;
+}
+
+.class-blog-img-wrap img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.class-blog-section {
+    margin-bottom: 38px;
+}
+
+.class-blog-section-title {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    line-height: 1.3;
+    margin-bottom: 14px;
+}
+
+.class-blog-section-num {
+    color: var(--sedia-green);
+    margin-right: 6px;
+}
+
+.class-blog-section-body {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #141718;
+    line-height: 1.75;
+}
+
+.class-blog-source {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #707070;
+    line-height: 1.5;
+    margin-top: 44px;
+}
+
+
+/* ========================================
+   PC GRANDE ≥ 1440px
+======================================== */
+
+@media (min-width: 1600px) {
+
+    .class-blog-hero-content {
+        max-width: 1440px;
+        padding: 0 120px 80px;
+    }
+
+    .class-blog-hero-title {
+        font-size: 54px;
+        max-width: 900px;
+    }
+
+    .class-blog-container {
+        max-width: 1440px;
+        padding: 0 120px;
+        grid-template-columns: 56px 1fr;
+        gap: 72px;
+    }
+
+}
+
+
+/* ========================================
+   TABLET ≤ 1024px
+======================================== */
+
+@media (max-width: 1024px) {
+
+    .class-blog-hero-content {
+        padding: 0 40px 50px;
+    }
+
+    .class-blog-hero-title {
+        font-size: 34px;
+    }
+
+    .class-blog-hero-quote {
+        font-size: 15px;
+    }
+
+    .class-blog-body {
+        padding: 56px 0 80px;
+    }
+
+    .class-blog-container {
+        padding: 0 40px;
+        grid-template-columns: 44px 1fr;
+        gap: 40px;
+    }
+
+}
+
+
+/* ========================================
+   MÓVIL ≤ 768px
+======================================== */
+
+@media (max-width: 768px) {
+
+    .class-blog-hero {
+        height: 660px;
+        aspect-ratio: auto;
+    }
+
+    .class-blog-hero-content {
+        padding: 0 20px 36px;
+    }
+
+    .class-blog-hero-title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .class-blog-hero-quote {
+        display: none;
+    }
+
+    .class-blog-hero-social {
+        display: flex;
+    }
+
+    .class-blog-body {
+        padding: 40px 0 60px;
+    }
+
+    .class-blog-container {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+        gap: 0;
+    }
+
+    .class-blog-social-sidebar {
+        display: none;
+    }
+
+    .class-blog-intro {
+        font-size: 15px;
+        margin-bottom: 32px;
+    }
+
+    .class-blog-img-wrap img {
+        height: 220px;
+    }
+
+    .class-blog-section-title {
+        font-size: 17px;
+    }
+
+    .class-blog-section-body {
+        font-size: 15px;
+    }
+
+}

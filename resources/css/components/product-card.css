@@ -1,0 +1,175 @@
+.class-product-card {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.class-product-card-img-wrap {
+    position: relative;
+    aspect-ratio: 5 / 6;
+    overflow: hidden;
+    background: #f5f5f3;
+    transition: box-shadow 0.25s ease;
+}
+
+.class-product-card-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.class-product-card-img--hover {
+    opacity: 0;
+}
+
+.class-product-card:hover .class-product-card-img-wrap {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .14);
+}
+
+.class-product-card:hover .class-product-card-img--base {
+    opacity: 0;
+}
+
+.class-product-card:hover .class-product-card-img--hover {
+    opacity: 1;
+}
+
+.class-product-card-add {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 12px 0;
+    border: none;
+    background: #EBEBEBA6;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #535353;
+    text-align: center;
+    cursor: pointer;
+    opacity: 65%;
+    transform: translateY(100%);
+    transition: opacity 0.25s ease, transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.class-product-card:hover .class-product-card-add {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.class-product-card-add:hover {
+    background: #fff;
+}
+
+.class-product-card-add.is-added {
+    background: var(--sedia-green);
+    color: #fff;
+}
+
+.class-product-card-info {
+    padding: 10px 10px;
+    background: #fff;
+}
+
+.class-product-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.class-product-card-name {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #212121;
+}
+
+.class-product-card-swatches {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.class-product-swatch {
+    width: 21px;
+    height: 21px;
+    border-radius: 1px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.class-product-swatch-count {
+    width: 21px;
+    height: 21px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    flex-shrink: 0;
+}
+
+.class-product-card-category {
+    display: block;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--sedia-muted);
+    margin-bottom: 5px;
+}
+
+.class-product-card-prices {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.class-product-price-sale {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #212121;
+}
+
+.class-product-price-original {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--sedia-muted);
+    text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+    .class-product-card-name {
+        font-size: 14px;
+    }
+
+    .class-product-swatch {
+        width: 16px;
+        height: 16px;
+    }
+
+    .class-product-swatch-count {
+        font-size: 12px;
+    }
+
+    .class-product-card-category {
+        font-size: 12px;
+    }
+
+    .class-product-price-sale,
+    .class-product-price-original {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,406 @@
+/* ========================================
+   CHECKOUT — LAYOUT PRINCIPAL
+======================================== */
+
+.class-checkout {
+    padding: 80px 72px 100px;
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+/* TÍTULO */
+
+.class-checkout-title {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* BODY — 2 COLUMNAS */
+
+.class-checkout-body {
+    display: grid;
+    grid-template-columns: 1fr 580px;
+    gap: 80px;
+    align-items: start;
+}
+
+
+/* ========================================
+   COLUMNA IZQUIERDA — FACTURACIÓN
+======================================== */
+
+.class-checkout-billing-title {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+/* GRID 2 COLUMNAS (Nombres + Apellidos) */
+
+.class-checkout-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+}
+
+/* CAMPO */
+
+.class-checkout-form-field {
+    margin-bottom: 36px;
+}
+
+/* INPUT */
+
+.class-checkout-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 8px;
+    outline: none;
+}
+
+.class-checkout-input::placeholder {
+    color: #7c7878;
+}
+
+/* SELECT */
+
+.class-checkout-select-wrap {
+    position: relative;
+}
+
+.class-checkout-select {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #7c7878;
+    padding-bottom: 8px;
+    padding-right: 24px;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.class-checkout-select-arrow {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-60%);
+    pointer-events: none;
+}
+
+/* CHECKBOX */
+
+.class-checkout-check {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+}
+
+.class-checkout-check input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #707070;
+    border-radius: 2px;
+    cursor: pointer;
+    flex-shrink: 0;
+    accent-color: #000;
+}
+
+/* NOTAS */
+
+.class-checkout-notes {
+    border: 1px solid #d8d8d8;
+    padding: 20px 22px;
+}
+
+.class-checkout-notes-label {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #707070;
+    line-height: 1.3;
+    margin-bottom: 16px;
+}
+
+.class-checkout-textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #707070;
+    resize: none;
+    background: transparent;
+    height: 50px;
+}
+
+.class-checkout-textarea::placeholder {
+    color: #707070;
+}
+
+
+/* ========================================
+   COLUMNA DERECHA — TU ORDEN
+======================================== */
+
+.class-checkout-order-title {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* CAJA */
+
+.class-checkout-order-box {
+    background: #f6f6f4;
+    padding: 40px 52px 48px;
+}
+
+/* CABECERA */
+
+.class-checkout-order-header {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 22px;
+}
+
+/* ITEMS */
+
+.class-checkout-order-items {
+    margin-bottom: 16px;
+}
+
+.class-checkout-order-item {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #707070;
+    line-height: 27px;
+    margin-bottom: 14px;
+}
+
+/* SUBTOTAL */
+
+.class-checkout-order-subtotal {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 1px solid #000;
+}
+
+.class-checkout-order-subtotal span:first-child {
+    color: #000;
+}
+
+.class-checkout-order-subtotal span:last-child {
+    color: #707070;
+}
+
+/* ENVÍO */
+
+.class-checkout-order-shipping {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.class-checkout-order-shipping span:first-child {
+    color: #000;
+}
+
+.class-checkout-order-shipping span:last-child {
+    color: #707070;
+}
+
+/* TOTAL */
+
+.class-checkout-order-total {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 24px;
+}
+
+/* AVISO PAGO */
+
+.class-checkout-order-notice {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+/* PRIVACIDAD */
+
+.class-checkout-order-privacy {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.class-checkout-order-privacy a {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* TÉRMINOS */
+
+.class-checkout-terms {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.class-checkout-terms input[type="radio"] {
+    width: 23px;
+    height: 23px;
+    flex-shrink: 0;
+    cursor: pointer;
+    accent-color: #000;
+}
+
+/* BOTÓN */
+
+.class-checkout-btn {
+    width: 100%;
+    height: 53px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.class-checkout-btn:hover {
+    background: #333;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1024px) {
+
+    .class-checkout {
+        padding: 60px 30px 80px;
+    }
+
+    .class-checkout-body {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .class-checkout-order-box {
+        padding: 30px;
+    }
+
+}
+
+
+/* ========================================
+   MÓVIL
+======================================== */
+
+@media (max-width: 768px) {
+
+    .class-checkout {
+        padding: 40px 20px 60px;
+    }
+
+    .class-checkout-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .class-checkout-billing-title,
+    .class-checkout-order-title {
+        font-size: 22px;
+        margin-bottom: 28px;
+    }
+
+    .class-checkout-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .class-checkout-order-box {
+        padding: 20px;
+    }
+
+    .class-checkout-order-header,
+    .class-checkout-order-item,
+    .class-checkout-order-subtotal,
+    .class-checkout-order-shipping,
+    .class-checkout-order-total {
+        font-size: 14px;
+    }
+
+    .class-checkout-terms {
+        align-items: flex-start;
+        font-size: 14px;
+    }
+
+}

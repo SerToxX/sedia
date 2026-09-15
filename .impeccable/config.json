@@ -1,0 +1,35 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font",
+        "value": "playfair display",
+        "files": [
+          "resources/css/producto-detalle.css"
+        ],
+        "createdAt": "2026-09-11T21:32:09.137Z",
+        "reason": "DESIGN.md documents only the admin panel (explicit scope note); this is public-site code, which already uses Playfair Display for headings elsewhere (resources/css/index.css .class-about-title) — reusing the site's existing established heading font, not a new addition"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "playfair display",
+        "files": [
+          "resources/css/index.css"
+        ],
+        "createdAt": "2026-09-11T22:50:17.882Z",
+        "reason": "DESIGN.md documents only the admin panel (explicit scope note); this is pre-existing public-site code that already used Playfair Display before this session's edits"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "playfair display",
+        "files": [
+          "resources/css/sobre-nosotros.css"
+        ],
+        "createdAt": "2026-09-12T00:00:36.916Z",
+        "reason": "DESIGN.md documents only the admin panel (explicit scope note); this is pre-existing public-site code that already used Playfair Display before this session's edits"
+      }
+    ]
+  }
+}

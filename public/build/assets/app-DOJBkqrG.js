@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("img").forEach(e=>{e.setAttribute("draggable","false")}),document.addEventListener("contextmenu",e=>{e.target.closest("img")&&e.preventDefault()}),document.addEventListener("dragstart",e=>{e.target.closest("img")&&e.preventDefault()})});
