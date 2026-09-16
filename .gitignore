@@ -4,6 +4,7 @@
 .env.backup
 .env.production
 DEPLOY.md
+dreamlife.md
 .phpactor.json
 .phpunit.result.cache
 /.fleet
