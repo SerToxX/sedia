@@ -29,6 +29,12 @@
         ],
         "createdAt": "2026-09-12T00:00:36.916Z",
         "reason": "DESIGN.md documents only the admin panel (explicit scope note); this is pre-existing public-site code that already used Playfair Display before this session's edits"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "playfair display",
+        "createdAt": "2026-09-16T22:13:45.907Z",
+        "reason": "user confirmed: Playfair Display ya es fuente de marca usada en sobre-nosotros.css y cargada en app.blade.php; usuario pidio aplicarla en proyectos.css"
       }
     ]
   }

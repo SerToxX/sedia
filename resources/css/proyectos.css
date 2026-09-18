@@ -63,7 +63,7 @@
 ======================================== */
 
 .class-proyectos-info {
-    margin-top: 93px;
+    margin-top: 48px;
     margin-bottom: 86px;
 }
 
@@ -104,10 +104,10 @@
 /* TITULO */
 
 .class-proyectos-info-text h2 {
-    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-family: "Playfair Display", serif;
     font-weight: 400;
     font-size: 38px;
-    color: #C5CDB8;
+    color: var(--sedia-green);
     line-height: 1.2;
     margin-bottom: 20px;
 }
@@ -226,10 +226,10 @@
 
 .class-proyectos-bloque3-text h2 {
 
-    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-family: "Playfair Display", serif;
     font-weight: 400;
     font-size: 38px;
-    color: #C5CDB8;
+    color: var(--sedia-green);
 
     line-height: 1.2;
     margin-bottom: 20px;
@@ -408,7 +408,7 @@
 
 .class-proyectos-form-title{
 
-    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-family: "Playfair Display", serif;
     font-weight:400;
     font-size:32px;
 
