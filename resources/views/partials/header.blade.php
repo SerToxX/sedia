@@ -188,7 +188,7 @@
             </a>
 
             <a class="class-menu-link {{ request()->routeIs('blog') ? 'active' : '' }}"
-                href="{{ route('contacto') }}">
+                href="{{ route('blog') }}">
                 Blog
             </a>
 

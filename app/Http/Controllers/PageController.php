@@ -78,6 +78,11 @@ class PageController extends Controller
         return view('pages.checkout.checkout');
     }
 
+    public function blog()
+    {
+        return view('pages.blog.blog');
+    }
+
     public function blogPost()
     {
         return view('pages.blog.blog-post');

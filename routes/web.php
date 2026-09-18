@@ -37,6 +37,8 @@ Route::post('/contacto', [ContactoController::class, 'enviar'])
 Route::post('/contactanos', [ContactoController::class, 'enviarContactanos'])
     ->name('contactanos.enviar');
 
+Route::get('/blog', [PageController::class, 'blog'])->name('blog');
+
 Route::get('/blog-post', [PageController::class, 'blogPost'])->name('blog-post');
 
 
