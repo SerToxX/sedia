@@ -29,7 +29,7 @@
     ]
   },
   "resources/css/app.css": {
-    "file": "assets/app-BVHzsHPi.css",
+    "file": "assets/app-tgersgH3.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -38,7 +38,7 @@
     ]
   },
   "resources/css/blog.css": {
-    "file": "assets/blog-CXoFPeyT.css",
+    "file": "assets/blog-DC6wLAwB.css",
     "src": "resources/css/blog.css",
     "isEntry": true,
     "name": "blog",
@@ -65,7 +65,7 @@
     ]
   },
   "resources/css/index.css": {
-    "file": "assets/index-B98mPrf_.css",
+    "file": "assets/index-C2jJ-mVc.css",
     "src": "resources/css/index.css",
     "isEntry": true,
     "name": "index",
@@ -119,7 +119,7 @@
     ]
   },
   "resources/css/proyectos.css": {
-    "file": "assets/proyectos-DdWBThnp.css",
+    "file": "assets/proyectos-BHjkpM_5.css",
     "src": "resources/css/proyectos.css",
     "isEntry": true,
     "name": "proyectos",
