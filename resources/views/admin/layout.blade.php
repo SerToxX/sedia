@@ -52,6 +52,10 @@
                         <x-admin-icon name="package" />
                         Productos
                     </a>
+                    <a href="{{ route('admin.banner.edit') }}" class="{{ request()->routeIs('admin.banner.*') ? 'is-active' : '' }}">
+                        <x-admin-icon name="image" />
+                        Banner Home
+                    </a>
                 </nav>
 
                 <div class="class-admin-topnav-actions">
@@ -89,6 +93,10 @@
                 <a href="{{ route('admin.products.index') }}" class="{{ request()->routeIs('admin.products.*') ? 'is-active' : '' }}">
                     <x-admin-icon name="package" />
                     Productos
+                </a>
+                <a href="{{ route('admin.banner.edit') }}" class="{{ request()->routeIs('admin.banner.*') ? 'is-active' : '' }}">
+                    <x-admin-icon name="image" />
+                    Banner Home
                 </a>
                 <div class="class-admin-mobile-nav-divider"></div>
                 <a href="{{ route('inicio') }}" target="_blank">

@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\SiteSetting;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     public function home()
     {
-        return view('pages.home');
+        $siteSetting = SiteSetting::current();
+
+        return view('pages.home', compact('siteSetting'));
     }
 
     public function productos(Request $request)

@@ -14,15 +14,17 @@
 {{-- =====================================================
      1. HERO
 ===================================================== --}}
-<section class="class-hero">
+<section class="class-hero" style="background-image: url('{{ $siteSetting->heroImageUrl() }}');">
 
-    <video
-        class="class-hero-video"
-        autoplay muted loop playsinline
-        preload="metadata"
-        poster="{{ asset('image/hero.webp') }}">
-        <source src="{{ asset('video/prueba.mp4') }}" type="video/mp4">
-    </video>
+    @if ($siteSetting->heroVideoUrl())
+        <video
+            class="class-hero-video"
+            autoplay muted loop playsinline
+            preload="metadata"
+            poster="{{ $siteSetting->heroImageUrl() }}">
+            <source src="{{ $siteSetting->heroVideoUrl() }}" type="{{ $siteSetting->heroVideoMimeType() }}">
+        </video>
+    @endif
 
     <div class="class-hero-overlay"></div>
 

@@ -19,6 +19,7 @@
         'alert' => '<path d="M10.3 3.86l-8.1 14A1.5 1.5 0 003.5 20h17a1.5 1.5 0 001.3-2.14l-8.1-14a1.5 1.5 0 00-2.6 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/>',
         'check' => '<circle cx="12" cy="12" r="9"/><path d="M8.5 12.3l2.4 2.4 4.6-5.2"/>',
         'image-off' => '<path d="M3 3l18 18"/><path d="M10.5 5H19a2 2 0 012 2v12.5"/><path d="M21 15l-4-4-3.5 3.5"/><path d="M3 5.5V19a2 2 0 002 2h13.5"/>',
+        'image' => '<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/>',
     ];
 @endphp
 
