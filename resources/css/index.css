@@ -9,8 +9,8 @@
 .class-hero {
     position: relative;
     width: 100%;
-    height: auto;
-    aspect-ratio: 2 / 1; /* medida fija tipo Kave (~2880x1442) en vez de 100vh, evita el "zoom" al hacer scroll en movil */
+    height: 100vh;
+    height: 100svh; /* igual que el hero real de kavehome.com: 100svh evita el "zoom" al hacer scroll en movil */
     overflow: hidden;
     background: var(--sedia-opal);
     background-image: url('../../public/image/hero.webp');
@@ -1117,10 +1117,6 @@
 @media (max-width: 768px) {
 
     /* HERO */
-    .class-hero {
-        aspect-ratio: 4 / 5; /* medida fija tipo Kave (~1170x1440) para movil */
-    }
-
     .class-hero-title {
         font-size: 36px;
         line-height: .95;
