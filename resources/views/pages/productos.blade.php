@@ -15,7 +15,7 @@
 HERO
 ============================ -->
 <section class="class-listing-hero">
-    <img src="{{ asset('image/sobre-nosotros-banner.png') }}" class="class-listing-hero-img" loading="eager" fetchpriority="high" alt="Sillas de exterior">
+    <img src="{{ $banner->imageUrl() }}" class="class-listing-hero-img" loading="eager" fetchpriority="high" alt="Sillas de exterior">
     <div class="class-listing-hero-overlay"></div>
     <div class="class-listing-hero-content">
         <h1 class="class-listing-hero-title">SILLAS DE<br>EXTERIOR</h1>

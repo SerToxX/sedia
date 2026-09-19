@@ -19,7 +19,7 @@ HERO SOBRE NOSOTROS
 
     <!-- IMAGEN -->
     <img
-        src="{{ asset('image/sobre-nosotros-banner.png') }}"
+        src="{{ $banner->imageUrl() }}"
         alt="Sobre Nosotros"
         class="class-sobre-nosotros-hero-img"
         loading="eager"

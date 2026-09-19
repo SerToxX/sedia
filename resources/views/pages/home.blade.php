@@ -14,15 +14,15 @@
 {{-- =====================================================
      1. HERO
 ===================================================== --}}
-<section class="class-hero" style="background-image: url('{{ $siteSetting->heroImageUrl() }}');">
+<section class="class-hero" style="background-image: url('{{ $banner->imageUrl() }}');">
 
-    @if ($siteSetting->heroVideoUrl())
+    @if ($banner->videoUrl())
         <video
             class="class-hero-video"
             autoplay muted loop playsinline
             preload="metadata"
-            poster="{{ $siteSetting->heroImageUrl() }}">
-            <source src="{{ $siteSetting->heroVideoUrl() }}" type="{{ $siteSetting->heroVideoMimeType() }}">
+            poster="{{ $banner->imageUrl() }}">
+            <source src="{{ $banner->videoUrl() }}" type="{{ $banner->videoMimeType() }}">
         </video>
     @endif
 

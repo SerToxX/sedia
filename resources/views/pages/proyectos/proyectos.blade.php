@@ -15,7 +15,7 @@
 
     <!-- IMAGEN -->
     <img
-        src="{{ asset('image/proyectos-inicio.png') }}"
+        src="{{ $banner->imageUrl() }}"
         alt="Proyectos Sedia"
         class="class-proyectos-hero-img"
         loading="eager"

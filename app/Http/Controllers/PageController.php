@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Banner;
 use App\Models\Product;
-use App\Models\SiteSetting;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     public function home()
     {
-        $siteSetting = SiteSetting::current();
+        $banner = Banner::forKey('home');
 
-        return view('pages.home', compact('siteSetting'));
+        return view('pages.home', compact('banner'));
     }
 
     public function productos(Request $request)
@@ -31,7 +31,9 @@ class PageController extends Controller
             ->paginate(16)
             ->withQueryString();
 
-        return view('pages.productos', compact('products', 'search'));
+        $banner = Banner::forKey('productos');
+
+        return view('pages.productos', compact('products', 'search', 'banner'));
     }
 
     public function productoDetalle(Product $product)
@@ -58,12 +60,16 @@ class PageController extends Controller
 
     public function proyectos()
     {
-        return view('pages.proyectos.proyectos');
+        $banner = Banner::forKey('proyectos');
+
+        return view('pages.proyectos.proyectos', compact('banner'));
     }
 
     public function sobreNosotros()
     {
-        return view('pages.sobre-nosotros.sobre-nosotros');
+        $banner = Banner::forKey('sobre_nosotros');
+
+        return view('pages.sobre-nosotros.sobre-nosotros', compact('banner'));
     }
 
     public function libroReclamaciones()
@@ -83,11 +89,15 @@ class PageController extends Controller
 
     public function blog()
     {
-        return view('pages.blog.blog');
+        $banner = Banner::forKey('blog');
+
+        return view('pages.blog.blog', compact('banner'));
     }
 
     public function blogPost()
     {
-        return view('pages.blog.blog-post');
+        $banner = Banner::forKey('blog_post');
+
+        return view('pages.blog.blog-post', compact('banner'));
     }
 }

@@ -5,8 +5,8 @@
 .class-blog-hero {
     position: relative;
     width: 100%;
-    height: auto;
-    aspect-ratio: 1920 / 800;
+    height: 100vh;
+    height: 100svh;
     overflow: hidden;
 }
 
@@ -221,32 +221,33 @@
 ======================================== */
 
 .class-blog-home-hero {
-    max-width: 1216px;
-    margin: 0 auto;
-    padding: 64px 72px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-}
-
-.class-blog-home-hero-img-wrap {
-    width: 614px;
-    height: 409px;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-
-.class-blog-home-hero-img-wrap img {
+    position: relative;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+    height: 100vh;
+    height: 100svh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.class-blog-home-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .35);
 }
 
 .class-blog-home-hero-content {
-    max-width: 480px;
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 24px;
     text-align: center;
 }
 
@@ -254,16 +255,15 @@
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-weight: 400;
     font-size: 42px;
-    color: var(--sedia-dark);
+    color: #fff;
     line-height: 1.15;
-    margin-bottom: 22px;
 }
 
 .class-blog-home-hero-text {
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-weight: 400;
     font-size: 20px;
-    color: #323334;
+    color: rgba(255, 255, 255, .85);
     line-height: 1.75;
 }
 
@@ -518,11 +518,6 @@
         gap: 72px;
     }
 
-    .class-blog-home-hero {
-        max-width: 1440px;
-        padding: 80px 120px 0;
-    }
-
 }
 
 
@@ -552,16 +547,6 @@
         padding: 0 40px;
         grid-template-columns: 44px 1fr;
         gap: 40px;
-    }
-
-    .class-blog-home-hero {
-        padding: 50px 40px 0;
-        gap: 40px;
-    }
-
-    .class-blog-home-hero-img-wrap {
-        width: 320px;
-        height: 240px;
     }
 
     .class-blog-home-hero-title {
@@ -594,11 +579,6 @@
 ======================================== */
 
 @media (max-width: 768px) {
-
-    .class-blog-hero {
-        height: 660px;
-        aspect-ratio: auto;
-    }
 
     .class-blog-hero-content {
         padding: 0 20px 36px;
@@ -646,17 +626,6 @@
 
     .class-blog-section-body {
         font-size: 15px;
-    }
-
-    .class-blog-home-hero {
-        flex-direction: column;
-        padding: 40px 20px 0;
-        gap: 28px;
-    }
-
-    .class-blog-home-hero-img-wrap {
-        width: 100%;
-        height: 240px;
     }
 
     .class-blog-home-hero-title {

@@ -5,8 +5,8 @@ HERO SOBRE NOSOTROS
 .class-sobre-nosotros-hero {
     position: relative;
     width: 100%;
-    height: auto;
-    aspect-ratio: 1920 / 800;
+    height: 100vh;
+    height: 100svh;
     overflow: hidden;
 }
 
@@ -925,11 +925,6 @@ CELULAR
 ======================================== */
 
 @media (max-width:768px) {
-
-    .class-sobre-nosotros-hero {
-        height: 660px;
-        aspect-ratio: auto;
-    }
 
     /* PROJECT */
 

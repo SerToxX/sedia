@@ -14,10 +14,8 @@
 <!-- ============================
 HERO
 ============================ -->
-<section class="class-blog-home-hero">
-    <div class="class-blog-home-hero-img-wrap">
-        <img src="{{ asset('image/blog-1.png') }}" loading="eager" fetchpriority="high" decoding="async" alt="Nuestro blog">
-    </div>
+<section class="class-blog-home-hero" style="background-image: url('{{ $banner->imageUrl() }}');">
+    <div class="class-blog-home-hero-overlay"></div>
     <div class="class-blog-home-hero-content">
         <h1 class="class-blog-home-hero-title">Nuestro blog</h1>
         <p class="class-blog-home-hero-text">

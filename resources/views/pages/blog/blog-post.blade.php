@@ -15,7 +15,7 @@
 HERO
 ============================ -->
 <section class="class-blog-hero">
-    <img src="{{ asset('image/restaurantes.png') }}" class="class-blog-hero-img" loading="eager" fetchpriority="high" alt="Blog hero">
+    <img src="{{ $banner->imageUrl() }}" class="class-blog-hero-img" loading="eager" fetchpriority="high" alt="Blog hero">
     <div class="class-blog-hero-overlay"></div>
     <div class="class-blog-hero-content">
         <span class="class-blog-hero-tag">Nuevo</span>

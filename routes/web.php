@@ -6,7 +6,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\Admin\AuthController as AdminAuthController;
 use App\Http\Controllers\Admin\ProductController as AdminProductController;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
-use App\Http\Controllers\Admin\SiteSettingController as AdminSiteSettingController;
+use App\Http\Controllers\Admin\BannerController as AdminBannerController;
 
 Route::get('/', [PageController::class, 'home'])->name('inicio');
 
@@ -65,7 +65,7 @@ Route::prefix('dashboard')->name('admin.')->group(function () {
         Route::delete('/productos/{product}', [AdminProductController::class, 'destroy'])->name('products.destroy');
         Route::delete('/productos/imagenes/{productImage}', [AdminProductController::class, 'destroyImage'])->name('products.images.destroy');
 
-        Route::get('/banner', [AdminSiteSettingController::class, 'edit'])->name('banner.edit');
-        Route::put('/banner', [AdminSiteSettingController::class, 'update'])->name('banner.update');
+        Route::get('/banners', [AdminBannerController::class, 'index'])->name('banners.index');
+        Route::put('/banners/{banner}', [AdminBannerController::class, 'update'])->name('banners.update');
     });
 });
