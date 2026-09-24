@@ -9,8 +9,7 @@
 .class-hero {
     position: relative;
     width: 100%;
-    height: 100vh;
-    height: 100svh; /* igual que el hero real de kavehome.com: 100svh evita el "zoom" al hacer scroll en movil */
+    height: 100dvh; /* dynamic viewport: se adapta sin zoom al hacer scroll en móvil */
     overflow: hidden;
     background: var(--sedia-opal);
     background-image: url('../../public/image/hero.webp');
