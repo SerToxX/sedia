@@ -32,6 +32,8 @@ Route::get('/contactanos', [PageController::class, 'contactanos'])->name('contac
 
 Route::get('/checkout', [PageController::class, 'checkout'])->name('checkout');
 
+Route::get('/carrito', [PageController::class, 'carrito'])->name('carrito');
+
 Route::post('/contacto', [ContactoController::class, 'enviar'])
     ->name('contacto.enviar');
 

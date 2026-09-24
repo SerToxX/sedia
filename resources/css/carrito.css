@@ -1,0 +1,692 @@
+/* ========================================
+   CARRITO — LAYOUT PRINCIPAL
+======================================== */
+
+.class-carrito {
+    padding: 37px 40px 56px;
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+/* TÍTULO */
+
+.class-carrito-title {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 43px;
+    color: #323334;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/* BODY — 2 COLUMNAS */
+
+.class-carrito-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 140px;
+    align-items: start;
+}
+
+
+/* ========================================
+   COLUMNA IZQUIERDA — ITEMS
+======================================== */
+
+.class-carrito-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 26px;
+    padding: 40px 0;
+    border-top: 1px solid #d8d8d8;
+}
+
+.class-carrito-item:first-child {
+    padding-top: 0;
+    border-top: none;
+}
+
+.class-carrito-item:last-child {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.class-carrito-item-img-wrap {
+    width: 144px;
+    height: 136px;
+    border-radius: 4px;
+    background: #f6f6f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.class-carrito-item-img {
+    width: 124px;
+    height: 124px;
+    object-fit: contain;
+    display: block;
+}
+
+.class-carrito-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 136px;
+    flex: 1;
+}
+
+.class-carrito-item-info-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.class-carrito-item-name {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000;
+}
+
+.class-carrito-item-variant {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #707070;
+}
+
+.class-carrito-item-price {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #141718;
+}
+
+.class-carrito-item-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 136px;
+    flex-shrink: 0;
+}
+
+.class-carrito-item-delete {
+    background: none;
+    border: none;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    color: #000;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.class-carrito-item-qty {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 104px;
+    height: 34px;
+    padding: 0 11px;
+    box-sizing: border-box;
+    border: 1px solid #bbbbbb;
+}
+
+.class-carrito-qty-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.class-carrito-qty-btn:disabled {
+    color: #707070;
+    cursor: not-allowed;
+}
+
+.class-carrito-qty-num {
+    text-align: center;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    color: #212121;
+}
+
+/* CUPÓN */
+
+.class-carrito-coupon {
+    border: 1px solid #d8d8d8;
+    padding: 22px 24px;
+    margin-top: 50px;
+}
+
+.class-carrito-coupon-label {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #707070;
+    margin-bottom: 18px;
+}
+
+.class-carrito-coupon-form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.class-carrito-coupon-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.class-carrito-coupon-input {
+    border: none;
+    background: transparent;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #707070;
+    outline: none;
+    width: 100%;
+}
+
+.class-carrito-coupon-input::placeholder {
+    color: #707070;
+}
+
+.class-carrito-coupon-underline {
+    width: 100%;
+    height: 1px;
+    background: #d8d8d8;
+    margin-top: 10px;
+}
+
+.class-carrito-coupon-btn {
+    width: 173px;
+    height: 36px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.class-carrito-coupon-btn:hover {
+    background: #333;
+}
+
+
+/* ========================================
+   COLUMNA DERECHA — TOTAL
+======================================== */
+
+.class-carrito-total-title {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 25px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.class-carrito-total-box {
+    padding-top: 22px;
+}
+
+.class-carrito-total-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 0;
+}
+
+.class-carrito-total-row span:first-child {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #000;
+}
+
+.class-carrito-total-row span:last-child {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #707070;
+}
+
+.class-carrito-total-shipping {
+    margin-top: 18px;
+}
+
+.class-carrito-total-shipping span:first-child {
+    font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #707070;
+}
+
+.class-carrito-total-shipping span:last-child {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #707070;
+    text-align: right;
+    max-width: 220px;
+}
+
+.class-carrito-calcular-envio {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #000;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+/* ZONA DE ENVIO (DESPLEGABLE) */
+
+.class-carrito-zone-wrap {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.class-carrito-zone-trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 0 0 13px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #707070;
+    outline: none;
+    cursor: pointer;
+}
+
+.class-carrito-zone-trigger-arrow {
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.class-carrito-zone-trigger[aria-expanded="true"] .class-carrito-zone-trigger-arrow {
+    transform: rotate(180deg);
+}
+
+.class-carrito-zone-panel {
+    background: #fff;
+    max-height: 420px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.class-carrito-zone-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.class-carrito-zone-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 23px;
+    background: #f6f6f4;
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+.class-carrito-zone-body {
+    display: block;
+    background: #fff;
+    padding: 0px 80px 8px 44px;
+}
+
+.class-carrito-zone-checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #707070;
+    border-radius: 2px;
+    accent-color: #000;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.class-carrito-zone-name {
+    flex: 1;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #000;
+}
+
+.class-carrito-zone-districts {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #000;
+}
+
+.class-carrito-zone-price {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.class-carrito-provincia-wrap {
+    position: relative;
+    margin-bottom: 94px;
+}
+
+.class-carrito-provincia-wrap.is-open {
+    margin-bottom: 20px;
+}
+
+.class-carrito-provincia-wrap.zona-open {
+    margin-bottom: 0;
+}
+
+.class-carrito-provincia-trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 0 0 13px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #707070;
+    outline: none;
+    cursor: pointer;
+}
+
+.class-carrito-provincia-trigger-arrow {
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.class-carrito-provincia-trigger[aria-expanded="true"] .class-carrito-provincia-trigger-arrow {
+    transform: rotate(180deg);
+}
+
+/* AGENCIA DE ENVIO (PROVINCIA) */
+
+.class-carrito-agencia-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.class-carrito-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.class-carrito-field-label {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #000;
+}
+
+.class-carrito-field-input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #b2b2b2;
+    border-radius: 2px;
+    background: #fff;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #212121;
+    outline: none;
+}
+
+.class-carrito-field-input::placeholder {
+    color: #b2b2b2;
+}
+
+.class-carrito-total-final {
+    border-bottom: none;
+    border-top: 1px solid #d8d8d8;
+    padding-top: 18px;
+    margin-bottom: 24px;
+}
+
+.class-carrito-total-row.class-carrito-total-final span {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #000;
+}
+
+.class-carrito-checkout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 53px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* ========================================
+   PC GRANDE ≥ 1600px
+======================================== */
+
+@media (min-width: 1600px) {
+
+    .class-carrito {
+        max-width: 1600px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1024px) {
+
+    .class-carrito {
+        padding: 50px 30px 80px;
+    }
+
+    .class-carrito-body {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+}
+
+
+/* ========================================
+   MÓVIL
+======================================== */
+
+@media (max-width: 768px) {
+
+    .class-carrito {
+        padding: 31px 20px 48px;
+    }
+
+    .class-carrito-title {
+        font-size: 24px;
+        line-height: 42px;
+        margin-bottom: 42px;
+    }
+
+    .class-carrito-item {
+        gap: 16px;
+        padding: 12px 0;
+    }
+
+    .class-carrito-item-img-wrap {
+        width: 90px;
+        height: 90px;
+    }
+
+    .class-carrito-item-right {
+        height: 90px;
+    }
+
+    .class-carrito-item-info {
+        height: 90px;
+    }
+
+    .class-carrito-item-img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .class-carrito-item-name {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .class-carrito-item-variant {
+        font-size: 15px;
+        line-height: 27px;
+    }
+
+    .class-carrito-item-price {
+        font-size: 15px;
+        line-height: 27px;
+    }
+
+    .class-carrito-item-qty {
+        width: 70px;
+        height: 29px;
+    }
+
+    .class-carrito-qty-btn {
+        width: 11.69px;
+    }
+
+    .class-carrito-qty-num {
+        font-size: 14px;
+    }
+
+    .class-carrito-coupon-form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .class-carrito-coupon-label {
+        font-size: 15px;
+    }
+
+    .class-carrito-coupon-input {
+        font-size: 13px;
+    }
+
+    .class-carrito-coupon-btn {
+        width: 100%;
+    }
+
+    .class-carrito-total-title {
+        text-align: center;
+        font-size: 20px;
+        border-top: 1px solid #dfdedb;
+        border-bottom: 1px solid #dfdedb;
+        padding: 16px 0;
+    }
+
+    .class-carrito-total-subtotal span:first-child {
+        font-size: 18px;
+    }
+
+    .class-carrito-total-subtotal span:last-child {
+        font-size: 16px;
+    }
+
+    .class-carrito-total-shipping span:first-child {
+        font-size: 18px;
+    }
+
+    .class-carrito-total-shipping span:last-child {
+        max-width: 160px;
+    }
+
+    .class-carrito-calcular-envio {
+        font-size: 18px;
+    }
+
+    .class-carrito-zone-trigger,
+    .class-carrito-provincia-trigger {
+        font-size: 14px;
+    }
+
+    .class-carrito-provincia-wrap {
+        margin-bottom: 34px;
+    }
+
+    .class-carrito-total-final {
+        padding-top: 28px;
+    }
+
+    .class-carrito-total-row.class-carrito-total-final span {
+        font-size: 18px;
+    }
+
+}

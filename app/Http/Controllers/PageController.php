@@ -87,6 +87,11 @@ class PageController extends Controller
         return view('pages.checkout.checkout');
     }
 
+    public function carrito()
+    {
+        return view('pages.carrito.carrito');
+    }
+
     public function blog()
     {
         $banner = Banner::forKey('blog');

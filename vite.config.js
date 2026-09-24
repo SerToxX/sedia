@@ -20,6 +20,7 @@ export default defineConfig({
                 'resources/css/sobre-nosotros.css',
                 'resources/css/libro-reclamaciones.css',
                 'resources/css/checkout.css',
+                'resources/css/carrito.css',
                 'resources/css/blog.css',
                 'resources/css/producto-detalle.css',
 
@@ -43,6 +44,7 @@ export default defineConfig({
                 'resources/js/libro-reclamaciones.js',
                 'resources/js/contactanos/form.js',
                 'resources/js/producto-detalle.js',
+                'resources/js/carrito.js',
             ],
             refresh: true,
         }),
