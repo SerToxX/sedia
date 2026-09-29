@@ -29,7 +29,7 @@
     ]
   },
   "resources/css/app.css": {
-    "file": "assets/app-B7Ysd4H1.css",
+    "file": "assets/app-TgvSQms3.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -44,6 +44,15 @@
     "name": "blog",
     "names": [
       "blog.css"
+    ]
+  },
+  "resources/css/carrito.css": {
+    "file": "assets/carrito-BTgfeuxR.css",
+    "src": "resources/css/carrito.css",
+    "isEntry": true,
+    "name": "carrito",
+    "names": [
+      "carrito.css"
     ]
   },
   "resources/css/checkout.css": {
@@ -65,7 +74,7 @@
     ]
   },
   "resources/css/index.css": {
-    "file": "assets/index-DLNrpFE0.css",
+    "file": "assets/index-j9VbJ0ee.css",
     "src": "resources/css/index.css",
     "isEntry": true,
     "name": "index",
@@ -171,6 +180,12 @@
     "file": "assets/app-DOJBkqrG.js",
     "name": "app",
     "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/carrito.js": {
+    "file": "assets/carrito-20rJ3u5X.js",
+    "name": "carrito",
+    "src": "resources/js/carrito.js",
     "isEntry": true
   },
   "resources/js/contactanos/form.js": {

@@ -596,6 +596,39 @@
     text-decoration: line-through;
 }
 
+/* Punto "hotspot" que reemplaza las tarjetas en móvil — oculto en escritorio */
+.class-featured-hotspot {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    transition: transform .2s ease;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+.class-featured-hotspot::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    pointer-events: none;
+}
+
+.class-featured-hotspot:active {
+    transform: scale(.92);
+}
+
 
 /* ================================================
    7. SEDIA PROJECT
@@ -661,7 +694,6 @@
     color: #fff;
     letter-spacing: 1.4px;
     text-decoration: none;
-    border-bottom: 1px solid rgba(255, 255, 255, .5);
     padding-bottom: 3px;
     width: fit-content;
     margin-top: 10px;
@@ -1118,8 +1150,14 @@
 
     /* HERO */
     .class-hero-title {
+        max-width: 280px;
         font-size: 36px;
-        line-height: .95;
+        line-height: 42px;
+        letter-spacing: -0.02em;
+    }
+
+    .class-hero-title br {
+        display: none;
     }
 
     .class-hero-button {
@@ -1128,16 +1166,18 @@
 
     /* ABOUT */
     .class-about {
-        padding: 60px 20px;
+        padding: 35px 20px 30px 20px;
     }
 
     .class-about-text {
         font-size: 15px;
+        margin-bottom: 30px;
     }
 
     /* CATEGORÍAS */
     .class-categories-title {
         font-size: 20px;
+        margin-bottom: 21px;
     }
 
     .class-cat-row {
@@ -1189,7 +1229,11 @@
     .class-section-title {
         font-size: 20px;
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 0px;
+    }
+
+    .class-promos {
+    padding: 0 0 23px;
     }
 
     .class-promos-grid {
@@ -1201,21 +1245,31 @@
     /* FEATURED */
     .class-featured {
         height: auto;
-        aspect-ratio: auto;
-        padding: 40px 20px;
+        aspect-ratio: 390 / 480;
+        padding: 0;
     }
 
     .class-featured-inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-        height: auto;
+        height: 100%;
     }
 
     .class-featured-card--left,
     .class-featured-card--right {
-        position: static;
+        display: none;
+    }
+
+    .class-featured-hotspot {
+        display: block;
+    }
+
+    .class-featured-hotspot--left {
+        top: 44%;
+        left: 27%;
+    }
+
+    .class-featured-hotspot--right {
+        top: 55%;
+        left: 52%;
     }
 
     /* SEDIA PROJECT */
@@ -1224,7 +1278,7 @@
         grid-template-rows: auto auto;
         height: auto;
         overflow: visible;
-        background: var(--sedia-green);
+        background: #C6C2B7;
         padding: 16px 16px 0;
     }
 
@@ -1243,7 +1297,7 @@
     }
 
     .class-sedia-sub {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .class-sedia-title {
@@ -1252,11 +1306,12 @@
 
     /* DISEÑO */
     .class-design {
-        padding: 50px 20px;
+        padding: 38px 20px 35px 20px;
     }
 
     .class-design-sub {
         font-size: 12px;
+        margin-bottom: 32px;
     }
 
     .class-design-body {
@@ -1311,12 +1366,13 @@
 
     .class-design-title {
         font-size: 30px;
+        margin-bottom: 32px;
     }
 
     /* BLOG */
     .class-blog {
         border-bottom: none;
-        margin-bottom: 39px;
+        margin-bottom: 0px;
     }
 
     .class-blog-featured {
@@ -1346,6 +1402,7 @@
 
     .class-blog-divider {
         margin-top: 0;
+        margin-bottom: 20px;
     }
 
     .class-blog-grid {
@@ -1372,6 +1429,7 @@
 
     .class-jobs-title {
         font-size: 36px;
+        margin-bottom: 25px;
     }
 
     .class-jobs-text {
@@ -1418,7 +1476,7 @@
 
     /* BLOG */
     .class-blog-featured {
-        padding: 30px 16px;
+        padding: 20px 16px;
     }
 
     .class-blog-grid {

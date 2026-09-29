@@ -710,12 +710,12 @@ CELULAR
 
     .class-header-container {
 
-        height: 80px;
+        height: 65px;
     }
 
     body {
 
-        padding-top: 80px;
+        padding-top: 65px;
     }
 
     .class-home,
@@ -742,7 +742,7 @@ CELULAR
 
     .class-header-menu-icon {
 
-        width: 18px;
+        width: 27px;
     }
 
     .class-header-search-icon img,
@@ -785,18 +785,18 @@ CELULAR
 
     .class-header-left {
 
-        font-size: 14px;
+        font-size: 16px;
         gap: 6px;
     }
 
     .class-header-menu-icon {
 
-        width: 16px;
+        width: 27px;
     }
 
     .class-header-logo {
 
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .class-header-right {

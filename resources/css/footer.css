@@ -254,12 +254,66 @@
     }
 
     .class-footer-content {
-        grid-template-columns: 1.5fr 1fr 1fr 1fr;
-        gap: 0 36px;
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 48px 0;
+        text-align: center;
+    }
+
+    /* Todas las columnas centradas, igual que en móvil */
+    .class-footer-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .class-footer-links {
+        align-items: center;
+    }
+
+    .class-footer-link-reclamaciones {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .class-footer-link-reclamaciones img {
+        width: 68px;
+        height: 28px;
+    }
+
+    .class-footer-social {
+        justify-content: center;
     }
 
     .class-footer-logo {
         font-size: 44px;
+    }
+
+    /* Tarjetas en una sola fila centrada */
+    .class-footer-payments {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    /* Tamaños de letra un poco más grandes que en móvil */
+    .class-footer-desc {
+        font-size: 16px;
+    }
+
+    .class-footer-col-title {
+        font-size: 18px;
+    }
+
+    .class-footer-links li {
+        font-size: 16px;
+    }
+
+    .class-footer-schedule {
+        font-size: 15px;
+    }
+
+    .class-footer-copy {
+        font-size: 14px;
     }
 }
 
@@ -278,40 +332,30 @@
         padding: 14px 20px;
     }
 
-    .class-footer-content {
-        grid-template-columns: 1fr;
-        gap: 32px;
-        padding: 48px 0;
-        text-align: center;
+    /* Tamaños de letra de vuelta a los de móvil (en tablet son +2/+4px) */
+    .class-footer-desc {
+        font-size: 13px;
     }
 
-    /* Todas las columnas centradas */
-    .class-footer-col {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .class-footer-col-title {
+        font-size: 15px;
     }
 
-    .class-footer-links {
-        align-items: center;
+    .class-footer-links li {
+        font-size: 13px;
     }
 
-    .class-footer-link-reclamaciones {
-        justify-content: center;
+    .class-footer-schedule {
+        font-size: 12px;
     }
 
-    .class-footer-social {
-        justify-content: center;
+    .class-footer-copy {
+        font-size: 12px;
     }
 
-    .class-footer-logo {
-        font-size: 44px;
-    }
-
-    /* Tarjetas en una sola fila centrada */
-    .class-footer-payments {
-        justify-content: center;
-        flex-wrap: nowrap;
+    .class-footer-link-reclamaciones img {
+        width: 57px;
+        height: 23px;
     }
 }
 
@@ -327,7 +371,7 @@
     }
 
     .class-footer-desc {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     /* En pantallas muy pequeñas permitir wrap para que no desborden */

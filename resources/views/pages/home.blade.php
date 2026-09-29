@@ -236,6 +236,9 @@
             </div>
         </a>
 
+        <a href="#" class="class-featured-hotspot class-featured-hotspot--left" aria-label="Ver producto Luna"></a>
+        <a href="#" class="class-featured-hotspot class-featured-hotspot--right" aria-label="Ver producto Mesa en U"></a>
+
     </div>
 
 </section>
