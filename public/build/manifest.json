@@ -119,7 +119,7 @@
     ]
   },
   "resources/css/producto-detalle.css": {
-    "file": "assets/producto-detalle-9m2gYwmF.css",
+    "file": "assets/producto-detalle-DYbEw7-t.css",
     "src": "resources/css/producto-detalle.css",
     "isEntry": true,
     "name": "producto-detalle",
@@ -198,7 +198,7 @@
     ]
   },
   "resources/js/header.js": {
-    "file": "assets/header-BhJYHPoM.js",
+    "file": "assets/header-D8whesET.js",
     "name": "header",
     "src": "resources/js/header.js",
     "isEntry": true
@@ -231,7 +231,7 @@
     ]
   },
   "resources/js/producto-detalle.js": {
-    "file": "assets/producto-detalle-BoAvrk1T.js",
+    "file": "assets/producto-detalle-0eLsuADa.js",
     "name": "producto-detalle",
     "src": "resources/js/producto-detalle.js",
     "isEntry": true

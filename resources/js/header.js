@@ -141,14 +141,14 @@ function setCart(items) {
     renderCart()
 }
 
-function addToCart({ id, name, price, image, category }) {
+function addToCart({ id, name, price, image, category, qty = 1 }) {
     const cart = getCart()
     const existing = cart.find(item => item.id === id)
 
     if (existing) {
-        existing.qty += 1
+        existing.qty += qty
     } else {
-        cart.push({ id, name, price, image, category, qty: 1 })
+        cart.push({ id, name, price, image, category, qty })
     }
 
     setCart(cart)
@@ -249,15 +249,17 @@ document.addEventListener("click", (e) => {
         price: parseFloat(addBtn.dataset.cartPrice) || 0,
         image: addBtn.dataset.cartImage,
         category: addBtn.dataset.cartCategory || "",
+        qty: parseInt(addBtn.dataset.cartQty, 10) || 1,
     })
 
     document.body.classList.add("carrito-open")
 
+    const label = addBtn.dataset.cartLabel || "Añadir al carrito"
     addBtn.classList.add("is-added")
     addBtn.textContent = "Añadido ✓"
     setTimeout(() => {
         addBtn.classList.remove("is-added")
-        addBtn.textContent = "Añadir al carrito"
+        addBtn.textContent = label
     }, 1400)
 })
 
@@ -282,6 +284,9 @@ document.addEventListener("click", (e) => {
 })
 
 renderCart()
+
+/* API mínima reutilizable desde otras páginas (p. ej. ficha de producto) */
+window.sediaCart = { add: addToCart, getCart }
 
 /* =========================
 DROPDOWN

@@ -40,7 +40,14 @@ class PageController extends Controller
     {
         abort_unless($product->active, 404);
 
-        return view('pages.producto-detalle', compact('product'));
+        $relacionados = Product::where('active', true)
+            ->where('id', '!=', $product->id)
+            ->with('images')
+            ->orderByDesc('id')
+            ->take(5)
+            ->get();
+
+        return view('pages.producto-detalle', compact('product', 'relacionados'));
     }
 
     public function preguntasFrecuentes()
