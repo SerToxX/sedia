@@ -179,16 +179,16 @@
     </div>
 
     {{-- ============ MARCA / HISTORIA ============ --}}
-    <div class="class-producto-brand">
+    <section class="class-producto-brand">
         <h2>{{ Str::upper($product->name) }}</h2>
         <span class="class-producto-brand-tag">Diseño italiano moderno</span>
         <p>Producto italiano de un solo bloque con filtro UV, que garantiza su gran calidad, ya que está hecha con fibra de vidrio reforzado y tecnología de moldeo por aire.</p>
-    </div>
+    </section>
 
     {{-- ============ IMAGEN AMBIENTE ============ --}}
-    <div class="class-producto-lifestyle">
+    <section class="class-producto-lifestyle">
         <img src="{{ asset('image/ambiente1.png') }}" alt="{{ $product->name }} en ambiente" loading="lazy">
-    </div>
+    </section>
 
     {{-- ============ RECOMENDADOS ============ --}}
     @if ($relacionados->isNotEmpty())

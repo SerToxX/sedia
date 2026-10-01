@@ -8,7 +8,7 @@
 .class-producto {
     --pad-x: 40px;
     background: var(--sedia-white);
-    padding: 29px var(--pad-x);
+    padding: 29px 0px;
 }
 
 .class-producto-container {
