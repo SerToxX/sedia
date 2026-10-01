@@ -263,12 +263,12 @@
     gap: 18px;
     padding-top: 24px;
     border-top: 1px solid var(--sedia-border);
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 .class-producto-benefit {
     display: flex;
     align-items: flex-start;
-    gap: 14px;
+    gap: 16px;
 }
 .class-producto-benefit-icon {
     width: 34px;
@@ -317,11 +317,11 @@
     letter-spacing: 0.2px;
     text-transform: uppercase;
     color: #000000;
-    margin: 0 0 14px;
+    margin: 0 0 16px;
 }
 
 .class-producto-description p {
-    margin: 0 0 20px;
+    margin: 0 0 28px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -335,6 +335,7 @@
     flex-wrap: wrap;
     align-items: baseline;
     column-gap: 24px;
+    margin-bottom: 20px;
 }
 .class-producto-medidas h3 { flex: 0 0 auto; margin-bottom: 0; }
 .class-producto-medidas ul {
@@ -356,16 +357,16 @@
     color: var(--sedia-dark);
 }
 
-.class-producto-extra { margin-bottom: 24px; }
+.class-producto-extra { padding-bottom: 27px; border-bottom: 1px solid var(--sedia-border); }
 .class-producto-extra-list {
     display: flex;
-    gap: 40px;
+    gap: 80px;
 }
 .class-producto-extra-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: 15px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 12px;
@@ -377,6 +378,7 @@
 .class-producto-extra-icon {
     width: 42px;
     height: 42px;
+    flex-shrink: 0;
     color: var(--sedia-dark);
 }
 .class-producto-extra-icon svg { width: 100%; height: 100%; }
@@ -386,8 +388,8 @@
 ================================================ */
 .class-producto-brand {
     max-width: 640px;
-    margin: 56px auto 0;
-    padding: 0 var(--pad-x) 48px;
+    margin: 62px auto 0;
+    padding: 0 var(--pad-x) 55px;
     text-align: center;
 }
 .class-producto-brand h2 {
@@ -410,7 +412,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #212121;
-    margin-bottom: 18px;
+    margin-bottom: 5px;
 }
 .class-producto-brand p {
     margin: 0;
@@ -441,10 +443,10 @@
 /* ================================================
    PRODUCTOS RECOMENDADOS
 ================================================ */
-.class-producto-related {
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 48px var(--pad-x) 64px;
+.class-producto-related-title-section {
+    width: calc(100% + 2 * var(--pad-x));
+    margin-left: calc(-1 * var(--pad-x));
+    margin-right: calc(-1 * var(--pad-x));
 }
 .class-producto-related-title {
     text-align: center;
@@ -454,9 +456,14 @@
     line-height: 42px;
     letter-spacing: -0.02em;
     color: var(--sedia-dark);
-    padding-bottom: 18px;
+    margin-top: 22px;
+    padding: 18px 16px;
+    border-top: 1px solid var(--sedia-border);
     border-bottom: 1px solid var(--sedia-border);
-    margin: 0 0 36px;
+}
+.class-producto-related {
+    max-width: 1600px;
+    margin: 87px auto 0;
 }
 .class-producto-related-grid {
     display: grid;
@@ -512,8 +519,8 @@
     .class-producto-brand { padding: 0 20px 40px; margin-top: 40px; }
     .class-producto-brand h2 { font-size: 24px; }
 
-    .class-producto-related { padding: 32px 0 48px; }
-    .class-producto-related-title { margin: 0 20px 24px; }
+    .class-producto-related { margin-top: 0; padding: 32px 0 48px; }
+    .class-producto-related-title { font-size: 24px; line-height: 1.3; }
     .class-producto-related-grid {
         grid-template-columns: none;
         grid-auto-columns: 46%;

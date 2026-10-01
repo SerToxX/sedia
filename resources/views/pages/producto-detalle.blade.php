@@ -192,9 +192,11 @@
 
     {{-- ============ RECOMENDADOS ============ --}}
     @if ($relacionados->isNotEmpty())
-        <div class="class-producto-related">
+        <section class="class-producto-related-title-section">
             <h2 class="class-producto-related-title">Productos recomendados</h2>
+        </section>
 
+        <div class="class-producto-related">
             <div class="class-producto-related-grid">
                 @foreach ($relacionados as $rel)
                     <x-product-card
@@ -211,6 +213,7 @@
             </div>
         </div>
     @endif
+
 
 </div>
 
