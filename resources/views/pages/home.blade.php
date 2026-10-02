@@ -249,20 +249,26 @@
 ===================================================== --}}
 <section class="class-sedia-project">
 
-    <div class="class-sedia-left">
-        <p class="class-sedia-sub">Soluciones a medida</p>
-        <h2 class="class-sedia-title">SEDIA PROJECT</h2>
-        <p class="class-sedia-text">
-            Ofrece soluciones profesionales en sillas para proyectos comerciales, arquitectónicos
-            y de diseño. Equipamos espacios con piezas duraderas, funcionales y estéticas,
-            adaptadas al concepto y necesidad de cada cliente.
-        </p>
-        <a href="/nosotros" class="class-sedia-link">MÁS INFORMACIÓN</a>
-    </div>
+    <div class="class-sedia-inner">
 
-    <div class="class-sedia-right">
-        <img src="{{ asset('image/sedia-project.jpg') }}"
-             alt="Sedia Project" loading="lazy" decoding="async">
+        <div class="class-sedia-left">
+            <p class="class-sedia-sub">Soluciones a medida</p>
+            <h2 class="class-sedia-title">SEDIA PROJECT</h2>
+            <p class="class-sedia-text">
+                Ofrece soluciones profesionales en sillas para proyectos comerciales, arquitectónicos
+                y de diseño. Equipamos espacios con piezas duraderas, funcionales y estéticas,
+                adaptadas al concepto y necesidad de cada cliente.
+            </p>
+            <a href="/nosotros" class="class-sedia-link">MÁS INFORMACIÓN</a>
+        </div>
+
+        <div class="class-sedia-right">
+            <div class="class-sedia-right-bleed">
+                <img src="{{ asset('image/sedia-project.jpg') }}"
+                     alt="Sedia Project" loading="lazy" decoding="async">
+            </div>
+        </div>
+
     </div>
 
 </section>

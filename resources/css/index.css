@@ -154,7 +154,7 @@
     display: grid;
     gap: 10px;
     width: 100%;
-    max-width: 1600px;
+    /* max-width: 1600px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -448,7 +448,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    max-width: 1600px;
+    /* max-width: 1600px; */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
@@ -635,15 +635,36 @@
 ================================================ */
 
 .class-sedia-project {
+    position: relative;
+    width: 100%;
+    /* max-width: 1600px; */
+    margin-left: auto;
+    margin-right: auto;
+    background: #B5B0A1;
+    overflow: hidden;
+}
+
+.class-sedia-inner {
     display: grid;
     grid-template-columns: 43% 57%;
     grid-template-rows: 480px;
     width: 100%;
     max-width: 1600px;
     height: 480px;
-    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Por encima de 1600px la columna de texto queda fija (43% de 1600 = 688px) y la
+   imagen de la derecha sangra hasta el borde de la ventana. Si la altura se quedara
+   fija en 480px, el recorte de la foto se volvería cada vez más panorámico y se
+   vería "aplastada". Por eso, igual que .class-featured, la altura crece con el
+   ancho manteniendo la proporción original de la foto (912 / 480). */
+@media (min-width: 1601px) {
+    .class-sedia-inner {
+        height: calc(480px + (100vw - 1600px) / 3.8);
+        grid-template-rows: calc(480px + (100vw - 1600px) / 3.8);
+    }
 }
 
 .class-sedia-left {
@@ -682,7 +703,7 @@
     font-weight: 500;
     color: #fff;
     line-height: 1.65;
-    max-width: 340px;
+    max-width: 540px;
     margin: 0;
 }
 
@@ -706,10 +727,22 @@
 
 .class-sedia-right {
     height: 100%;
-    overflow: hidden;
+    position: relative;
+    overflow: visible;
 }
 
-.class-sedia-right img {
+.class-sedia-right-bleed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    /* En pantallas >1600px, estira el borde derecho hasta el borde real de la ventana
+       (misma distancia que .class-sedia-inner deja de margen al centrarse a 1600px),
+       para que la foto llegue al borde sin mover el texto de la izquierda. */
+    right: calc(-1 * max(0px, (100vw - 1600px) / 2));
+}
+
+.class-sedia-right-bleed img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -775,10 +808,24 @@
     grid-template-rows: 234px 234px 480px;
     gap: 12px;
     width: 100%;
-    max-width: 1600px;
+    /* max-width: 1600px; */
     padding-top: 12px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Igual que .class-sedia-inner: por encima de 1600px la columna 1fr sigue creciendo
+   sin tope (ya se quitó el max-width), así que con filas fijas en px las fotos se
+   verían cada vez más "aplastadas". Las filas escalan para conservar la proporción
+   original (medida a los 1600px de referencia: foto principal 1298x480, foto
+   inferior 1600x480). */
+@media (min-width: 1601px) {
+    .class-design-collage {
+        grid-template-rows:
+            calc(((100vw - 302px) * 480 / 1298 - 12px) / 2)
+            calc(((100vw - 302px) * 480 / 1298 - 12px) / 2)
+            calc(100vw * 480 / 1600);
+    }
 }
 
 .class-design-main {
@@ -1001,7 +1048,7 @@
 .class-jobs {
     position: relative;
     width: 100%;
-    max-width: 1600px;
+    /* max-width: 1600px; */
     height: auto;
     aspect-ratio: 1920 / 800;
     margin-left: auto;
@@ -1088,7 +1135,7 @@
     }
 
     /* SEDIA PROJECT */
-    .class-sedia-project {
+    .class-sedia-inner {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -1274,12 +1321,15 @@
 
     /* SEDIA PROJECT */
     .class-sedia-project {
+        background: #C6C2B7;
+        padding: 16px 16px 0;
+    }
+
+    .class-sedia-inner {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
         height: auto;
         overflow: visible;
-        background: #C6C2B7;
-        padding: 16px 16px 0;
     }
 
     .class-sedia-right {
