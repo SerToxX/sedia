@@ -28,12 +28,15 @@ HERO SOBRE NOSOTROS
 
 .class-sobre-nosotros-hero-container {
 
+    width: 100%;
     height: 100%;
 
-    margin: 0 40px;
+    margin: auto;
+    padding: 0 40px;
 
     display: flex;
     align-items: center;
+    box-sizing: border-box;
 }
 
 /* TEXTO */
@@ -65,11 +68,14 @@ VALORES SOBRE NOSOTROS
 
 .class-nosotros-valores-container {
 
+    width: 100%;
+    box-sizing: border-box;
+
     display: flex;
     align-items: flex-start;
 
-    
-    margin: 0 40px;
+    margin: auto;
+    padding: 0 40px;
 
     gap: 109px;
 }
@@ -245,8 +251,11 @@ HISTORIA SOBRE NOSOTROS
 
 .class-nosotros-historia-container {
 
-    
-    margin: 0 40px;
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: auto;
+    padding: 0 40px;
 }
 
 
@@ -355,8 +364,10 @@ SERVICIO SOBRE NOSOTROS
 
 .class-nosotros-servicio-container {
 
-    
-    margin: 0 40px;
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: auto;
 
     display: flex;
     align-items: center;
@@ -365,6 +376,8 @@ SERVICIO SOBRE NOSOTROS
 
     padding-top: 35px;
     padding-bottom: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 
@@ -442,8 +455,11 @@ AMBIENTES
 
 .class-nosotros-ambientes-container {
 
-    
-    margin: 0 40px;
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: auto;
+    padding: 0 40px;
 }
 
 
@@ -562,11 +578,14 @@ PROJECT SOBRE NOSOTROS
 .class-nosotros-project-container {
 
     width: 100%;
-    
-    margin: 0 40px;
+    box-sizing: border-box;
+
+    margin: auto;
+    padding: 0 40px;
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
 }
 
@@ -706,12 +725,15 @@ PC
     .class-sobre-nosotros-hero-container {
 
         max-width: 1600px;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .class-nosotros-valores-container {
 
         max-width: 1600px;
         margin: 0 auto;
+        padding: 0;
 
         gap: 220px;
     }
@@ -739,6 +761,8 @@ PC
     .class-nosotros-historia-container {
 
         max-width: 1600px;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .class-nosotros-historia-img-wrap {
@@ -762,6 +786,8 @@ PC
 
         max-width: 1600px;
         margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
 
         gap: 120px;
     }
@@ -790,6 +816,8 @@ PC
     .class-nosotros-ambientes-container {
 
         max-width: 1600px;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .class-nosotros-ambientes-grid {
@@ -808,6 +836,13 @@ PC
 
         width: 510px;
         height: 780px;
+    }
+
+    .class-nosotros-project-container {
+
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 0;
     }
 
 }
@@ -1126,6 +1161,8 @@ CELULAR
         margin: 0;
         padding-top: 0;
         padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
         gap: 25px;
     }
 
