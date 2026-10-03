@@ -50,7 +50,7 @@
             </div>
 
             <div class="class-politicas-devolucion-side">
-                CONDICIONES<br>GENERALES
+                CONDICIONES <br>GENERALES
             </div>
 
         </div>
@@ -61,7 +61,7 @@
         <div class="class-politicas-devolucion-card">
 
             <div class="class-politicas-devolucion-side">
-                MOTIVOS DE<br>DEVOLUCIÓN<br>ACEPTADOS
+                MOTIVOS DE <br>DEVOLUCIÓN <br>ACEPTADOS
             </div>
 
             <div class="class-politicas-devolucion-text">
@@ -121,7 +121,7 @@
             </div>
 
             <div class="class-politicas-devolucion-side">
-                OPCIONES DE<br>SOLUCIÓN
+                OPCIONES DE <br>SOLUCIÓN
             </div>
 
         </div>
@@ -149,60 +149,76 @@
 
             <div class="class-politicas-devolucion-step active" data-step="0">
 
-                <svg viewBox="0 0 350 52" class="step-svg">
+                <svg viewBox="0 0 350 52" preserveAspectRatio="none" class="step-svg">
 
                     <polygon class="step-shape" points="0,0 325,0 350,26 325,52 0,52" />
 
                     <text x="46%" y="50%" dominant-baseline="middle" text-anchor="middle">
-                        <tspan font-weight="600">Paso 1:</tspan> Notificación
+                        <tspan class="step-num" font-weight="600">Paso 1</tspan><tspan class="step-colon" font-weight="600">:</tspan><tspan class="step-label"> Notificación</tspan>
                     </text>
 
                 </svg>
+
+                <div class="step-text-mobile">
+                    <span class="step-line1-m"><span class="step-num-m">Paso 1</span><span class="step-colon-m">:</span></span><span class="step-label-m"> Notificación</span>
+                </div>
 
             </div>
 
 
             <div class="class-politicas-devolucion-step" data-step="1">
 
-                <svg viewBox="0 0 350 52" class="step-svg">
+                <svg viewBox="0 0 350 52" preserveAspectRatio="none" class="step-svg">
 
                     <polygon class="step-shape" points="0,0 325,0 350,26 325,52 0,52 25,26" />
 
                     <text x="46%" y="50%" dominant-baseline="middle" text-anchor="middle">
-                        <tspan font-weight="600">Paso 2:</tspan> Instrucciones
+                        <tspan class="step-num" font-weight="600">Paso 2</tspan><tspan class="step-colon" font-weight="600">:</tspan><tspan class="step-label"> Instrucciones</tspan>
                     </text>
 
                 </svg>
+
+                <div class="step-text-mobile">
+                    <span class="step-line1-m"><span class="step-num-m">Paso 2</span><span class="step-colon-m">:</span></span><span class="step-label-m"> Instrucciones</span>
+                </div>
 
             </div>
 
 
             <div class="class-politicas-devolucion-step" data-step="2">
 
-                <svg viewBox="0 0 350 52" class="step-svg">
+                <svg viewBox="0 0 350 52" preserveAspectRatio="none" class="step-svg">
 
                     <polygon class="step-shape" points="0,0 325,0 350,26 325,52 0,52 25,26" />
 
                     <text x="46%" y="50%" dominant-baseline="middle" text-anchor="middle">
-                        <tspan font-weight="600">Paso 3:</tspan> Envío del artículo
+                        <tspan class="step-num" font-weight="600">Paso 3</tspan><tspan class="step-colon" font-weight="600">:</tspan><tspan class="step-label"> Envío del artículo</tspan>
                     </text>
 
                 </svg>
+
+                <div class="step-text-mobile">
+                    <span class="step-line1-m"><span class="step-num-m">Paso 3</span><span class="step-colon-m">:</span></span><span class="step-label-m"> Envío del artículo</span>
+                </div>
 
             </div>
 
 
             <div class="class-politicas-devolucion-step" data-step="3">
 
-                <svg viewBox="0 0 350 52" class="step-svg">
+                <svg viewBox="0 0 350 52" preserveAspectRatio="none" class="step-svg">
 
                     <polygon class="step-shape" points="0,0 350,0 350,52 0,52 25,26" />
 
                     <text x="46%" y="50%" dominant-baseline="middle" text-anchor="middle">
-                        <tspan font-weight="600">Paso 4:</tspan> Procesamiento
+                        <tspan class="step-num" font-weight="600">Paso 4</tspan><tspan class="step-colon" font-weight="600">:</tspan><tspan class="step-label"> Procesamiento</tspan>
                     </text>
 
                 </svg>
+
+                <div class="step-text-mobile">
+                    <span class="step-line1-m"><span class="step-num-m">Paso 4</span><span class="step-colon-m">:</span></span><span class="step-label-m"> Procesamiento</span>
+                </div>
 
             </div>
 

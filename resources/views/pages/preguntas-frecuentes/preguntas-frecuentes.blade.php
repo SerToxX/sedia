@@ -27,15 +27,7 @@ Preguntas frecuentes
 
 <div class="class-preguntas-frecuentes-answer">
 <p>
-1. Elige el modelo, la cantidad y el color del tapiz.<br>
-<strong>NOTA:</strong> En el caso de muebles, selecciona también los colores de melamina y estructura metálica disponibles.<br>
-2. Agrega el producto al carrito de compras.<br>
-3. Ingresa al carrito y haz clic en Finalizar compra.<br>
-4. Completa tus datos: nombre, dirección, teléfono, etc.<br>
-5. Selecciona el método de pago de tu preferencia.<br>
-6. Marca la casilla “He leído y estoy de acuerdo con los términos y condiciones de la web”.<br>
-7. Haz clic en “Realizar pedido”.<br>
-Finalmente, Recibirás un correo de confirmación con los datos de tu pedido y los números de cuenta para transferencia, o podrás pagar directamente con tarjeta.
+El tiempo de entrega depende de tu ubicación y la disponibilidad del producto. Generalmente, los pedidos se entregan entre 24 y 72 horas en Lima Metropolitana. Para otras zonas, el plazo puede variar. Te confirmaremos la fecha exacta al realizar tu compra.
 </p>
 </div>
 
@@ -45,21 +37,13 @@ Finalmente, Recibirás un correo de confirmación con los datos de tu pedido y l
 <div class="class-preguntas-frecuentes-item">
 
 <div class="class-preguntas-frecuentes-question">
-<span>¿Cómo puedo asegurarme de que el producto cabrá por la puerta o en el ascensor de mi casa?</span>
+<span>¿Cómo sabré si el producto pasa por la puerta?</span>
 <div class="class-preguntas-frecuentes-arrow"></div>
 </div>
 
 <div class="class-preguntas-frecuentes-answer">
 <p>
-1. Elige el modelo, la cantidad y el color del tapiz.<br>
-<strong>NOTA:</strong> En el caso de muebles, selecciona también los colores de melamina y estructura metálica disponibles.<br>
-2. Agrega el producto al carrito de compras.<br>
-3. Ingresa al carrito y haz clic en Finalizar compra.<br>
-4. Completa tus datos: nombre, dirección, teléfono, etc.<br>
-5. Selecciona el método de pago de tu preferencia.<br>
-6. Marca la casilla “He leído y estoy de acuerdo con los términos y condiciones de la web”.<br>
-7. Haz clic en “Realizar pedido”.<br>
-Finalmente, Recibirás un correo de confirmación con los datos de tu pedido y los números de cuenta para transferencia, o podrás pagar directamente con tarjeta.
+Te brindamos las medidas exactas del producto para que puedas compararlas con el acceso de tu espacio. Si tienes dudas, nuestro equipo puede asesorarte antes de la compra.
 </p>
 </div>
 
@@ -75,15 +59,7 @@ Finalmente, Recibirás un correo de confirmación con los datos de tu pedido y l
 
 <div class="class-preguntas-frecuentes-answer">
 <p>
-1. Elige el modelo, la cantidad y el color del tapiz.<br>
-<strong>NOTA:</strong> En el caso de muebles, selecciona también los colores de melamina y estructura metálica disponibles.<br>
-2. Agrega el producto al carrito de compras.<br>
-3. Ingresa al carrito y haz clic en Finalizar compra.<br>
-4. Completa tus datos: nombre, dirección, teléfono, etc.<br>
-5. Selecciona el método de pago de tu preferencia.<br>
-6. Marca la casilla “He leído y estoy de acuerdo con los términos y condiciones de la web”.<br>
-7. Haz clic en “Realizar pedido”.<br>
-Finalmente, Recibirás un correo de confirmación con los datos de tu pedido y los números de cuenta para transferencia, o podrás pagar directamente con tarjeta.
+Revisa que el producto esté en buen estado y coincida con tu pedido. Si notas algún detalle, repórtalo de inmediato a nuestro equipo.
 </p>
 </div>
 
@@ -99,15 +75,7 @@ Finalmente, Recibirás un correo de confirmación con los datos de tu pedido y l
 
 <div class="class-preguntas-frecuentes-answer">
 <p>
-1. Elige el modelo, la cantidad y el color del tapiz.<br>
-<strong>NOTA:</strong> En el caso de muebles, selecciona también los colores de melamina y estructura metálica disponibles.<br>
-2. Agrega el producto al carrito de compras.<br>
-3. Ingresa al carrito y haz clic en Finalizar compra.<br>
-4. Completa tus datos: nombre, dirección, teléfono, etc.<br>
-5. Selecciona el método de pago de tu preferencia.<br>
-6. Marca la casilla “He leído y estoy de acuerdo con los términos y condiciones de la web”.<br>
-7. Haz clic en “Realizar pedido”.<br>
-Finalmente, Recibirás un correo de confirmación con los datos de tu pedido y los números de cuenta para transferencia, o podrás pagar directamente con tarjeta.
+La mayoría de nuestros productos se entregan listos para usar. En algunos casos, pueden requerir un armado sencillo.
 </p>
 </div>
 
@@ -123,15 +91,7 @@ Finalmente, Recibirás un correo de confirmación con los datos de tu pedido y l
 
 <div class="class-preguntas-frecuentes-answer">
 <p>
-1. Elige el modelo, la cantidad y el color del tapiz.<br>
-<strong>NOTA:</strong> En el caso de muebles, selecciona también los colores de melamina y estructura metálica disponibles.<br>
-2. Agrega el producto al carrito de compras.<br>
-3. Ingresa al carrito y haz clic en Finalizar compra.<br>
-4. Completa tus datos: nombre, dirección, teléfono, etc.<br>
-5. Selecciona el método de pago de tu preferencia.<br>
-6. Marca la casilla “He leído y estoy de acuerdo con los términos y condiciones de la web”.<br>
-7. Haz clic en “Realizar pedido”.<br>
-Finalmente, Recibirás un correo de confirmación con los datos de tu pedido y los números de cuenta para transferencia, o podrás pagar directamente con tarjeta.
+Primero verifica si tu caso aplica en nuestra política de devoluciones. Ahí encontrarás los requisitos y pasos a seguir para iniciar el proceso.
 </p>
 </div>
 
@@ -147,15 +107,7 @@ Finalmente, Recibirás un correo de confirmación con los datos de tu pedido y l
 
 <div class="class-preguntas-frecuentes-answer">
 <p>
-1. Elige el modelo, la cantidad y el color del tapiz.<br>
-<strong>NOTA:</strong> En el caso de muebles, selecciona también los colores de melamina y estructura metálica disponibles.<br>
-2. Agrega el producto al carrito de compras.<br>
-3. Ingresa al carrito y haz clic en Finalizar compra.<br>
-4. Completa tus datos: nombre, dirección, teléfono, etc.<br>
-5. Selecciona el método de pago de tu preferencia.<br>
-6. Marca la casilla “He leído y estoy de acuerdo con los términos y condiciones de la web”.<br>
-7. Haz clic en “Realizar pedido”.<br>
-Finalmente, Recibirás un correo de confirmación con los datos de tu pedido y los números de cuenta para transferencia, o podrás pagar directamente con tarjeta.
+Nuestros productos cuentan con garantía por defectos de fabricación. El tiempo y condiciones específicas se detallan en la visualizacion de cada producto.
 </p>
 </div>
 
@@ -165,22 +117,29 @@ Finalmente, Recibirás un correo de confirmación con los datos de tu pedido y l
 <div class="class-preguntas-frecuentes-item">
 
 <div class="class-preguntas-frecuentes-question">
-<span>¿Cuándo recibiré el reembolso después de cancelar o devolver un producto?</span>
+<span>¿Cuánto tarda el reembolso?</span>
 <div class="class-preguntas-frecuentes-arrow"></div>
 </div>
 
 <div class="class-preguntas-frecuentes-answer">
 <p>
-1. Elige el modelo, la cantidad y el color del tapiz.<br>
-<strong>NOTA:</strong> En el caso de muebles, selecciona también los colores de melamina y estructura metálica disponibles.<br>
-2. Agrega el producto al carrito de compras.<br>
-3. Ingresa al carrito y haz clic en Finalizar compra.<br>
-4. Completa tus datos: nombre, dirección, teléfono, etc.<br>
-5. Selecciona el método de pago de tu preferencia.<br>
-6. Marca la casilla “He leído y estoy de acuerdo con los términos y condiciones de la web”.<br>
-7. Haz clic en “Realizar pedido”.<br>
-Finalmente, Recibirás un correo de confirmación con los datos de tu pedido y los números de cuenta para transferencia, o podrás pagar directamente con tarjeta.
+Una vez aprobado, el tiempo de reembolso puede variar según el motivo y el método de pago. Te indicaremos el plazo exacto durante el proceso.
 </p>
+</div>
+
+</div>
+
+
+<div class="class-preguntas-frecuentes-item">
+
+<div class="class-preguntas-frecuentes-question">
+<span>¿Cuánto cuesta el envío a provincias?</span>
+<div class="class-preguntas-frecuentes-arrow"></div>
+</div>
+
+<div class="class-preguntas-frecuentes-answer">
+<p>
+El costo de envío depende de la agencia de transporte y la ciudad de destino. Nosotros llevamos tu pedido sin costo a la agencia; desde ahí, el precio lo define la propia agencia.</p>
 </div>
 
 </div>

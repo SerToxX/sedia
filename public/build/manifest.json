@@ -29,7 +29,7 @@
     ]
   },
   "resources/css/app.css": {
-    "file": "assets/app-TgvSQms3.css",
+    "file": "assets/app-DUF0oaKO.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -101,7 +101,7 @@
     ]
   },
   "resources/css/politicas-devolucion.css": {
-    "file": "assets/politicas-devolucion-B8zbUSUV.css",
+    "file": "assets/politicas-devolucion-BOolzikr.css",
     "src": "resources/css/politicas-devolucion.css",
     "isEntry": true,
     "name": "politicas-devolucion",
@@ -110,7 +110,7 @@
     ]
   },
   "resources/css/preguntas-frecuentes.css": {
-    "file": "assets/preguntas-frecuentes-BZTt7Iyy.css",
+    "file": "assets/preguntas-frecuentes-qROhCQPa.css",
     "src": "resources/css/preguntas-frecuentes.css",
     "isEntry": true,
     "name": "preguntas-frecuentes",
@@ -137,7 +137,7 @@
     ]
   },
   "resources/css/sobre-nosotros.css": {
-    "file": "assets/sobre-nosotros-ChgFmLLI.css",
+    "file": "assets/sobre-nosotros-BaaeJqoa.css",
     "src": "resources/css/sobre-nosotros.css",
     "isEntry": true,
     "name": "sobre-nosotros",
@@ -216,7 +216,7 @@
     "isEntry": true
   },
   "resources/js/politicas-devolucion.js": {
-    "file": "assets/politicas-devolucion-DUbnPVsl.js",
+    "file": "assets/politicas-devolucion-9FZ5yvOh.js",
     "name": "politicas-devolucion",
     "src": "resources/js/politicas-devolucion.js",
     "isEntry": true
