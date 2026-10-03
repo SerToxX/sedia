@@ -28,10 +28,9 @@ HERO SOBRE NOSOTROS
 
 .class-sobre-nosotros-hero-container {
 
-    max-width: 1216px;
     height: 100%;
 
-    margin: 0 auto;
+    margin: 0 40px;
 
     display: flex;
     align-items: center;
@@ -69,8 +68,8 @@ VALORES SOBRE NOSOTROS
     display: flex;
     align-items: flex-start;
 
-    max-width: 1216px;
-    margin: 0 auto;
+    
+    margin: 0 40px;
 
     gap: 109px;
 }
@@ -246,8 +245,8 @@ HISTORIA SOBRE NOSOTROS
 
 .class-nosotros-historia-container {
 
-    max-width: 1216px;
-    margin: 0 auto;
+    
+    margin: 0 40px;
 }
 
 
@@ -356,8 +355,8 @@ SERVICIO SOBRE NOSOTROS
 
 .class-nosotros-servicio-container {
 
-    max-width: 1216px;
-    margin: 0 auto;
+    
+    margin: 0 40px;
 
     display: flex;
     align-items: center;
@@ -443,8 +442,8 @@ AMBIENTES
 
 .class-nosotros-ambientes-container {
 
-    max-width: 1216px;
-    margin: 0 auto;
+    
+    margin: 0 40px;
 }
 
 
@@ -563,8 +562,8 @@ PROJECT SOBRE NOSOTROS
 .class-nosotros-project-container {
 
     width: 100%;
-    max-width: 1216px;
-    margin: 0 auto;
+    
+    margin: 0 40px;
 
     display: flex;
     align-items: center;
@@ -937,12 +936,14 @@ CELULAR
     .class-nosotros-project-container {
         flex-direction: column;
         align-items: center;
+        margin: 0;
         padding-left: 20px;
         padding-right: 20px;
         gap: 30px;
     }
 
     .class-nosotros-historia-container {
+        margin: 0;
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -969,6 +970,7 @@ CELULAR
 
     .class-nosotros-project-button {
         width: 100%;
+        max-width: 242px;
     }
 
     .class-nosotros-project-img {
@@ -981,6 +983,7 @@ CELULAR
 
     .class-sobre-nosotros-hero-container {
 
+        margin: 0;
         padding-left: 20px;
         padding-right: 20px;
         justify-content: center;
@@ -1014,9 +1017,9 @@ CELULAR
 
         flex-direction: column;
 
+        margin: 0 0 43px;
         padding-left: 20px;
         padding-right: 20px;
-        margin-bottom: 43px;
         gap: 40px;
     }
 
@@ -1120,6 +1123,7 @@ CELULAR
         flex-direction: column;
         align-items: flex-start;
 
+        margin: 0;
         padding-top: 0;
         padding-bottom: 0;
         gap: 25px;
@@ -1153,7 +1157,7 @@ CELULAR
     .class-nosotros-ambientes-container{
         padding-left: 0px;
         padding-right: 0px;
-        margin: 0px auto 25px;
+        margin: 0 0 25px;
     }
 
     .class-nosotros-ambientes-text {
