@@ -2,7 +2,7 @@
 
 .class-reclamaciones-section{
     width: 100%;
-    padding: 70px 40px;
+    padding: 94px 40px;
     overflow: hidden;
 }
 
@@ -24,11 +24,11 @@
     align-items: center;
     justify-content: center;
 
-    gap: 26px;
+    gap: 40px;
 
     text-align: center;
 
-    margin-bottom: 70px;
+    margin-bottom: 62px;
 }
 
 .class-reclamaciones-title{
@@ -86,7 +86,7 @@
 
 .class-reclamaciones-steps-title{
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     line-height: 1.4;
 
@@ -101,7 +101,7 @@
 
     margin: 0 auto;
 
-    padding: 45px 80px 0;
+    padding: 61px 80px 0;
 }
 
 .class-reclamaciones-steps-list{
@@ -294,20 +294,44 @@
     flex-direction: column;
 }
 
-.class-reclamaciones-label{
-    margin-bottom: 12px;
+/* CAMPO FECHA: input nativo + texto superpuesto */
 
-    font-family: 'Poppins', sans-serif;
+.class-reclamaciones-date-field{
+    position: relative;
+}
+
+.class-reclamaciones-input[type="date"]{
+    color: transparent;
+}
+
+.class-reclamaciones-input[type="date"]:focus,
+.class-reclamaciones-input[type="date"]:valid{
+    color: #000000;
+}
+
+.class-reclamaciones-date-placeholder{
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+
+    pointer-events: none;
+
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
 
     color: #7C7878;
 }
 
+.class-reclamaciones-input[type="date"]:focus ~ .class-reclamaciones-date-placeholder,
+.class-reclamaciones-input[type="date"]:valid ~ .class-reclamaciones-date-placeholder{
+    display: none;
+}
+
 .class-reclamaciones-label-bold{
     margin-bottom: 16px;
 
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-size: 18px;
     font-weight: 600;
 
@@ -330,27 +354,62 @@
 
     outline: none;
 
-    padding-bottom: 10px;
+    padding-bottom: 4px;
 
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
 
     color: #000000;
 }
 
-.class-reclamaciones-input::placeholder,
+.class-reclamaciones-input::placeholder{
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #7C7878;
+
+    opacity: 1;
+}
+
 .class-reclamaciones-textarea::placeholder{
     color: #AFAFAF;
+
+    opacity: 1;
 }
 
 .class-reclamaciones-select{
     cursor: pointer;
 }
 
+.class-reclamaciones-select:invalid{
+    font-size: 18px;
+    color: #7C7878;
+}
+
+.class-reclamaciones-select option{
+    color: #000000;
+}
+
 .class-reclamaciones-textarea{
     resize: none;
     min-height: 120px;
+}
+
+/* =========================================
+   STEP 3: alinear filas Reclamo/Queja
+========================================= */
+
+.class-reclamaciones-step-content-form[data-step="3"] .class-reclamaciones-form-column{
+    display: contents;
+}
+
+.class-reclamaciones-step-content-form[data-step="3"] .class-reclamaciones-form-grid{
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, auto);
+
+    gap: 52px 58px;
 }
 
 /* =========================================
@@ -376,7 +435,7 @@
 
 .class-reclamaciones-radio-item{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 22px;
     cursor: pointer;
 }
@@ -438,6 +497,8 @@
 }
 
 .class-reclamaciones-radio-text{
+    max-width: 478px;
+
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -772,20 +833,20 @@
 @media (max-width: 768px){
 
     .class-reclamaciones-section{
-        padding: 60px 20px;
+        padding: 36px 20px;
     }
 
     .class-reclamaciones-header{
-        gap: 20px;
-        margin-bottom: 50px;
+        gap: 25px;
+        margin-bottom: 14px;
     }
 
     .class-reclamaciones-title{
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .class-reclamaciones-description{
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.7;
     }
 
@@ -794,12 +855,12 @@
     }
 
     .class-reclamaciones-steps-title{
-        font-size: 22px;
+        font-size: 18px;
         line-height: 1.5;
     }
 
     .class-reclamaciones-steps-content{
-        padding: 35px 20px 0;
+        padding: 23px 20px 0;
     }
 
     .class-reclamaciones-steps-list{
@@ -808,8 +869,20 @@
     }
 
     .class-reclamaciones-steps-list li{
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1.7;
+    }
+
+    .class-reclamaciones-step-circle-active{
+        font-size: 13px;
+    }
+
+    .class-reclamaciones-steps-wrapper{
+        margin-bottom: 60px;
+    }
+
+    .class-reclamaciones-steps-progress{
+        margin-bottom: 50px;
     }
 
     /* PROGRESS */
@@ -826,37 +899,115 @@
     }
 
     .class-reclamaciones-step-label{
-        font-size: 14px;
+        font-size: 12px;
     }
+
+
 
     /* FORM */
 
     .class-reclamaciones-form-grid{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
 
-        gap: 40px;
+        gap: 28px 20px;
     }
 
     .class-reclamaciones-form-column{
-        gap: 35px;
+        gap: 28px;
+    }
+
+    .class-reclamaciones-step-content-form[data-step="3"] .class-reclamaciones-form-grid{
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+
+        gap: 28px;
+    }
+
+    .class-reclamaciones-step-content-form[data-step="3"] .class-reclamaciones-radio-title-hidden{
+        display: none;
+    }
+
+    .class-reclamaciones-step-content-form[data-step="3"] .class-reclamaciones-form-column:nth-child(1) > .class-reclamaciones-radio-group{
+        order: 1;
+    }
+
+    .class-reclamaciones-step-content-form[data-step="3"] .class-reclamaciones-form-column:nth-child(2) > .class-reclamaciones-radio-group{
+        order: 2;
+    }
+
+    .class-reclamaciones-step-content-form[data-step="3"] .class-reclamaciones-form-column:nth-child(1) > .class-reclamaciones-field{
+        order: 3;
+    }
+
+    .class-reclamaciones-step-content-form[data-step="3"] .class-reclamaciones-form-column:nth-child(2) > .class-reclamaciones-field{
+        order: 4;
+    }
+
+    .class-reclamaciones-step-content-form[data-step="3"] .class-reclamaciones-form-column:nth-child(1) > .class-reclamaciones-checkbox-item{
+        order: 5;
+    }
+
+    .class-reclamaciones-step-content-form[data-step="3"] .class-reclamaciones-form-column:nth-child(2) > .class-reclamaciones-checkbox-item{
+        order: 6;
+    }
+
+    /* STEP 2: Fecha + N° comprobante en fila, el resto a ancho completo */
+
+    .class-reclamaciones-step-content-form[data-step="2"] .class-reclamaciones-form-column{
+        display: contents;
+    }
+
+    .class-reclamaciones-step-content-form[data-step="2"] .class-reclamaciones-form-grid{
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .class-reclamaciones-step-content-form[data-step="2"] .class-reclamaciones-form-grid > .class-reclamaciones-form-column:nth-child(1) > .class-reclamaciones-field:nth-child(1){
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .class-reclamaciones-step-content-form[data-step="2"] .class-reclamaciones-form-grid > .class-reclamaciones-form-column:nth-child(2) > .class-reclamaciones-field:nth-child(1){
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .class-reclamaciones-step-content-form[data-step="2"] .class-reclamaciones-form-grid > .class-reclamaciones-form-column:nth-child(1) > .class-reclamaciones-field:nth-child(2){
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    .class-reclamaciones-step-content-form[data-step="2"] .class-reclamaciones-form-grid > .class-reclamaciones-form-column:nth-child(2) > .class-reclamaciones-field:nth-child(2){
+        grid-column: 1 / -1;
+        grid-row: 3;
     }
 
     .class-reclamaciones-form-row-3{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
 
-        gap: 35px;
+        gap: 28px 20px;
 
         margin-top: 35px;
     }
 
-    .class-reclamaciones-label{
-        font-size: 16px;
+    .class-reclamaciones-form-row-3 .class-reclamaciones-field:nth-child(3){
+        grid-column: 1 / -1;
+    }
+
+    .class-reclamaciones-input::placeholder,
+    .class-reclamaciones-select:invalid,
+    .class-reclamaciones-date-placeholder{
+        font-size: 14px;
     }
 
     .class-reclamaciones-input,
     .class-reclamaciones-select,
     .class-reclamaciones-textarea{
-        font-size: 15px;
+        font-size: 14px;
+    }
+
+    .class-reclamaciones-select{
+        padding-right: 18px;
     }
 
     /* RADIO */
@@ -879,7 +1030,7 @@
     /* ACTIONS */
 
     .class-reclamaciones-actions{
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     .class-reclamaciones-next-submit{

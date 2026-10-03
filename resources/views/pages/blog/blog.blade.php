@@ -14,15 +14,24 @@
 <!-- ============================
 HERO
 ============================ -->
-<section class="class-blog-home-hero" style="background-image: url('{{ $banner->imageUrl() }}');">
-    <div class="class-blog-home-hero-overlay"></div>
-    <div class="class-blog-home-hero-content">
-        <h1 class="class-blog-home-hero-title">Nuestro blog</h1>
-        <p class="class-blog-home-hero-text">
-            Al combinar diseño, comodidad e innovación, creamos sillas de hogar que aportan estilo y
-            funcionalidad a cada espacio. Piezas pensadas para brindar confort diario sin renunciar a la
-            estética, perfectas para acompañar la vida moderna con elegancia y personalidad.
-        </p>
+<section class="class-blog-home-hero">
+    <div class="class-blog-home-hero-inner">
+        <div class="class-blog-home-hero-media">
+            <img
+                src="{{ $banner->imageUrl() }}"
+                alt="Nuestro blog"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async">
+        </div>
+        <div class="class-blog-home-hero-content">
+            <h1 class="class-blog-home-hero-title">Nuestro blog</h1>
+            <p class="class-blog-home-hero-text">
+                Al combinar diseño, comodidad e innovación, creamos sillas de hogar que aportan estilo y
+                funcionalidad a cada espacio. Piezas pensadas para brindar confort diario sin renunciar a la
+                estética, perfectas para acompañar la vida moderna con elegancia y personalidad.
+            </p>
+        </div>
     </div>
 </section>
 

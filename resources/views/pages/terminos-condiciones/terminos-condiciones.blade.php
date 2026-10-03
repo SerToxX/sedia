@@ -30,6 +30,9 @@ actividades fraudulentas, ilícitas o que afecten su funcionamiento.
 </div>
 
 
+<div class="class-terminos-condiciones-items">
+
+
 <div class="class-terminos-condiciones-item">
 
 <div class="class-terminos-condiciones-question">
@@ -163,6 +166,9 @@ Nos reservamos el derecho de modificar estos términos y condiciones en cualquie
 modificaciones entrarán en vigor desde su publicación en el sitio web.
 </p>
 </div>
+
+</div>
+
 
 </div>
 

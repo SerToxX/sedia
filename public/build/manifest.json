@@ -29,7 +29,7 @@
     ]
   },
   "resources/css/app.css": {
-    "file": "assets/app-DUF0oaKO.css",
+    "file": "assets/app-B2flvZvQ.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -38,7 +38,7 @@
     ]
   },
   "resources/css/blog.css": {
-    "file": "assets/blog-ToPYUsi0.css",
+    "file": "assets/blog-CJxj829s.css",
     "src": "resources/css/blog.css",
     "isEntry": true,
     "name": "blog",
@@ -65,7 +65,7 @@
     ]
   },
   "resources/css/contactanos.css": {
-    "file": "assets/contactanos-DO4ouXkN.css",
+    "file": "assets/contactanos-CixmgbMK.css",
     "src": "resources/css/contactanos.css",
     "isEntry": true,
     "name": "contactanos",
@@ -83,7 +83,7 @@
     ]
   },
   "resources/css/libro-reclamaciones.css": {
-    "file": "assets/libro-reclamaciones-D0OT2PiU.css",
+    "file": "assets/libro-reclamaciones-BG3uB5r2.css",
     "src": "resources/css/libro-reclamaciones.css",
     "isEntry": true,
     "name": "libro-reclamaciones",
@@ -101,7 +101,7 @@
     ]
   },
   "resources/css/politicas-devolucion.css": {
-    "file": "assets/politicas-devolucion-BOolzikr.css",
+    "file": "assets/politicas-devolucion-CTNPoqRx.css",
     "src": "resources/css/politicas-devolucion.css",
     "isEntry": true,
     "name": "politicas-devolucion",
@@ -146,7 +146,7 @@
     ]
   },
   "resources/css/terminos-condiciones.css": {
-    "file": "assets/terminos-condiciones-BVUl8Aod.css",
+    "file": "assets/terminos-condiciones-DiAW9BMe.css",
     "src": "resources/css/terminos-condiciones.css",
     "isEntry": true,
     "name": "terminos-condiciones",
@@ -216,7 +216,7 @@
     "isEntry": true
   },
   "resources/js/politicas-devolucion.js": {
-    "file": "assets/politicas-devolucion-9FZ5yvOh.js",
+    "file": "assets/politicas-devolucion-DUbnPVsl.js",
     "name": "politicas-devolucion",
     "src": "resources/js/politicas-devolucion.js",
     "isEntry": true

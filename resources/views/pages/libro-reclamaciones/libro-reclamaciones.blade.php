@@ -169,26 +169,21 @@
 
                             <div class="class-reclamaciones-field">
 
-                                <label class="class-reclamaciones-label">
-                                    Nombres
-                                </label>
-
                                 <input
                                     type="text"
                                     class="class-reclamaciones-input"
+                                    placeholder="Nombres"
                                 >
 
                             </div>
 
                             <div class="class-reclamaciones-field">
 
-                                <label class="class-reclamaciones-label">
-                                    Tipo de documento
-                                </label>
+                                <select class="class-reclamaciones-select" required>
 
-                                <select class="class-reclamaciones-select">
-
-                                    <option value=""></option>
+                                    <option value="" disabled selected hidden>
+                                        Tipo de documento
+                                    </option>
 
                                     <option value="dni">
                                         DNI
@@ -204,13 +199,10 @@
 
                             <div class="class-reclamaciones-field">
 
-                                <label class="class-reclamaciones-label">
-                                    Telefono o celular
-                                </label>
-
                                 <input
                                     type="text"
                                     class="class-reclamaciones-input"
+                                    placeholder="Telefono o celular"
                                 >
 
                             </div>
@@ -222,39 +214,30 @@
 
                             <div class="class-reclamaciones-field">
 
-                                <label class="class-reclamaciones-label">
-                                    Apellidos
-                                </label>
-
                                 <input
                                     type="text"
                                     class="class-reclamaciones-input"
+                                    placeholder="Apellidos"
                                 >
 
                             </div>
 
                             <div class="class-reclamaciones-field">
 
-                                <label class="class-reclamaciones-label">
-                                    N° de documento
-                                </label>
-
                                 <input
                                     type="text"
                                     class="class-reclamaciones-input"
+                                    placeholder="N° de documento"
                                 >
 
                             </div>
 
                             <div class="class-reclamaciones-field">
-
-                                <label class="class-reclamaciones-label">
-                                    Correo electronico
-                                </label>
 
                                 <input
                                     type="email"
                                     class="class-reclamaciones-input"
+                                    placeholder="Correo electronico"
                                 >
 
                             </div>
@@ -268,39 +251,30 @@
 
                         <div class="class-reclamaciones-field">
 
-                            <label class="class-reclamaciones-label">
-                                Region
-                            </label>
-
                             <input
                                 type="text"
                                 class="class-reclamaciones-input"
+                                placeholder="Region"
                             >
 
                         </div>
 
                         <div class="class-reclamaciones-field">
 
-                            <label class="class-reclamaciones-label">
-                                Distrito
-                            </label>
-
                             <input
                                 type="text"
                                 class="class-reclamaciones-input"
+                                placeholder="Distrito"
                             >
 
                         </div>
 
                         <div class="class-reclamaciones-field">
 
-                            <label class="class-reclamaciones-label">
-                                Direccion
-                            </label>
-
                             <input
                                 type="text"
                                 class="class-reclamaciones-input"
+                                placeholder="Direccion"
                             >
 
                         </div>
@@ -320,28 +294,26 @@
 
                         <div class="class-reclamaciones-form-column">
 
-                            <div class="class-reclamaciones-field">
-
-                                <label class="class-reclamaciones-label">
-                                    Fecha de compra
-                                </label>
+                            <div class="class-reclamaciones-field class-reclamaciones-date-field">
 
                                 <input
                                     type="date"
                                     class="class-reclamaciones-input"
+                                    required
                                 >
+
+                                <span class="class-reclamaciones-date-placeholder">
+                                    Fecha de compra
+                                </span>
 
                             </div>
 
                             <div class="class-reclamaciones-field">
 
-                                <label class="class-reclamaciones-label">
-                                    Monto reclamado (si en caso aplica)
-                                </label>
-
                                 <input
                                     type="text"
                                     class="class-reclamaciones-input"
+                                    placeholder="Monto reclamado (si en caso aplica)"
                                 >
 
                             </div>
@@ -352,26 +324,20 @@
 
                             <div class="class-reclamaciones-field">
 
-                                <label class="class-reclamaciones-label">
-                                    Número de comprobante de pago
-                                </label>
-
                                 <input
                                     type="text"
                                     class="class-reclamaciones-input"
+                                    placeholder="N° de comprobante"
                                 >
 
                             </div>
 
                             <div class="class-reclamaciones-field">
 
-                                <label class="class-reclamaciones-label">
-                                    Producto/ servicio adquirido
-                                </label>
-
                                 <input
                                     type="text"
                                     class="class-reclamaciones-input"
+                                    placeholder="Producto/ servicio adquirido"
                                 >
 
                             </div>
