@@ -235,28 +235,22 @@
               novalidate>
             @csrf
             <div class="form-group">
-                <label>Nombres y Apellidos</label>
-                <input type="text" name="nombre" required>
+                <input type="text" name="nombre" placeholder="Nombres y Apellidos" required>
             </div>
             <div class="form-group">
-                <label>Empresa</label>
-                <input type="text" name="empresa">
+                <input type="text" name="empresa" placeholder="Empresa">
             </div>
             <div class="form-group">
-                <label>Telefono /Celular</label>
-                <input type="text" name="telefono">
+                <input type="text" name="telefono" placeholder="Telefono /Celular">
             </div>
             <div class="form-group">
-                <label>DNI / RUC</label>
-                <input type="text" name="documento">
+                <input type="text" name="documento" placeholder="DNI / RUC">
             </div>
             <div class="form-group full">
-                <label>Email</label>
-                <input type="email" name="email" required>
+                <input type="email" name="email" placeholder="Email" required>
             </div>
             <div class="form-group full">
-                <label>Comentanos de tu proyecto</label>
-                <textarea name="mensaje" required></textarea>
+                <textarea name="mensaje" placeholder="Comentanos de tu proyecto" required></textarea>
             </div>
             <div class="class-proyectos-form-bottom">
                 <button type="button" class="btn-file" id="btnSelectFiles">

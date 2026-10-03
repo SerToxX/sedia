@@ -321,7 +321,7 @@ HERO SOBRE NOSOTROS
 
 
         <div class="class-nosotros-project-img">
-            <img src="{{ asset('image/sedia-project-chair.png') }}" loading="lazy" decoding="async">
+            <img src="{{ asset('image/sedia-project-chair2.png') }}" loading="lazy" decoding="async">
         </div>
 
 

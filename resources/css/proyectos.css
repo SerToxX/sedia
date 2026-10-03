@@ -63,7 +63,7 @@
 ======================================== */
 
 .class-proyectos-info {
-    margin-top: 48px;
+    margin-top: 68px;
     margin-bottom: 86px;
 }
 
@@ -131,7 +131,7 @@
     align-items: center;
     justify-content: space-between;
 
-    margin-top: 60px;
+    margin-top: 55px;
 
     padding-left: 80px;
     padding-right: 80px;
@@ -164,7 +164,7 @@
 
 .class-proyectos-negocios-grid {
     display: flex;
-    gap: 8px;
+    gap: 10px;
 }
 
 /* TARJETA */
@@ -203,8 +203,8 @@
 
 .class-proyectos-bloque3 {
 
-    background: var(--sedia-gray-bg);
-    margin-top: 86px;
+    background: #B5B0A1;
+    margin-top: 55px;
 }
 
 .class-proyectos-bloque3-container {
@@ -221,7 +221,7 @@
 /* TEXTO */
 
 .class-proyectos-bloque3-text {
-    max-width: 500px;
+    max-width: 450px;
 }
 
 .class-proyectos-bloque3-text h2 {
@@ -229,7 +229,7 @@
     font-family: "Playfair Display", serif;
     font-weight: 400;
     font-size: 38px;
-    color: var(--sedia-green);
+    color: #fff;
 
     line-height: 1.2;
     margin-bottom: 20px;
@@ -240,7 +240,7 @@
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-weight: 400;
     font-size: 15px;
-    color: #000;
+    color: #fff;
 
     line-height: 1.6;
 }
@@ -266,7 +266,7 @@
 ======================================== */
 
 .class-proyectos-beneficios {
-    margin-top: 60px;
+    margin-top: 52px;
 }
 
 .class-proyectos-beneficios-container {
@@ -275,7 +275,8 @@
     align-items: center;
     gap: 70px;
 
-    padding-right: 89px;
+    /* padding-right: 89px; */
+    padding: 0 80px;
 }
 
 /* IMAGEN */
@@ -306,7 +307,7 @@
 
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-weight: 400;
-    font-size: 42px;
+    font-size: 32px;
     color: #1E1E1E;
 
     margin-bottom: 40px;
@@ -394,7 +395,7 @@
 ======================================== */
 
 .class-proyectos-form{
-    padding:100px 0;
+    padding: 62px 0;
 }
 
 .class-proyectos-form-container{
@@ -427,7 +428,7 @@
     gap: 50px 30px;
 }
 
-/* LABEL */
+/* LABEL (solo queda visible en el grupo de Archivos) */
 
 .form-group label{
 
@@ -451,12 +452,27 @@
 
     border:none;
     border-bottom:1px solid #000000;
+    padding-bottom:4px;
 
     outline:none;
     background:transparent;
 
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-size:16px;
+}
+
+/* PLACEHOLDER: mismo diseño que tenía el label cuando iba fuera del input */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight:400;
+    font-size:18px;
+
+    color:#7C7878;
+
+    opacity:1;
 }
 
 /* FULL WIDTH */
@@ -752,7 +768,10 @@ textarea{
     }
 
     .class-proyectos-hero-content {
-        left: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
     }
 
     .class-proyectos-hero-button {
@@ -765,12 +784,12 @@ textarea{
     ======================================== */
 
     .class-proyectos-form {
-        padding: 60px 20px;
+        padding: 51px 20px;
     }
 
     .class-proyectos-form-title {
         font-size: 24px;
-        margin-bottom: 40px;
+        margin-bottom: 54px;
     }
 
     .class-proyectos-form-grid {
@@ -778,43 +797,68 @@ textarea{
         gap: 35px;
     }
 
+    .form-group input,
+    .form-group textarea {
+        padding-bottom: 10px;
+    }
+
     .class-proyectos-form-bottom {
         flex-direction: column;
         align-items: flex-start;
-        gap: 20px;
+        margin-top: 0;
+        gap: 30px;
     }
 
     .btn-submit {
         margin-top: 0;
+        align-self: flex-end;
+    }
+
+    .btn-file {
+        font-size: 13px;
     }
 
     /* ========================================
     BLOQUE 1
     ======================================== */
+    .class-proyectos-info {
+        margin-top: 35px;
+        margin-bottom: 45px;
+    }
+
     .class-proyectos-info-top {
         flex-direction: column;
         align-items: flex-start;
-
-        padding-left: 20px;
-        padding-right: 20px;
-        gap: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+        gap: 38px;
     }
 
     .class-proyectos-info-img-wrap {
         width: 100%;
         height: 260px;
+        order: 2;
     }
 
     .class-proyectos-info-text {
         max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        order: 1;
+        text-align: center;
     }
 
     .class-proyectos-info-text h2 {
-        font-size: 26px;
+        font-size: 30px;
     }
 
+    .class-proyectos-negocios-text h3 {
+        font-size: 24px;
+    }
+
+
     .class-proyectos-info-text p {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     /* ========================================
@@ -824,11 +868,17 @@ textarea{
     .class-proyectos-negocios {
         flex-direction: column;
         align-items: flex-start;
+        padding-left: 0px;
+        padding-right: 0px;
 
+        margin-top: 26px;
+
+        gap: 40px;
+    }
+
+    .class-proyectos-negocios-text {
         padding-left: 20px;
         padding-right: 20px;
-
-        gap: 30px;
     }
 
     .class-proyectos-negocios-grid {
@@ -841,16 +891,24 @@ textarea{
         height: 260px;
     }
 
+    .class-proyectos-card span {
+        top: 20px;
+        bottom: auto;
+        font-size: 15px;
+    }
+
     /* ========================================
     BLOQUE 3
     ======================================== */
+    .class-proyectos-bloque3 {
+        background: transparent;
+    }
+
     .class-proyectos-bloque3-container {
 
         flex-direction: column;
         align-items: flex-start;
-
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 0px;
 
         gap: 30px;
     }
@@ -859,32 +917,41 @@ textarea{
 
         width: 100%;
         height: 260px;
+        order: 1;
     }
 
     .class-proyectos-bloque3-text {
         max-width: 100%;
+        order: 2;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .class-proyectos-bloque3-text h2 {
-        font-size: 26px;
+        font-size: 30px;
+        color: var(--sedia-green);
     }
 
     .class-proyectos-bloque3-text p {
-        font-size: 14px;
+        font-size: 15px;
+        color: #000000;
     }
 
     /* ========================================
     BLOQUE 4 - BENEFICIOS
     ======================================== */
 
+    .class-proyectos-beneficios {
+        margin-top: 40px;
+    }
+
     .class-proyectos-beneficios-container {
 
         flex-direction: column;
-
-        padding-left: 20px;
-        padding-right: 20px;
-
-        gap: 40px;
+        padding-left: 0px;
+        padding-right: 0px;
+        gap: 30px;
     }
 
     .class-proyectos-beneficios-img-wrap {
@@ -893,15 +960,54 @@ textarea{
         height: 360px;
     }
 
+    .class-proyectos-beneficios-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .class-proyectos-beneficios-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
     .class-proyectos-beneficios-grid {
 
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
 
+    .beneficio-item {
+        text-align: center;
+        padding: 0;
+    }
+
+    .beneficio-item:nth-child(odd) {
+        padding-right: 0;
+    }
+
+    .beneficio-num {
+        font-size: 40px;
+    }
+
+    .beneficio-item h3 {
+        font-size: 18px;
+    }
+
+    .beneficio-item p {
+        font-size: 15px;
+    }
+
     .beneficio-border-left {
-        border: none;
         padding-left: 0;
+    }
+
+    .beneficio-border-left::before {
+        left: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 202px;
+        background: #8F8F8F;
     }
 
 }

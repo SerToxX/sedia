@@ -58,7 +58,7 @@ VALORES SOBRE NOSOTROS
 
 .class-nosotros-valores {
 
-    padding: 70px 0;
+    padding: 52px 0;
 }
 
 
@@ -79,7 +79,7 @@ VALORES SOBRE NOSOTROS
 /* TEXTO IZQUIERDA */
 
 .class-nosotros-valores-text {
-    max-width: 420px;
+    max-width: 440px;
     margin-top: 90px;
 }
 
@@ -120,7 +120,7 @@ VALORES SOBRE NOSOTROS
 
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
 
     color: #000;
 
@@ -137,7 +137,7 @@ VALORES SOBRE NOSOTROS
 
     grid-template-columns: 317px 317px;
 
-    gap: 36px;
+    gap: 27px;
 }
 
 
@@ -149,15 +149,15 @@ VALORES SOBRE NOSOTROS
     width: 317px;
     height: 252px;
 
-    background: #FFFFFF;
+    background: #B5B0A1;
 
-    padding: 28px;
+    padding: 30px;
 
     box-shadow: 0px 3px 19.5px rgba(175, 175, 175, 0.79);
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 
     align-items: flex-start;
 
@@ -186,7 +186,7 @@ VALORES SOBRE NOSOTROS
     width: 45px;
     height: 45px;
 
-    background: var(--sedia-green);
+    background: #fff;
 
     border-radius: 50%;
 
@@ -198,7 +198,7 @@ VALORES SOBRE NOSOTROS
     font-weight: 800;
     font-size: 24px;
 
-    color: #FFFFFF;
+    color: #B5B0A1;
 }
 
 
@@ -211,7 +211,7 @@ VALORES SOBRE NOSOTROS
     font-weight: 600;
     font-size: 24px;
 
-    color: var(--sedia-green);
+    color: #fff;
 }
 
 
@@ -222,9 +222,9 @@ VALORES SOBRE NOSOTROS
 
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
 
-    color: #141718;
+    color: #fff;
 
     margin-top: 20px;
 
@@ -238,7 +238,7 @@ HISTORIA SOBRE NOSOTROS
 .class-nosotros-historia {
 
     margin-top: 0px;
-    margin-bottom: 92px;
+    margin-bottom: 68px;
 }
 
 
@@ -258,7 +258,7 @@ HISTORIA SOBRE NOSOTROS
     width: 100%;
     height: 500px;
 
-    margin-bottom: 75px;
+    margin-bottom: 45px;
 }
 
 .class-nosotros-historia-img-wrap img {
@@ -332,7 +332,7 @@ HISTORIA SOBRE NOSOTROS
 
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
 
     color: #141718;
 
@@ -345,10 +345,10 @@ SERVICIO SOBRE NOSOTROS
 
 .class-nosotros-servicio {
 
-    background: var(--sedia-gray-bg);
+    background: #B5B0A1;
 
     margin-top: 0px;
-    margin-bottom: 80px;
+    margin-bottom: 66px;
 }
 
 
@@ -402,11 +402,11 @@ SERVICIO SOBRE NOSOTROS
 
 .servicio-title {
 
-    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-family: "Playfair Display";
     font-weight: 400;
     font-size: 38px;
 
-    color: var(--sedia-green);
+    color: #fff;
 
     line-height: 1.2;
 
@@ -422,7 +422,7 @@ SERVICIO SOBRE NOSOTROS
     font-weight: 400;
     font-size: 18px;
 
-    color: #141718;
+    color: #fff;
 
     line-height: 1.6;
 }
@@ -435,7 +435,7 @@ AMBIENTES
 
 
     padding-top: 0px;
-    padding-bottom: 164px;
+    padding-bottom: 96px;
 }
 
 
@@ -479,7 +479,7 @@ AMBIENTES
 
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
 
     color: #000000;
 
@@ -554,7 +554,7 @@ PROJECT SOBRE NOSOTROS
     display: flex;
     align-items: center;
 
-    margin-bottom: 138px;
+    margin-bottom: 100px;
 }
 
 
@@ -930,8 +930,8 @@ CELULAR
 
     .class-nosotros-project {
         height: auto;
-        padding: 50px 0;
-        margin-bottom: 80px;
+        padding: 32px 0;
+        margin-bottom: 16px;
     }
 
     .class-nosotros-project-container {
@@ -942,8 +942,29 @@ CELULAR
         gap: 30px;
     }
 
+    .class-nosotros-historia-container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .historia-subtitle {
+        font-size: 18px;
+    }
+
+    .historia-title {
+        font-size: 30px;
+    }
+
+    .class-nosotros-project-title {
+        font-size: 60px;
+    }
+
+
+
+
     .class-nosotros-project-left {
         max-width: 100%;
+        text-align: center;
     }
 
     .class-nosotros-project-button {
@@ -962,14 +983,32 @@ CELULAR
 
         padding-left: 20px;
         padding-right: 20px;
+        justify-content: center;
     }
 
     .class-sobre-nosotros-hero-title {
-        font-size: 38px;
+        font-size: 36px;
+        text-align: center;
     }
 
 
     /* VALORES */
+    .class-nosotros-valores {
+        padding: 0px 0;
+    }
+
+    .class-nosotros-valores-sub {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    .class-nosotros-valores-title {
+        font-size: 30px;
+    }
+
+    .class-nosotros-valores-desc {
+        font-size: 15px;
+    }
 
     .class-nosotros-valores-container {
 
@@ -977,42 +1016,87 @@ CELULAR
 
         padding-left: 20px;
         padding-right: 20px;
-
+        margin-bottom: 43px;
         gap: 40px;
     }
 
     .class-nosotros-valores-text {
         max-width: 100%;
+        margin-top: 33px;
     }
 
     .class-nosotros-valores-grid {
 
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         width: 100%;
+        gap: 12px;
     }
 
     .valor-card {
 
         width: 100%;
+        min-width: 0;
         height: auto;
+        padding: 16px 11px 16px 11px;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
     }
 
-    .class-nosotros-historia-container {
+    .valor-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+        margin-bottom: -2px;
+    }
 
-        padding-left: 20px;
-        padding-right: 20px;
+    .valor-num {
+        width: 24px;
+        height: 24px;
+        font-size: 18px;
+        flex-shrink: 0;
+    }
+
+    .valor-card h3 {
+        font-size: 17px;
+        min-width: 0;
+    }
+
+    .valor-card p {
+        font-size: 15px;
+        margin-top: 6px;
     }
 
     .class-nosotros-historia-img-wrap {
 
         height: 240px;
+        margin-bottom: 28px;
     }
 
     .class-nosotros-historia-content {
 
         flex-direction: column;
 
-        gap: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        gap: 0px;
+    }
+
+    .class-nosotros-historia-text {
+        margin-bottom: 20px;
+    }
+
+    .class-nosotros-historia{
+        margin-bottom: 40px;
+    }
+
+    .servicio-title {
+        font-size: 30px;
+    }
+
+    .servicio-desc {
+        font-size: 15px;
     }
 
     .class-nosotros-historia-text {
@@ -1023,6 +1107,7 @@ CELULAR
     .historia-desc {
 
         max-width: 100%;
+        margin-top: 17px;
     }
 
     .historia-desc p {
@@ -1030,7 +1115,59 @@ CELULAR
         font-size: 15px;
     }
 
-    .class-nosotros-ambientes-container {
+    .class-nosotros-servicio-container {
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding-top: 0;
+        padding-bottom: 0;
+        gap: 25px;
+    }
+
+    .class-nosotros-servicio-img-wrap {
+
+        width: 100%;
+        height: 240px;
+    }
+
+    .class-nosotros-servicio-text {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 34px;
+        padding-bottom: 35px;
+    }
+
+    .class-nosotros-servicio {
+        margin-bottom: 40px;
+    }
+
+    .ambientes-title {
+        font-size: 24px;
+    }
+
+    .ambientes-desc {
+        font-size: 15px;
+    }
+
+    .class-nosotros-ambientes-container{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0px auto 25px;
+    }
+
+    .class-nosotros-ambientes-text {
+        margin: 0px auto 25px;
+    }
+
+    .class-nosotros-ambientes{
+        padding-bottom: 28px;
+    }
+
+
+
+
+    .class-nosotros-ambientes-text {
 
         padding-left: 20px;
         padding-right: 20px;
@@ -1038,10 +1175,11 @@ CELULAR
 
     .class-nosotros-ambientes-grid {
 
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
 
-        gap: 25px;
+        gap: 21px;
     }
 
     .ambiente-left,
@@ -1049,7 +1187,15 @@ CELULAR
     .ambiente-right {
 
         width: 100%;
-        height: 280px;
+        height: 278px;
+        flex: 1 1 0;
+        margin-top: 0;
+    }
+
+    .ambiente-center {
+
+        width: 169px;
+        flex: 0 0 169px;
     }
 
 
