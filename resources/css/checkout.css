@@ -337,6 +337,14 @@
     background: #333;
 }
 
+@media (min-width: 1600px) {
+    .class-checkout {
+        max-width: 1600px;
+        margin: 92px auto;
+        padding: 0;
+    }
+}
+
 
 /* ========================================
    TABLET

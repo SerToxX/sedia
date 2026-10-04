@@ -526,6 +526,27 @@
         padding: 70px 0px;
     }
 
+
+    .class-blog-home-hero-inner {
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 110px 0 30px;
+    }
+
+    .class-blog-feat-text {
+        padding-left: 0px;
+    }
+
+    .class-blog-feat-img{
+        padding-right: 0px;
+    }
+
+    .class-blog-grid{
+        padding: 0px;
+    }
+
+
+
     .class-blog-hero-title {
         font-size: 54px;
         max-width: 980px;

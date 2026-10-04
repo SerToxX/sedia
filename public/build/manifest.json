@@ -38,7 +38,7 @@
     ]
   },
   "resources/css/blog.css": {
-    "file": "assets/blog-Cv7V0ygW.css",
+    "file": "assets/blog-DDaTxOS7.css",
     "src": "resources/css/blog.css",
     "isEntry": true,
     "name": "blog",
@@ -56,7 +56,7 @@
     ]
   },
   "resources/css/checkout.css": {
-    "file": "assets/checkout-BqaTUoIC.css",
+    "file": "assets/checkout-C3xJXj68.css",
     "src": "resources/css/checkout.css",
     "isEntry": true,
     "name": "checkout",
@@ -146,7 +146,7 @@
     ]
   },
   "resources/css/terminos-condiciones.css": {
-    "file": "assets/terminos-condiciones-DiAW9BMe.css",
+    "file": "assets/terminos-condiciones-D51KGycL.css",
     "src": "resources/css/terminos-condiciones.css",
     "isEntry": true,
     "name": "terminos-condiciones",
