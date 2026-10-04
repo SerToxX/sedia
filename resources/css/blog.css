@@ -397,6 +397,7 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 30px;
 }
 
 .class-blog-card {
@@ -735,7 +736,7 @@
 
     .class-blog-grid {
         grid-template-columns: 1fr;
-        padding: 16px 20px;
+        padding: 16px 14px;
     }
 
 
