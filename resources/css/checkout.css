@@ -3,8 +3,7 @@
 ======================================== */
 
 .class-checkout {
-    padding: 80px 72px 100px;
-    max-width: 1360px;
+    padding: 92px 40px;
     margin: 0 auto;
 }
 
@@ -16,7 +15,7 @@
     font-size: 40px;
     color: #000;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 87px;
 }
 
 /* BODY — 2 COLUMNAS */
@@ -65,7 +64,7 @@
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #000;
+    color: #7C7878;
     padding-bottom: 8px;
     outline: none;
 }

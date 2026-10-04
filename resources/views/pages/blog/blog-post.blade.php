@@ -21,28 +21,21 @@ HERO
         <span class="class-blog-hero-tag">Nuevo</span>
         <h1 class="class-blog-hero-title">El poder de una buena silla: el detalle que transforma tu comedor</h1>
         <p class="class-blog-hero-quote"><em>"El diseño atrae las miradas, pero es la comodidad de una buena silla la que invita a quedarse."</em></p>
-        <!-- Iconos sociales — solo visibles en móvil -->
-        <div class="class-blog-hero-social">
-            <a href="#" class="class-blog-hero-social-link" aria-label="Twitter">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.7 5.3 4.3 8.5 4.5-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3.5-1.7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-            <a href="#" class="class-blog-hero-social-link" aria-label="Facebook">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-            <a href="#" class="class-blog-hero-social-link" aria-label="LinkedIn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-        </div>
     </div>
 </section>
+
+<!-- Iconos sociales — solo visibles en móvil, debajo del banner -->
+<div class="class-blog-hero-social">
+    <a href="#" class="class-blog-hero-social-link" aria-label="Twitter">
+        <img src="{{ asset('image/icons/blog/twitter.svg') }}" width="28" height="28" alt="Twitter">
+    </a>
+    <a href="#" class="class-blog-hero-social-link" aria-label="Facebook">
+        <img src="{{ asset('image/icons/blog/facebook.svg') }}" width="28" height="28" alt="Facebook">
+    </a>
+    <a href="#" class="class-blog-hero-social-link" aria-label="LinkedIn">
+        <img src="{{ asset('image/icons/blog/linkedin.svg') }}" width="28" height="28" alt="LinkedIn">
+    </a>
+</div>
 
 
 <!-- ============================
@@ -54,21 +47,13 @@ CUERPO ARTÍCULO
         <!-- SIDEBAR SOCIAL (solo desktop / tablet) -->
         <aside class="class-blog-social-sidebar">
             <a href="#" class="class-blog-social-link" aria-label="Twitter">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.7 5.3 4.3 8.5 4.5-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3.5-1.7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <img src="{{ asset('image/icons/blog/twitter.svg') }}" width="28" height="28" alt="Twitter">
             </a>
             <a href="#" class="class-blog-social-link" aria-label="Facebook">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <img src="{{ asset('image/icons/blog/facebook.svg') }}" width="28" height="28" alt="Facebook">
             </a>
             <a href="#" class="class-blog-social-link" aria-label="LinkedIn">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <img src="{{ asset('image/icons/blog/linkedin.svg') }}" width="28" height="28" alt="LinkedIn">
             </a>
         </aside>
 
@@ -117,6 +102,11 @@ CUERPO ARTÍCULO
                 </p>
             </div>
 
+            <!-- IMAGEN 2 -->
+            <div class="class-blog-img-wrap">
+                <img src="{{ asset('image/proyectos-mesa.png') }}" loading="lazy" decoding="async" alt="Mesa de comedor con sillas premium">
+            </div>
+
             <!-- SECCIÓN 4 -->
             <div class="class-blog-section">
                 <h2 class="class-blog-section-title">
@@ -139,13 +129,8 @@ CUERPO ARTÍCULO
                 </p>
             </div>
 
-            <!-- IMAGEN 2 -->
-            <div class="class-blog-img-wrap">
-                <img src="{{ asset('image/proyectos-mesa.png') }}" loading="lazy" decoding="async" alt="Mesa de comedor con sillas premium">
-            </div>
-
             <p class="class-blog-source">
-                <em>Fuente: International Ergonomics Association y la American Society of Interior Designers.</em>
+                <em><span class="class-blog-source-label">Fuente</span>: International Ergonomics Association y la American Society of Interior Designers.</em>
             </p>
 
         </article>
