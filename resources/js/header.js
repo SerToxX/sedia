@@ -323,7 +323,9 @@ if (header) {
         document.body.classList.contains("class-home") ||
         document.body.classList.contains("class-proyectos-page") ||
         document.body.classList.contains("class-sobre-nosotros-page") ||
-        document.body.classList.contains("class-listing-page")
+        document.body.classList.contains("class-listing-page") ||
+        document.body.classList.contains("class-blog-home-page") ||
+        document.body.classList.contains("class-blog-post-page")
 
     // Sincroniza el header con la posición real de scroll ANTES de esperar un
     // evento "scroll". Sin esto, al recargar con el scroll restaurado por el

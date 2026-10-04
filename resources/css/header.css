@@ -27,6 +27,7 @@ HEADER TRANSPARENTE
 .class-proyectos-page .class-header-container,
 .class-sobre-nosotros-page .class-header-container,
 .class-listing-page .class-header-container,
+.class-blog-home-page .class-header-container,
 .class-blog-post-page .class-header-container {
     background: transparent;
     border-bottom-color: transparent;
@@ -39,6 +40,7 @@ HEADER TRANSPARENTE
 .class-proyectos-page .class-header-container:not(.class-header-scrolled),
 .class-sobre-nosotros-page .class-header-container:not(.class-header-scrolled),
 .class-listing-page .class-header-container:not(.class-header-scrolled),
+.class-blog-home-page .class-header-container:not(.class-header-scrolled),
 .class-blog-post-page .class-header-container:not(.class-header-scrolled) {
     background: transparent !important;
     border-bottom-color: transparent !important;
@@ -52,16 +54,19 @@ ELEMENTOS BLANCOS EN HEADER TRANSPARENTE
 .class-proyectos-page .class-header-container:not(.class-header-scrolled) .class-header-left,
 .class-sobre-nosotros-page .class-header-container:not(.class-header-scrolled) .class-header-left,
 .class-listing-page .class-header-container:not(.class-header-scrolled) .class-header-left,
+.class-blog-home-page .class-header-container:not(.class-header-scrolled) .class-header-left,
 .class-blog-post-page .class-header-container:not(.class-header-scrolled) .class-header-left,
 .class-home .class-header-container:not(.class-header-scrolled) .class-header-logo,
 .class-proyectos-page .class-header-container:not(.class-header-scrolled) .class-header-logo,
 .class-sobre-nosotros-page .class-header-container:not(.class-header-scrolled) .class-header-logo,
 .class-listing-page .class-header-container:not(.class-header-scrolled) .class-header-logo,
+.class-blog-home-page .class-header-container:not(.class-header-scrolled) .class-header-logo,
 .class-blog-post-page .class-header-container:not(.class-header-scrolled) .class-header-logo,
 .class-home .class-header-container:not(.class-header-scrolled) .class-header-cart-count,
 .class-proyectos-page .class-header-container:not(.class-header-scrolled) .class-header-cart-count,
 .class-sobre-nosotros-page .class-header-container:not(.class-header-scrolled) .class-header-cart-count,
 .class-listing-page .class-header-container:not(.class-header-scrolled) .class-header-cart-count,
+.class-blog-home-page .class-header-container:not(.class-header-scrolled) .class-header-cart-count,
 .class-blog-post-page .class-header-container:not(.class-header-scrolled) .class-header-cart-count {
     color: #FFFFFF;
 }
@@ -79,6 +84,9 @@ ELEMENTOS BLANCOS EN HEADER TRANSPARENTE
 .class-listing-page .class-header-container:not(.class-header-scrolled) .class-header-menu-icon,
 .class-listing-page .class-header-container:not(.class-header-scrolled) .class-header-search-icon img,
 .class-listing-page .class-header-container:not(.class-header-scrolled) .class-header-cart-icon img,
+.class-blog-home-page .class-header-container:not(.class-header-scrolled) .class-header-menu-icon,
+.class-blog-home-page .class-header-container:not(.class-header-scrolled) .class-header-search-icon img,
+.class-blog-home-page .class-header-container:not(.class-header-scrolled) .class-header-cart-icon img,
 .class-blog-post-page .class-header-container:not(.class-header-scrolled) .class-header-menu-icon,
 .class-blog-post-page .class-header-container:not(.class-header-scrolled) .class-header-search-icon img,
 .class-blog-post-page .class-header-container:not(.class-header-scrolled) .class-header-cart-icon img {
@@ -128,6 +136,7 @@ body {
 .class-proyectos-page,
 .class-sobre-nosotros-page,
 .class-listing-page,
+.class-blog-home-page,
 .class-blog-post-page {
 
     padding-top: 0;
@@ -713,6 +722,7 @@ CELULAR
     .class-proyectos-page,
     .class-sobre-nosotros-page,
     .class-listing-page,
+    .class-blog-home-page,
     .class-blog-post-page {
 
         padding-top: 0;
