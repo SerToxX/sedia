@@ -20,7 +20,7 @@
     "src": "public/image/jobs-bg.png"
   },
   "resources/css/admin.css": {
-    "file": "assets/admin-DUl6Nq5O.css",
+    "file": "assets/admin-Cqt2vkLP.css",
     "src": "resources/css/admin.css",
     "isEntry": true,
     "name": "admin",
@@ -168,7 +168,7 @@
     "src": "resources/fonts/Phenomena-Regular.otf"
   },
   "resources/js/admin.js": {
-    "file": "assets/admin-DvLNIP7b.js",
+    "file": "assets/admin-CX4ig5Po.js",
     "name": "admin",
     "src": "resources/js/admin.js",
     "isEntry": true,

@@ -1,12 +1,18 @@
 import { showToast, initToastClose } from './utils/toast.js';
 
-document.addEventListener('DOMContentLoaded', () => {
+// Turbo Drive reemplaza solo el <body> entre navegaciones (en vez de recargar
+// todo el documento), así que este init debe volver a correr en cada
+// "turbo:load" — no solo en el "DOMContentLoaded" de la carga inicial.
+function initAdmin() {
     initToastClose();
 
-    // Mensaje flash de éxito/error inyectado por Blade (ver admin/layout.blade.php)
+    // Mensaje flash de éxito/error inyectado por Blade (ver admin/layout.blade.php).
+    // Se limpia después de mostrarlo para que una navegación posterior sin
+    // flash propio no vuelva a mostrar el mensaje de la página anterior.
     if (window.__adminFlash) {
         const { type, title, message } = window.__adminFlash;
         showToast(type, title, message);
+        window.__adminFlash = null;
     }
 
     // ---------------------------------------------
@@ -52,4 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay?.classList.add('is-open');
     });
     overlay?.addEventListener('click', closeSidebar);
-});
+
+    // Al navegar con Turbo el menú móvil debe quedar cerrado en la página nueva.
+    closeSidebar();
+}
+
+document.addEventListener('DOMContentLoaded', initAdmin);
+document.addEventListener('turbo:load', initAdmin);

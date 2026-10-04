@@ -5,13 +5,7 @@
 @section('content')
 
 <div class="class-admin-page-header">
-    <div class="class-admin-page-title-row">
-        <span class="class-admin-page-icon"><x-admin-icon name="image" /></span>
-        <div>
-            <h1 class="class-admin-page-title">Banners</h1>
-            <p class="class-admin-page-subtitle">Imagen (y video, cuando aplica) de cada banner del sitio público</p>
-        </div>
-    </div>
+    <p class="class-admin-page-subtitle">Imagen (y video, cuando aplica) de cada banner del sitio público</p>
 </div>
 
 @foreach ($banners as $banner)

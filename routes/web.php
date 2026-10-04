@@ -61,6 +61,13 @@ Route::prefix('dashboard')->name('admin.')->group(function () {
 
         Route::get('/', [AdminDashboardController::class, 'index'])->name('dashboard');
 
+        // Secciones del nuevo sidebar aún sin funcionalidad propia (placeholder)
+        Route::view('/pedidos', 'admin.placeholder', ['title' => 'Pedidos', 'icon' => 'bag'])->name('pedidos.index');
+        Route::view('/clientes', 'admin.placeholder', ['title' => 'Clientes', 'icon' => 'users'])->name('clientes.index');
+        Route::view('/inventario', 'admin.placeholder', ['title' => 'Inventario', 'icon' => 'archive'])->name('inventario.index');
+        Route::view('/conversaciones', 'admin.placeholder', ['title' => 'Conversaciones', 'icon' => 'chat'])->name('conversaciones.index');
+        Route::view('/configuraciones', 'admin.placeholder', ['title' => 'Configuraciones', 'icon' => 'settings'])->name('configuraciones.index');
+
         Route::get('/productos', [AdminProductController::class, 'index'])->name('products.index');
         Route::post('/productos', [AdminProductController::class, 'store'])->name('products.store');
         Route::put('/productos/{product}', [AdminProductController::class, 'update'])->name('products.update');

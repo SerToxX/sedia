@@ -7,13 +7,7 @@
 <div x-data="{ openModal: {{ old('_modal') ? "'".old('_modal')."'" : 'null' }} }">
 
     <div class="class-admin-page-header">
-        <div class="class-admin-page-title-row">
-            <span class="class-admin-page-icon"><x-admin-icon name="package" /></span>
-            <div>
-                <h1 class="class-admin-page-title">Productos</h1>
-                <p class="class-admin-page-subtitle">{{ $products->total() }} producto{{ $products->total() === 1 ? '' : 's' }} en tu catálogo</p>
-            </div>
-        </div>
+        <p class="class-admin-page-subtitle">{{ $products->total() }} producto{{ $products->total() === 1 ? '' : 's' }} en tu catálogo</p>
         <button type="button" class="class-admin-btn" @click="openModal = 'create'">
             <x-admin-icon name="plus" style="width:15px;height:15px" />
             Nuevo producto

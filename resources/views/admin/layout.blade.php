@@ -7,19 +7,21 @@
     <meta name="robots" content="noindex, nofollow">
     <title>@yield('title', 'Panel') | Sedia Admin</title>
 
-    {{-- Google Fonts de forma no bloqueante --}}
+    {{-- Google Fonts: carga bloqueante a propósito. El panel usa Turbo Drive
+    (ver abajo), así que este <head> solo se procesa una vez por sesión —
+    el truco de carga async (pensado para el sitio público) solo causaba un
+    parpadeo de fuente sin aplicar en cada navegación del panel. --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style"
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-          rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-              rel="stylesheet">
-    </noscript>
+          rel="stylesheet">
 
     @vite(['resources/css/admin.css', 'resources/css/toast.css', 'resources/js/admin.js'])
+
+    {{-- Turbo Drive: intercepta clics en enlaces y envíos de formularios del
+    panel para traer la página nueva por fetch y reemplazar solo el <body>,
+    en vez de recargar todo el documento en cada navegación. --}}
+    <script src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@8.0.12/dist/turbo.es2017-umd.min.js"></script>
 
     {{-- Alpine.js solo para el panel de administración — no toca el sitio público --}}
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
@@ -37,59 +39,42 @@
 
     <div class="class-admin-shell">
 
-        <header class="class-admin-topnav">
-            <div class="class-admin-topnav-inner">
-                <div class="class-admin-topnav-brand">
-                    Sedia <span style="font-size: 15px; font-family: 'Poppins', sans-serif; font-weight: 500; color: hsl(var(--muted-foreground)); align-self: flex-end; margin-bottom: 4px;">Admin</span>
-                </div>
+        <div id="classAdminSidebarOverlay" class="class-admin-sidebar-overlay"></div>
 
-                <nav class="class-admin-topnav-links">
-                    <a href="{{ route('admin.dashboard') }}" class="{{ request()->routeIs('admin.dashboard') ? 'is-active' : '' }}">
-                        <x-admin-icon name="dashboard" />
-                        Dashboard
-                    </a>
-                    <a href="{{ route('admin.products.index') }}" class="{{ request()->routeIs('admin.products.*') ? 'is-active' : '' }}">
-                        <x-admin-icon name="package" />
-                        Productos
-                    </a>
-                    <a href="{{ route('admin.banners.index') }}" class="{{ request()->routeIs('admin.banners.*') ? 'is-active' : '' }}">
-                        <x-admin-icon name="image" />
-                        Banners
-                    </a>
-                </nav>
+        <aside id="classAdminSidebar" class="class-admin-sidebar">
 
-                <div class="class-admin-topnav-actions">
-                    <span class="class-admin-badge-role">Admin</span>
-
-                    <button id="classAdminThemeToggle" type="button" class="class-admin-theme-toggle" title="Cambiar tema">
-                        <x-admin-icon name="sun" class="class-admin-icon-sun" />
-                        <x-admin-icon name="moon" class="class-admin-icon-moon" />
-                    </button>
-
-                    <a href="{{ route('inicio') }}" target="_blank" class="class-admin-store-link class-admin-topnav-desktop-only">
-                        Volver a Sedia
-                    </a>
-
-                    <form method="POST" action="{{ route('admin.logout') }}" class="class-admin-topnav-desktop-only">
-                        @csrf
-                        <button type="submit" class="class-admin-logout-btn">
-                            <x-admin-icon name="logout" />
-                            Cerrar sesión
-                        </button>
-                    </form>
-
-                    <button id="classAdminHamburger" type="button" class="class-admin-icon-btn class-admin-hamburger" aria-label="Menú">
-                        <x-admin-icon name="menu" />
-                    </button>
-                </div>
+            <div class="class-admin-sidebar-brand">
+                SEDIA
             </div>
 
-            <div id="classAdminSidebarOverlay" class="class-admin-mobile-nav-overlay"></div>
-            <nav id="classAdminSidebar" class="class-admin-mobile-nav">
+            <nav class="class-admin-sidebar-nav">
                 <a href="{{ route('admin.dashboard') }}" class="{{ request()->routeIs('admin.dashboard') ? 'is-active' : '' }}">
                     <x-admin-icon name="dashboard" />
                     Dashboard
                 </a>
+                <a href="{{ route('admin.pedidos.index') }}" class="{{ request()->routeIs('admin.pedidos.*') ? 'is-active' : '' }}">
+                    <x-admin-icon name="bag" />
+                    Pedidos
+                </a>
+                <a href="{{ route('admin.clientes.index') }}" class="{{ request()->routeIs('admin.clientes.*') ? 'is-active' : '' }}">
+                    <x-admin-icon name="users" />
+                    Clientes
+                </a>
+                <a href="{{ route('admin.inventario.index') }}" class="{{ request()->routeIs('admin.inventario.*') ? 'is-active' : '' }}">
+                    <x-admin-icon name="archive" />
+                    Inventario
+                </a>
+                <a href="{{ route('admin.conversaciones.index') }}" class="{{ request()->routeIs('admin.conversaciones.*') ? 'is-active' : '' }}">
+                    <x-admin-icon name="chat" />
+                    Conversaciones
+                </a>
+                <a href="{{ route('admin.configuraciones.index') }}" class="{{ request()->routeIs('admin.configuraciones.*') ? 'is-active' : '' }}">
+                    <x-admin-icon name="settings" />
+                    Configuraciones
+                </a>
+
+                <div class="class-admin-sidebar-divider"></div>
+
                 <a href="{{ route('admin.products.index') }}" class="{{ request()->routeIs('admin.products.*') ? 'is-active' : '' }}">
                     <x-admin-icon name="package" />
                     Productos
@@ -98,24 +83,64 @@
                     <x-admin-icon name="image" />
                     Banners
                 </a>
-                <div class="class-admin-mobile-nav-divider"></div>
-                <a href="{{ route('inicio') }}" target="_blank">
+            </nav>
+
+            <div class="class-admin-sidebar-footer">
+                <a href="{{ route('inicio') }}" target="_blank" class="class-admin-sidebar-store-link">
+                    <x-admin-icon name="store" />
                     Volver a Sedia
                 </a>
                 <form method="POST" action="{{ route('admin.logout') }}">
                     @csrf
-                    <button type="submit">
+                    <button type="submit" class="class-admin-sidebar-logout">
                         <x-admin-icon name="logout" />
-                        Cerrar sesión
+                        Cerrar Sesión
                     </button>
                 </form>
-            </nav>
-        </header>
+            </div>
+
+        </aside>
 
         <div class="class-admin-content">
-            <div class="class-admin-main">
-                @yield('content')
+
+            <header class="class-admin-topbar">
+                <button id="classAdminHamburger" type="button" class="class-admin-hamburger" aria-label="Menú">
+                    <x-admin-icon name="menu" />
+                </button>
+
+                <h1 class="class-admin-topbar-title">@yield('title', 'Panel')</h1>
+
+                <div class="class-admin-topbar-actions">
+                    <div class="class-admin-date-pill">
+                        <span>{{ now()->format('d-m-y') }}</span>
+                        <x-admin-icon name="chevron-down" />
+                    </div>
+
+                    <button type="button" class="class-admin-icon-btn class-admin-topbar-bell" title="Notificaciones">
+                        <x-admin-icon name="bell" />
+                    </button>
+
+                    <button id="classAdminThemeToggle" type="button" class="class-admin-theme-toggle" title="Cambiar tema">
+                        <x-admin-icon name="sun" class="class-admin-icon-sun" />
+                        <x-admin-icon name="moon" class="class-admin-icon-moon" />
+                    </button>
+
+                    <div class="class-admin-avatar" title="{{ auth('admin')->user()?->name }}">
+                        {{ strtoupper(substr(auth('admin')->user()?->name ?? 'A', 0, 1)) }}
+                    </div>
+                </div>
+            </header>
+
+            <div class="class-admin-breadcrumb">
+                <a href="{{ route('admin.dashboard') }}">
+                    <x-admin-icon name="home" />
+                </a>
             </div>
+
+            <main class="class-admin-main">
+                @yield('content')
+            </main>
+
         </div>
 
     </div>
